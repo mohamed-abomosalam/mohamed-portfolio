@@ -1,188 +1,1171 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- SEO Basics -->
-  <title>محمد أبو مسلم عبد المهدي | Mohamed Abu Muslim - Document Controller & Developer</title>
-  <meta name="description" content="الموقع الرسمي لمحمد أبو مسلم عبد المهدي. متخصص في إدارة الوثائق الهندسية (Document Control)، وحلول الأتمتة السحابية وتطوير الأنظمة والتطبيقات البرمجية.">
+  <!-- ==========================================
+       SEO & METADATA ENGINE (Google / Schema.org)
+       ========================================== -->
+  <title>محمد أبو مسلم عبد المهدي | Mohamed Abo Mosalam - Document Controller & Automation Architect</title>
+  <meta name="description" content="الموقع الرسمي التنفيذي لمحمد أبو مسلم عبد المهدي. متخصص في إدارة الوثائق الهندسية (Document Control) وهندسة حلول الأتمتة المخصصة ونظم Google Apps Script والذكاء الاصطناعي.">
+  <meta name="keywords" content="محمد أبو مسلم, محمد ابو مسلم عبد المهدي, Mohamed Abo Mosalam, Document Controller, Google Apps Script Developer, أنساب للمقاولات العامة, ماس للهندسة والإنشاء, أتمتة العمليات, EDMS">
   <meta name="author" content="محمد أبو مسلم عبد المهدي">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://salama-bot.github.io/mohamed-portfolio/">
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph / Meta Cards -->
+  <meta property="og:locale" content="ar_AR">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="محمد أبو مسلم عبد المهدي | السيرة الذاتية المهنية">
-  <meta property="og:description" content="إدارة الوثائق الهندسية وتطوير أنظمة الأتمتة المخصصة.">
+  <meta property="og:title" content="محمد أبو مسلم عبد المهدي | هندسة النظم وإدارة الوثائق">
+  <meta property="og:description" content="البوابة المهنية الرسمية: أتمتة العمليات المؤسسية وإدارة الوثائق الهندسية الكبرى.">
+  <meta property="og:url" content="https://salama-bot.github.io/mohamed-portfolio/">
+  <meta property="og:site_name" content="Mohamed Abo Mosalam Portfolio">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="محمد أبو مسلم عبد المهدي | Document Controller & Solutions Architect">
+  <meta name="twitter:description" content="إدارة دورات الوثائق الهندسية وهندسة حلول الأتمتة السحابية.">
 
-  <!-- Tailwind CSS & Google Fonts -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ==========================================
+       PREMIUM FONTS INJECTION
+       ========================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- ==========================================
+       EXTERNAL LIBRARIES (CSS & ICONS)
+       ========================================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ==========================================
+       TAILWIND CONFIGURATION
+       ========================================== -->
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              glow: '#00ffaa'
+            },
+            dark: {
+              base: '#07090d',
+              surface: '#0d1117',
+              elevated: '#161b22',
+              border: '#21262d',
+              borderLight: '#30363d'
+            }
+          },
           fontFamily: {
-            sans: ['Tajawal', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['"IBM Plex Sans Arabic"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+            en: ['"Plus Jakarta Sans"', 'sans-serif']
+          },
+          boxShadow: {
+            'glow-emerald': '0 0 50px -10px rgba(16, 185, 129, 0.3)',
+            'glow-cyan': '0 0 50px -10px rgba(6, 182, 212, 0.25)',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)'
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'border-beam': 'borderBeam 6s linear infinite'
+          },
+          keyframes: {
+            borderBeam: {
+              '0%, 100%': { transform: 'translateX(-100%)' },
+              '50%': { transform: 'translateX(100%)' }
+            }
           }
         }
       }
     }
   </script>
 
-  <!-- Schema Markup للتعريف الرسمي بالشخص لمحركات البحث -->
+  <!-- ==========================================
+       RICH SCHEMA GRAPH (LD+JSON)
+       ========================================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "محمد أبو مسلم عبد المهدي",
-    "alternateName": ["Mohamed Abu Muslim", "محمد ابو مسلم"],
-    "jobTitle": "Document Controller & Automation Specialist",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Engineering & Contracting Sector"
-    },
-    "knowsAbout": [
-      "Document Control",
-      "EDMS",
-      "Google Apps Script",
-      "Process Automation",
-      "JavaScript",
-      "Python",
-      "Advanced Excel",
-      "Data Analytics"
-    ],
-    "description": "متخصص في إدارة الوثائق الهندسية وحلول أتمتة الأنظمة البرمجية للمشاريع الكبرى."
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://salama-bot.github.io/mohamed-portfolio/#person",
+        "name": "محمد أبو مسلم عبد المهدي",
+        "alternateName": [
+          "Mohamed Abo Mosalam Abdel-Mahdi",
+          "Mohamed Abu Muslim",
+          "محمد ابو مسلم"
+        ],
+        "jobTitle": "Document Controller & Automation Solutions Architect",
+        "telephone": ["+966570532375", "+201063864546"],
+        "email": "mohamedabomosalam96@gmail.com",
+        "url": "https://salama-bot.github.io/mohamed-portfolio/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "المدينة المنورة",
+          "addressCountry": "SA"
+        },
+        "sameAs": [
+          "https://github.com/salama-bot"
+        ],
+        "knowsAbout": [
+          "Document Control Systems (EDMS)",
+          "Google Apps Script Advanced Architecture",
+          "Business Process Automation",
+          "Data Analysis & Reconciliation",
+          "Python Scripting for OCR & File Splitting",
+          "AutoCAD LMTOOLS License Server Administration"
+        ]
+      }
+    ]
   }
   </script>
-</head>
-<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-emerald-500 selection:text-black">
 
-  <!-- Header -->
-  <header class="border-b border-zinc-800/80 sticky top-0 bg-zinc-950/90 backdrop-blur z-50">
-    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-      <div class="text-sm font-bold tracking-wide text-zinc-200">
-        محمد أبو مسلم <span class="text-emerald-500">.</span>
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07090d;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #21262d;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #10b981;
+    }
+
+    /* Glass Effect Utilities */
+    .glass-panel {
+      background: rgba(13, 17, 23, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(48, 54, 61, 0.6);
+    }
+    
+    .glass-card {
+      background: linear-gradient(135deg, rgba(22, 27, 34, 0.8) 0%, rgba(13, 17, 23, 0.9) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(48, 54, 61, 0.5);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      transform: translateY(-4px);
+    }
+
+    /* Text Gradient */
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .text-gradient-emerald {
+      background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Noise Texture Overlay */
+    .noise-bg {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+      background-size: 28px 28px;
+    }
+  </style>
+</head>
+
+<body class="bg-dark-base text-zinc-200 font-sans selection:bg-brand-500 selection:text-black overflow-x-hidden relative noise-bg">
+
+  <!-- ==========================================
+       CANVAS 3D BACKGROUND (Three.js)
+       ========================================== -->
+  <canvas id="hero-canvas" class="fixed inset-0 pointer-events-none z-0 w-full h-full opacity-40"></canvas>
+
+  <!-- ==========================================
+       PROGRESS BAR
+       ========================================== -->
+  <div id="scroll-progress" class="fixed top-0 right-0 left-0 h-[2px] bg-gradient-to-l from-brand-400 via-emerald-500 to-cyan-400 z-50 transform origin-right scale-x-0 transition-transform duration-75"></div>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <header class="fixed top-0 right-0 left-0 z-40 transition-all duration-300 glass-panel border-b border-dark-border" id="main-header">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-400 p-[1px] shadow-lg shadow-brand-500/20 group-hover:shadow-brand-500/40 transition">
+          <div class="w-full h-full bg-dark-base rounded-[11px] flex items-center justify-center font-mono font-bold text-white text-base">
+            MA
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-white text-base tracking-wide group-hover:text-brand-400 transition">محمد أبو مسلم</span>
+          <span class="text-[11px] font-mono text-zinc-500 -mt-1 tracking-wider uppercase">Systems & DC</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-mono text-zinc-400">
+        <a href="#about" class="hover:text-brand-400 transition relative py-1 hover-indicator">01. النبذة</a>
+        <a href="#competencies" class="hover:text-brand-400 transition relative py-1 hover-indicator">02. الكفاءات</a>
+        <a href="#experience" class="hover:text-brand-400 transition relative py-1 hover-indicator">03. المسار الوظيفي</a>
+        <a href="#projects" class="hover:text-brand-400 transition relative py-1 hover-indicator">04. المشاريع</a>
+        <a href="#calculator" class="hover:text-brand-400 transition relative py-1 hover-indicator">05. حاسبة الأتمتة</a>
+        <a href="#contact" class="hover:text-brand-400 transition relative py-1 hover-indicator">06. الاتصال</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-400 hover:to-brand-500 text-dark-base font-bold text-xs font-mono shadow-glow-emerald transition duration-200">
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+          <span>بدء المحادثة</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" aria-label="Open Menu" class="lg:hidden w-10 h-10 rounded-xl bg-dark-elevated border border-dark-border text-zinc-300 flex items-center justify-center hover:text-white transition">
+          <i class="fa-solid fa-bars text-sm"></i>
+        </button>
       </div>
-      <div class="flex items-center gap-4 text-xs font-mono">
-        <a href="#about" class="text-zinc-400 hover:text-zinc-100 transition">نبذة</a>
-        <a href="#specialties" class="text-zinc-400 hover:text-zinc-100 transition">التخصصات</a>
-        <a href="#skills" class="text-zinc-400 hover:text-zinc-100 transition">المهارات</a>
-        <a href="#contact" class="px-3 py-1.5 rounded bg-zinc-800 text-emerald-400 border border-zinc-700 hover:border-emerald-500/50 transition">تواصل معي</a>
+
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-drawer" class="hidden lg:hidden border-t border-dark-border bg-dark-base/95 backdrop-blur-xl px-6 py-6 transition-all duration-300">
+      <div class="flex flex-col gap-4 text-sm font-mono">
+        <a href="#about" class="text-zinc-300 hover:text-brand-400 transition py-2 mobile-link">01. نبذة مهنية</a>
+        <a href="#competencies" class="text-zinc-300 hover:text-brand-400 transition py-2 mobile-link">02. الكفاءات والمحاور</a>
+        <a href="#experience" class="text-zinc-300 hover:text-brand-400 transition py-2 mobile-link">03. سجل الخبرات</a>
+        <a href="#projects" class="text-zinc-300 hover:text-brand-400 transition py-2 mobile-link">04. المشروعات البرمجية</a>
+        <a href="#calculator" class="text-zinc-300 hover:text-brand-400 transition py-2 mobile-link">05. حاسبة الأتمتة</a>
+        <a href="#contact" class="text-zinc-300 hover:text-brand-400 transition py-2 mobile-link">06. تواصل مباشر</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-5xl mx-auto px-6 pt-20 pb-16">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-xs font-mono mb-6">
-      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-      متاح للمشاريع والتعاقدات الاحترافية
-    </div>
-    
-    <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-100 leading-tight mb-4">
-      محمد أبو مسلم عبد المهدي
-    </h1>
-    <p class="text-xl md:text-2xl text-zinc-400 font-medium mb-6">
-      Document Controller & Process Automation Developer
-    </p>
-    <p class="text-zinc-400 leading-relaxed max-w-3xl text-base mb-8">
-      أجمع بين الدقة الصارمة في إدارة وضبط الوثائق الهندسية والمراسلات الفنية للمشاريع، وبين تطوير برمجيات وأدوات الأتمتة المخصصة، محولاً العمليات الورقية وجداول البيانات المعقدة إلى بيئات عمل رقمية عالية الكفاءة ودقيقة التنفيذ.
-    </p>
-    
-    <div class="flex flex-wrap gap-3 font-mono text-xs">
-      <a href="#contact" class="px-5 py-3 rounded-lg bg-emerald-500 text-zinc-950 font-bold hover:bg-emerald-400 transition">
-        بدء التواصل المباشر
-      </a>
-      <a href="#specialties" class="px-5 py-3 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 hover:border-zinc-700 transition">
-        استعراض مجالات الخبرة
-      </a>
+  <!-- ==========================================
+       HERO EXECUTIVE SECTION
+       ========================================== -->
+  <section id="hero" class="relative min-h-screen pt-32 pb-20 flex items-center z-10">
+    <div class="max-w-7xl mx-auto px-6 w-full">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Column (Text Details) -->
+        <div class="lg:col-span-8 space-y-6">
+          
+          <!-- Status Pill -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-panel border border-brand-500/30 text-brand-400 text-xs font-mono shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-400 animate-pulse"></span>
+            <span>متاح للتعاقدات المؤسسية والمشاريع الاستراتيجية</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.15]">
+            <span class="text-gradient block">محمد أبو مسلم</span>
+            <span class="text-gradient block text-zinc-400 text-3xl sm:text-5xl lg:text-6xl font-extrabold mt-1">عبد المهدي</span>
+          </h1>
+
+          <!-- Dynamic Typing Headline -->
+          <div class="text-lg sm:text-2xl font-mono text-zinc-400 flex items-center gap-2 font-medium">
+            <span class="text-brand-400">></span>
+            <span id="typed-text" class="text-zinc-200"></span>
+            <span class="animate-pulse text-brand-400 font-bold">_</span>
+          </div>
+
+          <!-- Description Summary -->
+          <p class="text-zinc-400 text-base sm:text-lg leading-relaxed max-w-3xl font-light">
+            خبير يجمع بين الضبط الهندسي الصارم للوثائق الإنشائية والمراسلات الفنية للمشاريع الكبرى (<span class="text-zinc-200 font-medium">EDMS, Submittals, Compliance</span>)، وبين هندسة النظم البرمجية والأتمتة السحابية المتقدمة (<span class="text-zinc-200 font-medium">Google Apps Script, REST APIs, Automation Flows</span>). أعمل على سد الفجوة بين الأقسام الميدانية والبيئات الرقمية لتحقيق إنتاجية قصوى وخلو تام من الأخطاء البشرية.
+          </p>
+
+          <!-- Executive WhatsApp Quick Actions -->
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            
+            <!-- KSA WhatsApp -->
+            <a href="https://wa.me/966570532375?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%81%D8%B1%D8%B5%D8%A9%20%D8%B9%D9%85%D9%84%20/%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9." 
+               target="_blank" rel="noopener" 
+               class="flex items-center gap-3 px-5 py-3 rounded-xl glass-card border border-dark-borderLight hover:border-brand-500/80 group">
+              <div class="w-8 h-8 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center text-base group-hover:scale-110 transition">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="text-right">
+                <div class="text-[10px] font-mono text-zinc-500">مقر العمل الحالي (السعودية)</div>
+                <div class="text-xs font-mono font-bold text-zinc-200 dir-ltr tracking-wider">+966 57 053 2375</div>
+              </div>
+            </a>
+
+            <!-- EG WhatsApp -->
+            <a href="https://wa.me/201063864546?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%20/%20%D8%A3%D8%AA%D9%85%D8%AA%D8%A9." 
+               target="_blank" rel="noopener" 
+               class="flex items-center gap-3 px-5 py-3 rounded-xl glass-card border border-dark-borderLight hover:border-brand-500/80 group">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-base group-hover:scale-110 transition">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="text-right">
+                <div class="text-[10px] font-mono text-zinc-500">الرقم المباشر (مصر)</div>
+                <div class="text-xs font-mono font-bold text-zinc-200 dir-ltr tracking-wider">+20 106 386 4546</div>
+              </div>
+            </a>
+
+            <!-- Direct Email Badge -->
+            <a href="mailto:mohamedabomosalam96@gmail.com" class="flex items-center gap-2.5 px-4 py-3 rounded-xl glass-panel text-xs font-mono text-zinc-400 hover:text-white hover:border-zinc-500 transition">
+              <i class="fa-regular fa-envelope text-brand-400"></i>
+              <span>mohamedabomosalam96@gmail.com</span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Right Hero Column (Interactive Metrics Card) -->
+        <div class="lg:col-span-4" data-tilt data-tilt-max="7" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="glass-card rounded-3xl p-8 border border-dark-border shadow-2xl relative overflow-hidden">
+            
+            <div class="absolute -top-12 -left-12 w-40 h-40 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex items-center justify-between pb-6 border-b border-dark-border">
+              <div>
+                <span class="text-[11px] font-mono text-brand-400 uppercase tracking-widest block">موجز الأداء القياسي</span>
+                <span class="text-lg font-bold text-white">الكفاءة التشغيلية</span>
+              </div>
+              <div class="w-10 h-10 rounded-xl bg-dark-elevated flex items-center justify-center text-zinc-400 border border-dark-border">
+                <i class="fa-solid fa-chart-line text-sm text-brand-400"></i>
+              </div>
+            </div>
+
+            <div class="divide-y divide-dark-border">
+              
+              <!-- Metric 1 -->
+              <div class="py-5">
+                <div class="flex justify-between items-baseline mb-1">
+                  <span class="text-zinc-400 text-xs font-mono">وثائق ومخططات مؤرشفة</span>
+                  <span class="text-3xl font-black font-mono text-white counter" data-target="1000">+0</span>
+                </div>
+                <div class="w-full bg-dark-base rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-brand-500 h-full rounded-full" style="width: 95%"></div>
+                </div>
+                <span class="text-[10px] text-zinc-500 mt-1.5 block">عقود، حزم RFIs، ومخططات As-Built بمشاريع كبرى</span>
+              </div>
+
+              <!-- Metric 2 -->
+              <div class="py-5">
+                <div class="flex justify-between items-baseline mb-1">
+                  <span class="text-zinc-400 text-xs font-mono">تقليص الأخطاء اليدوية</span>
+                  <div class="flex items-baseline">
+                    <span class="text-3xl font-black font-mono text-brand-400 counter" data-target="40">0</span>
+                    <span class="text-xl font-bold font-mono text-brand-400">%</span>
+                  </div>
+                </div>
+                <div class="w-full bg-dark-base rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-cyan-400 h-full rounded-full" style="width: 80%"></div>
+                </div>
+                <span class="text-[10px] text-zinc-500 mt-1.5 block">أتمتة القيود المخزنية وجداول التشغيل والتقارير اليومية</span>
+              </div>
+
+              <!-- Metric 3 -->
+              <div class="py-5">
+                <div class="flex justify-between items-baseline mb-1">
+                  <span class="text-zinc-400 text-xs font-mono">تسريع استرجاع البيانات</span>
+                  <div class="flex items-baseline">
+                    <span class="text-3xl font-black font-mono text-white counter" data-target="60">0</span>
+                    <span class="text-xl font-bold font-mono text-white">%</span>
+                  </div>
+                </div>
+                <div class="w-full bg-dark-base rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-emerald-400 h-full rounded-full" style="width: 90%"></div>
+                </div>
+                <span class="text-[10px] text-zinc-500 mt-1.5 block">فهارس سحابية متقدمة مربوطة بقواعد بيانات ديناميكية</span>
+              </div>
+
+            </div>
+
+            <!-- Card Bottom Footer -->
+            <div class="pt-4 flex items-center justify-between text-[11px] font-mono text-zinc-500">
+              <span class="inline-flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                نظام تشغيلي متكامل
+              </span>
+              <span>100% Uptime</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- Core Domains Section -->
-  <section id="specialties" class="max-w-5xl mx-auto px-6 py-12 border-t border-zinc-800/60">
-    <h2 class="text-xs font-mono uppercase tracking-wider text-emerald-500 mb-8">// مجالات التركيز الرئيسية</h2>
-    
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- Domain 1 -->
-      <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/80 hover:border-zinc-700 transition">
-        <div class="text-emerald-400 font-mono text-sm mb-3">01 / ENGINEERING & PROJECTS</div>
-        <h3 class="text-lg font-bold text-zinc-100 mb-2">إدارة وضبط الوثائق (Document Control)</h3>
-        <p class="text-zinc-400 text-sm leading-relaxed mb-4">
-          إدارة شاملة لدورات اعتماد المخططات والتقارير وطلبات الفحص (Submittals, RFIs, Inspection Requests). بناء وإدارة السجلات الرقمية وضمان الامتثال الصارم للمواصفات والجدول الزمني لتسليم وثائق المشروع.
-        </p>
-        <ul class="text-xs font-mono text-zinc-400 space-y-1">
-          <li>• ضبط سير العمل والمراجعات (Submittal Workflow & Logs)</li>
-          <li>• أرشفة وتوثيق مخرجات الاستشاري والمقاولين</li>
-          <li>• مطابقة جودة ومواصفات حزم التسليم الهندسية</li>
-        </ul>
+  <!-- ==========================================
+       SECTION 01: CORE ARCHITECTURE & COMPETENCIES
+       ========================================== -->
+  <section id="competencies" class="py-24 border-t border-dark-border relative z-10">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- Section Heading -->
+      <div class="mb-16">
+        <span class="text-xs font-mono text-brand-400 uppercase tracking-widest block mb-2">// 01. CORE PILLARS</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white">الركائز المهنية والخبرات المحورية</h2>
+        <p class="text-zinc-400 text-sm max-w-2xl mt-2">التكامل بين الصرامة التنظيمية للهندسة المدنية والإنشائية وبين المرونة البرمجية الفائقة لأحدث تقنيات الأتمتة.</p>
       </div>
 
-      <!-- Domain 2 -->
-      <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/80 hover:border-zinc-700 transition">
-        <div class="text-emerald-400 font-mono text-sm mb-3">02 / SYSTEMS & AUTOMATION</div>
-        <h3 class="text-lg font-bold text-zinc-100 mb-2">هندسة الحلول وأتمتة العمليات (Automation & Dev)</h3>
-        <p class="text-zinc-400 text-sm leading-relaxed mb-4">
-          ابتكار وتطوير أدوات داخلية مؤتمتة وتطبيقات ويب سريعة باستخدام Google Apps Script وPython والـ APIs لربط منظومات العمل، واستخراج البيانات تلقائياً من الملفات وحذف الروتين اليدوي بنسبة 100%.
-        </p>
-        <ul class="text-xs font-mono text-zinc-400 space-y-1">
-          <li>• أنظمة الويب المربوطة بالسحاب (Web Apps via Sheets DB)</li>
-          <li>• استخراج ومعالجة بيانات ملفات PDF الممسوحة آلياً</li>
-          <li>• برمجة روبوتات التنبيهات وإدارة البيانات (Webhooks / APIs)</li>
-        </ul>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="glass-card rounded-2xl p-8 border border-dark-border group hover:border-brand-500/60 transition">
+          <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-folder-closed"></i>
+          </div>
+          <span class="text-xs font-mono text-zinc-500 block mb-1">المحور الأول</span>
+          <h3 class="text-xl font-bold text-white mb-3">إدارة الوثائق والمراسلات الهندسية (EDMS)</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            تنظيم وحوكمة الدورة المستندية للمشاريع الإنشائية بالكامل؛ تتبع ومراقبة تقديمات المواد (Material Submittals)، طلبات الفحص (IRs)، مخططات الورشة (Shop Drawings)، وطلبات الاستفسار الفني (RFIs).
+          </p>
+          <ul class="space-y-2 text-xs font-mono text-zinc-400 border-t border-dark-border pt-4">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> إدارة سجلات التسليم والمطابقة (Master Logs)</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> التنسيق الفني بين الاستشاري ومقاولي الباطن</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400 text-[10px]"></i> التدقيق والالتزام بمحددات الجودة والسلامة</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="glass-card rounded-2xl p-8 border border-dark-border group hover:border-cyan-500/60 transition">
+          <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <span class="text-xs font-mono text-zinc-500 block mb-1">المحور الثاني</span>
+          <h3 class="text-xl font-bold text-white mb-3">الأتمتة السحابية ونظم Google Apps Script</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            بناء تطبيقات ويب مخصصة تربط Google Sheets بمثابة قاعدة بيانات ديناميكية عالية الموثوقية (Sheets-as-a-DB)، وتصميم أنظمة الرقمنة الإدارية المؤتمتة لحذف العمليات اليدوية بنسبة 100%.
+          </p>
+          <ul class="space-y-2 text-xs font-mono text-zinc-400 border-t border-dark-border pt-4">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 text-[10px]"></i> تطوير Web Apps متكاملة للإدخال والاستعلام</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 text-[10px]"></i> ربط Webhooks وتطبيقات المراسلة مثل Telegram</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 text-[10px]"></i> إرسال التقارير التلقائية والتنبيهات المجدولة</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="glass-card rounded-2xl p-8 border border-dark-border group hover:border-blue-500/60 transition">
+          <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <span class="text-xs font-mono text-zinc-500 block mb-1">المحور الثالث</span>
+          <h3 class="text-xl font-bold text-white mb-3">تحليل البيانات والبرمجة النصية (Data & Python)</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            استخراج ومعالجة كميات البيانات الضخمة من ملفات PDF الممسوحة ضوئياً، وفصل وتصنيف حزم الوثائق برمجياً باستخدام Python، وصياغة نماذج الفرز المالي والمخزني عبر Power Query وVBA.
+          </p>
+          <ul class="space-y-2 text-xs font-mono text-zinc-400 border-t border-dark-border pt-4">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> استخراج التواريخ والأرقام عبر سكريبتات Python</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> دوال إكسل المتقدمة وبرمجة الماكرو (VBA Macros)</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> ضبط تراخيص الخوادم الشبكية وأنظمة LMTOOLS</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Skills & Technologies -->
-  <section id="skills" class="max-w-5xl mx-auto px-6 py-12 border-t border-zinc-800/60">
-    <h2 class="text-xs font-mono uppercase tracking-wider text-emerald-500 mb-8">// الكفاءات والتقنيات</h2>
-    
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm font-mono">
-      <div class="p-4 rounded-lg bg-zinc-900/30 border border-zinc-800/60">
-        <span class="text-zinc-500 block text-xs mb-1">البرمجة والتطوير</span>
-        <span class="text-zinc-200">JavaScript, Apps Script, Python, HTML/CSS</span>
+  <!-- ==========================================
+       SECTION 02: PROFESSIONAL TIMELINE & CAREER
+       ========================================== -->
+  <section id="experience" class="py-24 border-t border-dark-border relative z-10 bg-dark-surface/30">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="mb-16 text-center">
+        <span class="text-xs font-mono text-brand-400 uppercase tracking-widest block mb-2">// 02. CAREER TRAJECTORY</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white">المحطات المهنية والشركات</h2>
+        <p class="text-zinc-400 text-sm max-w-xl mx-auto mt-2">سجل حافل بالعمل مع كبرى الكيانات الهندسية، المقاولات العامة، والمؤسسات الصناعية.</p>
       </div>
-      <div class="p-4 rounded-lg bg-zinc-900/30 border border-zinc-800/60">
-        <span class="text-zinc-500 block text-xs mb-1">تحليل الجداول</span>
-        <span class="text-zinc-200">Power Query, Advanced Formulas, Sheets</span>
-      </div>
-      <div class="p-4 rounded-lg bg-zinc-900/30 border border-zinc-800/60">
-        <span class="text-zinc-500 block text-xs mb-1">إدارة الوثائق</span>
-        <span class="text-zinc-200">EDMS Logs, Submittals, QA/QC Tracking</span>
-      </div>
-      <div class="p-4 rounded-lg bg-zinc-900/30 border border-zinc-800/60">
-        <span class="text-zinc-500 block text-xs mb-1">التكامل والربط</span>
-        <span class="text-zinc-200">Webhooks, REST APIs, Automation Flows</span>
+
+      <div class="relative border-r-2 border-dark-border mr-4 sm:mr-32 space-y-12">
+        
+        <!-- Experience Item 1 -->
+        <div class="relative group">
+          <!-- Timeline Marker -->
+          <div class="absolute -right-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-dark-base shadow-glow-emerald"></div>
+          
+          <div class="mr-8 sm:mr-10">
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-dark-border">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div>
+                  <span class="text-xs font-mono text-brand-400 block">المملكة العربية السعودية — المدينة المنورة</span>
+                  <h3 class="text-xl font-bold text-white mt-0.5">شركة أنساب للمقاولات العامة (Ansb Contracting)</h3>
+                </div>
+                <div class="px-3 py-1 rounded-full bg-dark-elevated border border-dark-border text-xs font-mono text-zinc-300 w-fit">
+                  2026 - الحالي
+                </div>
+              </div>
+              <h4 class="text-sm font-semibold text-zinc-200 mb-3">Document Controller & Automation Admin</h4>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                المسؤولية عن إدارة وتدقيق حزم الوثائق الهندسية وطلبات الفحص لمشروع تطوير داون تاون المدينة، تنسيق مراسلات الاستشاري والجهات المشرفة، وإنشاء لوحات متابعة رقمية مؤتمتة لتقليل التأخير الزمني في الاعتمادات.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Submittal Management</span>
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">RFI Systems</span>
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Workflow Digitization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="relative group">
+          <div class="absolute -right-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 border-4 border-dark-base"></div>
+          
+          <div class="mr-8 sm:mr-10">
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-dark-border">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div>
+                  <span class="text-xs font-mono text-cyan-400 block">جمصة — مصر</span>
+                  <h3 class="text-xl font-bold text-white mt-0.5">الشركة المصرية لمستحضرات التجميل (ECC)[cite: 7]</h3>
+                </div>
+                <div class="px-3 py-1 rounded-full bg-dark-elevated border border-dark-border text-xs font-mono text-zinc-300 w-fit">
+                  02/2025 - 2026[cite: 7]
+                </div>
+              </div>
+              <h4 class="text-sm font-semibold text-zinc-200 mb-3">Google Apps Script Developer & Automation Specialist[cite: 7]</h4>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                بناء وهندسة نظام إدارة الإنتاج المتكامل (Production Management System) من خلال تحويل كافة المستندات الورقية وسجلات التصنيع إلى منظومة سحابية متقدمة[cite: 7]. تطوير تطبيقات ويب معتمدة على Google Sheets كقواعد بيانات ديناميكية[cite: 7]، وتقليل أخطاء الإدخال بنسبة 40%[cite: 7].
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Google Apps Script[cite: 7]</span>
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">JavaScript[cite: 7]</span>
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Inventory Tracking[cite: 7]</span>
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Automated Mail Alerts[cite: 7]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="relative group">
+          <div class="absolute -right-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-dark-base"></div>
+          
+          <div class="mr-8 sm:mr-10">
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-dark-border">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div>
+                  <span class="text-xs font-mono text-blue-400 block">الساحل الشمالي (سيدي عبد الرحمن) — مصر</span>
+                  <h3 class="text-xl font-bold text-white mt-0.5">ماس للهندسة والإنشاء (Mass Engineering & Construction)[cite: 7]</h3>
+                </div>
+                <div class="px-3 py-1 rounded-full bg-dark-elevated border border-dark-border text-xs font-mono text-zinc-300 w-fit">
+                  02/2021 - 01/2023[cite: 7]
+                </div>
+              </div>
+              <h4 class="text-sm font-semibold text-zinc-200 mb-3">Document Controller[cite: 7]</h4>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                إدارة وحفظ وتدفق كافة مستندات المشروع الفنية والمخططات الهندسية لمنتجع ساحلي متكامل[cite: 7]. تصميم نظام أرشفة رقمي ذكي مبني على الإكسل المتطور أدى إلى رقمنة وتصنيف أكثر من 1,000 مخطط وعقد، مع رفع سرعة استرجاع الوثائق بنسبة 60%[cite: 7].
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Digital Archive System[cite: 7]</span>
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Submittals & RFIs[cite: 7]</span>
+                <span class="px-2.5 py-1 rounded bg-dark-base border border-dark-border text-[11px] font-mono text-zinc-400">Advanced Excel[cite: 7]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact & Footer -->
-  <footer id="contact" class="max-w-5xl mx-auto px-6 py-16 border-t border-zinc-800/60">
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+  <!-- ==========================================
+       SECTION 03: FEATURED TECHNICAL PROJECTS
+       ========================================== -->
+  <section id="projects" class="py-24 border-t border-dark-border relative z-10">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-mono text-brand-400 uppercase tracking-widest block mb-2">// 03. ENGINEERING & SOFTWARE BUILDS</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-white">المشاريع والنظم المطورة</h2>
+          <p class="text-zinc-400 text-sm max-w-xl mt-2">منظومات برمجية تم بناؤها واختبارها في بيئات تشغيل واقعية لحل تحديات معقدة.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 p-1.5 rounded-xl glass-panel border border-dark-border text-xs font-mono">
+          <button class="filter-btn active px-3.5 py-1.5 rounded-lg bg-brand-500 text-black font-bold transition" data-filter="all">الكل</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-zinc-400 hover:text-white transition" data-filter="automation">أتمتة وسحاب</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-zinc-400 hover:text-white transition" data-filter="doc-control">إدارة وثائق</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg text-zinc-400 hover:text-white transition" data-filter="ai-apps">ذكاء اصطناعي</button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8" id="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-item automation glass-card rounded-3xl p-8 border border-dark-border group relative overflow-hidden" data-tilt data-tilt-max="5">
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[11px] font-mono text-brand-400 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20">Production Cloud Core</span>
+            <span class="text-xs font-mono text-zinc-500">2025 - 2026</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-brand-400 transition">نظام إدارة الإنتاج السحابي (ECC Platform)</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            تطبيق ويب كامل مبني بـ Google Apps Script وJavaScript، يحول جداول Google Sheets إلى خادم وقاعدة بيانات علائقية. يتيح تتبع خطوط التصنيع لحظياً، تصفية وجرد المواد الخام، وأتمتة التقارير اليومية إلى إدارة المصنع.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-dark-border font-mono text-xs text-zinc-400">
+            <span>#AppsScript</span>
+            <span>#GoogleSheetsDB</span>
+            <span>#REST_API</span>
+            <span>#HTML5/CSS3</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item ai-apps glass-card rounded-3xl p-8 border border-dark-border group relative overflow-hidden" data-tilt data-tilt-max="5">
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[11px] font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">AI Ecosystem</span>
+            <span class="text-xs font-mono text-zinc-500">Web Application</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition">منصة إتقان للذكاء الاصطناعي (Itqan AI)[cite: 7]</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            بوابة رقمية تفاعلية توظف نماذج الذكاء الاصطناعي لتحليل النصوص، وتوليد الإجابات الفورية، وتبسيط مسارات التعلّم للمستخدمين مع آلية استرجاع وفحص للمحتوى متطورة[cite: 7].
+          </p>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-dark-border font-mono text-xs text-zinc-400">
+            <span>#AI_Integration[cite: 7]</span>
+            <span>#JavaScript[cite: 7]</span>
+            <span>#PromptEngineering</span>
+            <span>#ResponsiveUI</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item doc-control glass-card rounded-3xl p-8 border border-dark-border group relative overflow-hidden" data-tilt data-tilt-max="5">
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[11px] font-mono text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">Engineering Archiving</span>
+            <span class="text-xs font-mono text-zinc-500">Mass Construction[cite: 7]</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition">نظام الأرشفة الرقمية والبحث الهندسي الموجه[cite: 7]</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            نظام متكامل صُمم لرقمنة وتصنيف أكثر من 1000 مخطط هندسي وعقد تنفيذي في مشروع الساحل الشمالي، يقلص زمن البحث عن المستند بنسبة 60% مع منع تكرار أو فقدان النسخ المعتمدة[cite: 7].
+          </p>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-dark-border font-mono text-xs text-zinc-400">
+            <span>#AdvancedExcel[cite: 7]</span>
+            <span>#VBA[cite: 7]</span>
+            <span>#DocumentLogs[cite: 7]</span>
+            <span>#QualityAudit</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item automation glass-card rounded-3xl p-8 border border-dark-border group relative overflow-hidden" data-tilt data-tilt-max="5">
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[11px] font-mono text-emerald-400 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">Humanitarian & Social</span>
+            <span class="text-xs font-mono text-zinc-500">Live Platforms[cite: 7]</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-emerald-400 transition">منصتا (تبرع - Tabarra') و (نقوط - Noqoot)[cite: 7]</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            تطبيقات ويب ديناميكية؛ الأولى لربط المتبرعين بالدم بالمرضى بشكل طارئ[cite: 7]، والثانية لتوثيق وتتبع المساهمات المالية في الفعاليات الاجتماعية رقمياً واستبدال السجلات الورقية[cite: 7].
+          </p>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-dark-border font-mono text-xs text-zinc-400">
+            <span>#DynamicDatabase[cite: 7]</span>
+            <span>#FrontendEngine</span>
+            <span>#DataReconciliation[cite: 7]</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 04: INTERACTIVE ROI CALCULATOR
+       ========================================== -->
+  <section id="calculator" class="py-24 border-t border-dark-border relative z-10 bg-dark-surface/40">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-mono text-brand-400 uppercase tracking-widest block mb-2">// 04. ROI SIMULATOR</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white">حاسبة العائد الاستثماري للأتمتة وحوكمة الوثائق</h2>
+        <p class="text-zinc-400 text-sm max-w-xl mx-auto mt-2">شاهد تقديرياً كيف تساهم حلول الأتمتة المخصصة ونظم الأرشفة الدقيقة في خفض التكاليف وساعات العمل المهدرة لمؤسستك.</p>
+      </div>
+
+      <div class="glass-card rounded-3xl p-8 sm:p-10 border border-dark-border shadow-2xl">
+        
+        <div class="grid sm:grid-cols-2 gap-8 mb-8">
+          
+          <!-- Slider 1 -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-mono text-zinc-300">عدد موظفي الإدخال والمتابعة:</label>
+              <span id="employees-val" class="font-mono text-brand-400 font-bold text-sm">5 موظفين</span>
+            </div>
+            <input type="range" id="employees-slider" min="1" max="50" value="5" class="w-full accent-brand-500 bg-dark-base rounded-lg h-2 cursor-pointer">
+            <span class="text-[10px] text-zinc-500 font-mono mt-1 block">الفريق المعني بإدخال الفواتير، التقارير والوثائق</span>
+          </div>
+
+          <!-- Slider 2 -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-mono text-zinc-300">ساعات العمل اليدوي اليومية للموظف:</label>
+              <span id="hours-val" class="font-mono text-cyan-400 font-bold text-sm">3 ساعات</span>
+            </div>
+            <input type="range" id="hours-slider" min="1" max="8" value="3" class="w-full accent-cyan-400 bg-dark-base rounded-lg h-2 cursor-pointer">
+            <span class="text-[10px] text-zinc-500 font-mono mt-1 block">الوقت المخصص للطباعة، التعديل، والمطابقة</span>
+          </div>
+
+        </div>
+
+        <!-- Calculated Results Display -->
+        <div class="grid sm:grid-cols-2 gap-6 p-6 rounded-2xl bg-dark-base/80 border border-dark-border">
+          <div class="text-right">
+            <span class="text-xs font-mono text-zinc-500 block">ساعات العمل السنوية الموفرة:</span>
+            <div class="text-3xl font-black font-mono text-brand-400 mt-1" id="saved-hours">3,600 ساعة</div>
+            <span class="text-[11px] text-zinc-400 mt-1 block">يتم استثمارها في المهام الفنية والإدارية الحيوية.</span>
+          </div>
+          <div class="text-right border-t sm:border-t-0 sm:border-r border-dark-border pt-4 sm:pt-0 sm:pr-6">
+            <span class="text-xs font-mono text-zinc-500 block">انخفاض معدل الخطأ البشري:</span>
+            <div class="text-3xl font-black font-mono text-cyan-400 mt-1">تصل إلى 99.8%</div>
+            <span class="text-[11px] text-zinc-400 mt-1 block">بفضل التحقق البرمجي التلقائي وتدفق البيانات المشفر.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 05: TECHNICAL TOOLCHAIN
+       ========================================== -->
+  <section id="skills" class="py-24 border-t border-dark-border relative z-10">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="mb-16">
+        <span class="text-xs font-mono text-brand-400 uppercase tracking-widest block mb-2">// 05. TECHNICAL STACK</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white">ترسانة الأدوات والتقنيات البرمجية</h2>
+        <p class="text-zinc-400 text-sm max-w-xl mt-2">الأدوات التي أعتمد عليها في بناء الأنظمة وإدارة أصول المشاريع الهندسية.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 font-mono text-xs">
+        
+        <div class="p-4 rounded-2xl glass-card border border-dark-border text-center group hover:border-brand-500/50">
+          <i class="fa-brands fa-google text-2xl text-brand-400 mb-2 group-hover:scale-110 transition block"></i>
+          <span class="font-bold text-zinc-200 block">Apps Script</span>
+          <span class="text-[10px] text-zinc-500">Expert / Backend</span>
+        </div>
+
+        <div class="p-4 rounded-2xl glass-card border border-dark-border text-center group hover:border-yellow-400/50">
+          <i class="fa-brands fa-js text-2xl text-yellow-400 mb-2 group-hover:scale-110 transition block"></i>
+          <span class="font-bold text-zinc-200 block">JavaScript</span>
+          <span class="text-[10px] text-zinc-500">ES6+ / Web Apps</span>
+        </div>
+
+        <div class="p-4 rounded-2xl glass-card border border-dark-border text-center group hover:border-blue-400/50">
+          <i class="fa-brands fa-python text-2xl text-blue-400 mb-2 group-hover:scale-110 transition block"></i>
+          <span class="font-bold text-zinc-200 block">Python</span>
+          <span class="text-[10px] text-zinc-500">OCR & Data Scripts</span>
+        </div>
+
+        <div class="p-4 rounded-2xl glass-card border border-dark-border text-center group hover:border-emerald-400/50">
+          <i class="fa-solid fa-file-excel text-2xl text-emerald-400 mb-2 group-hover:scale-110 transition block"></i>
+          <span class="font-bold text-zinc-200 block">MS Excel</span>
+          <span class="text-[10px] text-zinc-500">VBA & Power Query</span>
+        </div>
+
+        <div class="p-4 rounded-2xl glass-card border border-dark-border text-center group hover:border-cyan-400/50">
+          <i class="fa-solid fa-table text-2xl text-cyan-400 mb-2 group-hover:scale-110 transition block"></i>
+          <span class="font-bold text-zinc-200 block">Sheets DB</span>
+          <span class="text-[10px] text-zinc-500">Query & Relational</span>
+        </div>
+
+        <div class="p-4 rounded-2xl glass-card border border-dark-border text-center group hover:border-red-400/50">
+          <i class="fa-solid fa-network-wired text-2xl text-red-400 mb-2 group-hover:scale-110 transition block"></i>
+          <span class="font-bold text-zinc-200 block">Network & CAD</span>
+          <span class="text-[10px] text-zinc-500">LMTOOLS / Licensing</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 06: CONTACT & EXECUTIVE CHANNELS
+       ========================================== -->
+  <section id="contact" class="py-24 border-t border-dark-border relative z-10 bg-gradient-to-b from-dark-base to-[#040608]">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="glass-card rounded-3xl p-8 sm:p-14 border border-dark-border relative overflow-hidden shadow-2xl">
+        
+        <div class="absolute top-0 right-0 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-2xl">
+          <span class="text-xs font-mono text-brand-400 uppercase tracking-widest block mb-2">// DIRECT ACCESS</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight mb-4">
+            جاهز لتطوير أعمالك وأتمتة منظومتك الهندسية؟
+          </h2>
+          <p class="text-zinc-400 text-base leading-relaxed mb-8">
+            أنا متاح دائماً لمناقشة الفرص الوظيفية الاستراتيجية، إدارة دورات الوثائق للمشاريع الضخمة، أو بناء وتطوير أنظمة أتمتة مخصصة وفق أعلى المعايير التقنية.
+          </p>
+        </div>
+
+        <!-- Contact Channels Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+          
+          <!-- KSA Direct -->
+          <a href="https://wa.me/966570532375" target="_blank" rel="noopener" class="p-5 rounded-2xl bg-dark-base/80 border border-dark-border hover:border-brand-500 transition group">
+            <div class="flex items-center gap-3 mb-2">
+              <i class="fa-brands fa-whatsapp text-xl text-brand-400 group-hover:scale-110 transition"></i>
+              <span class="text-xs font-bold text-white">واتساب (السعودية)</span>
+            </div>
+            <div class="text-xs font-mono text-zinc-300 dir-ltr text-right">+966 57 053 2375</div>
+            <span class="text-[10px] text-zinc-500 mt-1 block">المدينة المنورة</span>
+          </a>
+
+          <!-- Egypt Direct -->
+          <a href="https://wa.me/201063864546" target="_blank" rel="noopener" class="p-5 rounded-2xl bg-dark-base/80 border border-dark-border hover:border-cyan-400 transition group">
+            <div class="flex items-center gap-3 mb-2">
+              <i class="fa-brands fa-whatsapp text-xl text-cyan-400 group-hover:scale-110 transition"></i>
+              <span class="text-xs font-bold text-white">واتساب (مصر)</span>
+            </div>
+            <div class="text-xs font-mono text-zinc-300 dir-ltr text-right">+20 106 386 4546</div>
+            <span class="text-[10px] text-zinc-500 mt-1 block">رقم الاتصال المباشر</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:mohamedabomosalam96@gmail.com" class="p-5 rounded-2xl bg-dark-base/80 border border-dark-border hover:border-blue-400 transition group sm:col-span-2 lg:col-span-1">
+            <div class="flex items-center gap-3 mb-2">
+              <i class="fa-regular fa-envelope text-xl text-blue-400 group-hover:scale-110 transition"></i>
+              <span class="text-xs font-bold text-white">البريد الإلكتروني</span>
+            </div>
+            <div class="text-xs font-mono text-zinc-300 truncate">mohamedabomosalam96@gmail.com</div>
+            <span class="text-[10px] text-zinc-500 mt-1 block">مراسلة مباشرة 24/7</span>
+          </a>
+
+        </div>
+
+        <!-- External Profile Links -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-dark-border text-xs font-mono text-zinc-400">
+          <div class="flex items-center gap-4">
+            <a href="https://github.com/salama-bot" target="_blank" rel="noopener" class="hover:text-brand-400 transition flex items-center gap-1.5">
+              <i class="fa-brands fa-github text-sm"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div class="text-zinc-500 text-[11px]">
+            استجابة فورية عبر قنوات الواتساب الموضحة
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="border-t border-dark-border bg-dark-base py-10 relative z-10 text-xs font-mono text-zinc-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
-        <h3 class="text-lg font-bold text-zinc-100">تواصل مهني مباشر</h3>
-        <p class="text-zinc-400 text-sm">محمد أبو مسلم عبد المهدي — متاح دائماً للأعمال والاستشارات.</p>
+        © <span id="current-year"></span> محمد أبو مسلم عبد المهدي. جميع الحقوق محفوظة.
       </div>
-      <div class="flex flex-wrap gap-4 text-xs font-mono">
-        <a href="mailto:your-email@example.com" class="px-4 py-2 rounded bg-zinc-800 text-zinc-200 hover:text-emerald-400 transition">Email</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener" class="px-4 py-2 rounded bg-zinc-800 text-zinc-200 hover:text-emerald-400 transition">LinkedIn</a>
-        <a href="https://github.com" target="_blank" rel="noopener" class="px-4 py-2 rounded bg-zinc-800 text-zinc-200 hover:text-emerald-400 transition">GitHub</a>
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+        <span class="text-zinc-400">Engineered with Precision & Code</span>
       </div>
-    </div>
-    <div class="mt-12 text-center text-xs font-mono text-zinc-600">
-      © <span id="year"></span> محمد أبو مسلم عبد المهدي. جميع الحقوق محفوظة.
     </div>
   </footer>
 
+  <!-- ==========================================
+       HIGH-PERFORMANCE CLIENT SCRIPTS
+       ========================================== -->
+  <!-- External Libraries: Three.js, GSAP, VanillaTilt -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    /* ============================================================
+       01. THREE.JS INTERACTIVE 3D CONSTELLATION MESH
+       ============================================================ */
+    const initThreeCanvas = () => {
+      const canvas = document.getElementById('hero-canvas');
+      if (!canvas) return;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+      camera.position.z = 250;
+
+      const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      // Particle Geometry
+      const particleCount = 120;
+      const geometry = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      const velocities = [];
+
+      for (let i = 0; i < particleCount * 3; i += 3) {
+        positions[i] = (Math.random() - 0.5) * 450;
+        positions[i + 1] = (Math.random() - 0.5) * 450;
+        positions[i + 2] = (Math.random() - 0.5) * 200;
+
+        velocities.push({
+          x: (Math.random() - 0.5) * 0.35,
+          y: (Math.random() - 0.5) * 0.35,
+          z: (Math.random() - 0.5) * 0.2
+        });
+      }
+
+      geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+      const material = new THREE.PointsMaterial({
+        color: 0x10b981,
+        size: 2.8,
+        transparent: true,
+        opacity: 0.65
+      });
+
+      const particleSystem = new THREE.Points(geometry, material);
+      scene.add(particleSystem);
+
+      // Mouse Parallax Effect
+      let mouseX = 0;
+      let mouseY = 0;
+      window.addEventListener('mousemove', (e) => {
+        mouseX = (e.clientX - window.innerWidth / 2) * 0.05;
+        mouseY = (e.clientY - window.innerHeight / 2) * 0.05;
+      });
+
+      // Render Loop
+      const animate = () => {
+        requestAnimationFrame(animate);
+
+        const pos = geometry.attributes.position.array;
+        for (let i = 0; i < particleCount; i++) {
+          const idx = i * 3;
+          pos[idx] += velocities[i].x;
+          pos[idx + 1] += velocities[i].y;
+          pos[idx + 2] += velocities[i].z;
+
+          // Boundary bounce
+          if (pos[idx] > 220 || pos[idx] < -220) velocities[i].x *= -1;
+          if (pos[idx + 1] > 220 || pos[idx + 1] < -220) velocities[i].y *= -1;
+          if (pos[idx + 2] > 100 || pos[idx + 2] < -100) velocities[i].z *= -1;
+        }
+        geometry.attributes.position.needsUpdate = true;
+
+        particleSystem.rotation.y += 0.001;
+        particleSystem.rotation.x += 0.0005;
+
+        camera.position.x += (mouseX - camera.position.x) * 0.05;
+        camera.position.y += (-mouseY - camera.position.y) * 0.05;
+        camera.lookAt(scene.position);
+
+        renderer.render(scene, camera);
+      };
+
+      animate();
+
+      // Window Resize Listener
+      window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+    };
+
+    /* ============================================================
+       02. DYNAMIC TEXT TYPING EFFECT
+       ============================================================ */
+    const initTypewriter = () => {
+      const phrases = [
+        "Document Controller & EDMS Specialist",
+        "Google Apps Script Senior Developer",
+        "Business Process Automation Architect",
+        "Advanced Data Reconciliation & Python"
+      ];
+      let phraseIndex = 0;
+      let letterIndex = 0;
+      let isDeleting = false;
+      const targetElement = document.getElementById('typed-text');
+      if (!targetElement) return;
+
+      const typeLoop = () => {
+        const currentPhrase = phrases[phraseIndex];
+
+        if (isDeleting) {
+          targetElement.textContent = currentPhrase.substring(0, letterIndex - 1);
+          letterIndex--;
+        } else {
+          targetElement.textContent = currentPhrase.substring(0, letterIndex + 1);
+          letterIndex++;
+        }
+
+        let typeSpeed = isDeleting ? 40 : 80;
+
+        if (!isDeleting && letterIndex === currentPhrase.length) {
+          typeSpeed = 2000; // Pause at full phrase
+          isDeleting = true;
+        } else if (isDeleting && letterIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          typeSpeed = 400;
+        }
+
+        setTimeout(typeLoop, typeSpeed);
+      };
+
+      typeLoop();
+    };
+
+    /* ============================================================
+       03. SCROLL PROGRESS & HEADER SHRINK
+       ============================================================ */
+    const initScrollUX = () => {
+      const progressBar = document.getElementById('scroll-progress');
+      const header = document.getElementById('main-header');
+
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height);
+        if (progressBar) progressBar.style.transform = `scaleX(${scrolled})`;
+
+        if (header) {
+          if (winScroll > 50) {
+            header.classList.add('h-16');
+            header.classList.remove('h-20');
+          } else {
+            header.classList.add('h-20');
+            header.classList.remove('h-16');
+          }
+        }
+      });
+    };
+
+    /* ============================================================
+       04. GSAP COUNTER ANIMATION
+       ============================================================ */
+    const initCounters = () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      document.querySelectorAll('.counter').forEach((counter) => {
+        const target = +counter.getAttribute('data-target');
+        gsap.to(counter, {
+          scrollTrigger: {
+            trigger: counter,
+            start: 'top 85%',
+            once: true
+          },
+          innerText: target,
+          duration: 2,
+          snap: { innerText: 1 },
+          ease: 'power2.out'
+        });
+      });
+    };
+
+    /* ============================================================
+       05. DYNAMIC PROJECT FILTER
+       ============================================================ */
+    const initProjectFilter = () => {
+      const buttons = document.querySelectorAll('.filter-btn');
+      const items = document.querySelectorAll('.project-item');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => {
+            b.classList.remove('bg-brand-500', 'text-black', 'font-bold');
+            b.classList.add('text-zinc-400');
+          });
+
+          btn.classList.add('bg-brand-500', 'text-black', 'font-bold');
+          btn.classList.remove('text-zinc-400');
+
+          const filter = btn.getAttribute('data-filter');
+
+          items.forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+              gsap.to(item, { display: 'block', opacity: 1, scale: 1, duration: 0.35 });
+            } else {
+              gsap.to(item, { display: 'none', opacity: 0, scale: 0.95, duration: 0.35 });
+            }
+          });
+        });
+      });
+    };
+
+    /* ============================================================
+       06. INTERACTIVE ROI CALCULATOR LOGIC
+       ============================================================ */
+    const initRoiCalculator = () => {
+      const empSlider = document.getElementById('employees-slider');
+      const hrsSlider = document.getElementById('hours-slider');
+      const empVal = document.getElementById('employees-val');
+      const hrsVal = document.getElementById('hours-val');
+      const savedHoursDisplay = document.getElementById('saved-hours');
+
+      if (!empSlider || !hrsSlider) return;
+
+      const calculate = () => {
+        const employees = parseInt(empSlider.value);
+        const hours = parseInt(hrsSlider.value);
+
+        empVal.textContent = `${employees} موظفين`;
+        hrsVal.textContent = `${hours} ساعات`;
+
+        // 250 working days/year * 80% automation efficiency factor
+        const totalSaved = Math.round(employees * hours * 250 * 0.8);
+        savedHoursDisplay.textContent = `${totalSaved.toLocaleString()} ساعة`;
+      };
+
+      empSlider.addEventListener('input', calculate);
+      hrsSlider.addEventListener('input', calculate);
+      calculate();
+    };
+
+    /* ============================================================
+       07. MOBILE DRAWER NAVIGATION
+       ============================================================ */
+    const initMobileMenu = () => {
+      const toggle = document.getElementById('mobile-toggle');
+      const drawer = document.getElementById('mobile-drawer');
+      const links = document.querySelectorAll('.mobile-link');
+
+      if (!toggle || !drawer) return;
+
+      toggle.addEventListener('click', () => {
+        drawer.classList.toggle('hidden');
+      });
+
+      links.forEach(l => {
+        l.addEventListener('click', () => {
+          drawer.classList.add('hidden');
+        });
+      });
+    };
+
+    /* ============================================================
+       ENTRYPOINT INITIALIZER
+       ============================================================ */
+    window.addEventListener('DOMContentLoaded', () => {
+      initThreeCanvas();
+      initTypewriter();
+      initScrollUX();
+      initCounters();
+      initProjectFilter();
+      initRoiCalculator();
+      initMobileMenu();
+
+      const yearElem = document.getElementById('current-year');
+      if (yearElem) yearElem.textContent = new Date().getFullYear();
+    });
   </script>
 </body>
 </html>
