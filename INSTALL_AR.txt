@@ -1,101 +1,107 @@
-الإصدار 08 — محمد أبو مسلم عبد المهدي
+دليل الرفع والتشغيل — Operations Atlas / الإصدار 09
+محمد أبو مسلم عبد المهدي
+الرابط: https://mohamed-abomosalam.github.io/mohamed-portfolio/
+المستودع: https://github.com/mohamed-abomosalam/mohamed-portfolio
 
-الرابط الجديد:
-https://mohamed-abomosalam.github.io/mohamed-portfolio/
+1. الرفع مرة واحدة
+نزّل portfolio-executive-complete.zip وفك الضغط.
+افتح المستودع → Add file → Upload files.
+ارفع محتويات الحزمة في جذر المستودع: index.html ومجلدات ar وen وassets والملفات المرافقة.
+لا ترفع ZIP نفسه، ولا تضع الموقع داخل مجلد خارجي إضافي.
+اترك جميع ملفات التحقق google*.html الموجودة بالفعل؛ لا تحذف رموز التحقق الأخرى.
+اضغط Commit changes، وانتظر نجاح آخر نشر في تبويب Actions.
+Settings → Pages يجب أن يشير إلى main و / (root) إذا كنت تستخدم النشر من فرع.
+ملف .nojekyll مرفق؛ تأكد من إظهار الملفات المخفية عند فك الضغط إذا لم يظهر لك.
+الموقع ثابت ويمكن تشغيله على GitHub Pages دون إعداد npm أو خادم خلفي.
 
-1. رفع التحديث
-افتح https://github.com/mohamed-abomosalam/mohamed-portfolio
-فك ZIP ثم من الصفحة الرئيسية للمستودع اختر Add file → Upload files.
-اسحب محتويات المجلد المفكوك (ar و en و assets والملفات الموجودة بجانبها) إلى صفحة الرفع؛ لا ترفع ZIP أو المجلد الخارجي.
-Commit changes ثم انتظر نجاح Actions.
-الحزمة تشمل ملف التحقق من Google الموجود بالفعل؛ لا تحذفه بعد التحقق.
+2. ما الذي جرى بناؤه
+واجهة جديدة بالكامل: افتتاحية فاتحة، عرض تحريري للأعمال، مختبر مسارات، سجل خبرة، كفاءات، أسئلة عملية وقنوات اتصال.
+العربية والإنجليزية لهما صفحات HTML فعلية ونصوص وبيانات وصفية مستقلة.
+CSS وJavaScript مدمجان في الصفحات، والخطوط والصور محلية.
+Lucide: مجموعة SVG صغيرة. Anime.js: الجزء الخاص بحركة WAAPI، نحو 11 كيلوبايت قبل الضغط.
+الحركة تراعي prefers-reduced-motion. التراخيص موجودة في THIRD_PARTY_NOTICES.txt.
+15 صفحة محتوى، وصفحة 404، وخريطة موقع من 14 عنواناً أساسياً.
+لا توجد مكتبات تحميل ضخمة أو اعتماد على CDN للخطوط أو الأيقونات أو الحركة.
 
-2. اختبار الروابط
-https://mohamed-abomosalam.github.io/mohamed-portfolio/ar/
-https://mohamed-abomosalam.github.io/mohamed-portfolio/en/
-https://mohamed-abomosalam.github.io/mohamed-portfolio/sitemap.xml
-https://mohamed-abomosalam.github.io/mohamed-portfolio/google811e8a7aab6ac555.html
-جرّب اللغة، القائمة على الموبايل، البحث وتصنيف المشروعات، روابط التواصل وتنزيل السيرة الذاتية.
+3. رسالة الشكر والتقييم
+رسالة ترحيب وشكر تظهر مرة واحدة في جلسة التصفح؛ يمكن إغلاقها، ولا توقف التنقل.
+سؤال الرضا يظهر بعد 35 ثانية وتصفح 60% من الصفحة، ويمكن فتحه من زر قيّم التجربة في التذييل.
+يمكن إغلاقه، ولا يقفل تمرير الصفحة أو ينقل التركيز عند ظهوره تلقائياً.
+اختيار واحد يُحفظ في هذا المتصفح باستخدام مفتاح النسخة السابقة نفسه.
+من سبق له التقييم لن تظهر له دعوة تلقائية جديدة. هذا ليس تعريفاً لشخص أو منعاً للتكرار بين الأجهزة.
+إذا حُجبت Analytics لا نضمن وصول الحدث. رسالة الشكر تؤكد تفاعل الواجهة فقط.
+لا توجد أرقام تقييمات عامة أو نجوم أو آراء مختلقة على الموقع.
 
-3. Google Search Console
-أضف خاصية جديدة من نوع URL prefix بالرابط الكامل الجديد مع / في النهاية.
-اتبع طريقة إثبات الملكية التي تعرضها Google. إذا كانت تطلب نفس ملف التحقق الموجود، جرّب Verify. إن عرضت ملفاً مختلفاً، حمّله وارفعه كما هو ثم تحقق.
-داخل خاصية الموقع الجديد افتح Sitemaps واكتب sitemap.xml فقط إذا كانت الواجهة تعرض عنوان الموقع قبله.
-افحص /ar/ و /en/ من خاصية الموقع الجديد، نفذ Test live URL، ثم اطلب الفهرسة إذا كانتا مؤهلتين.
-احتفظ بالخاصية القديمة للرجوع إلى بياناتها. طلب الفهرسة لا يضمن موعداً أو ترتيباً في نتائج البحث.
-
-4. Google Analytics
-احتفظ بالحساب والخاصية ومصدر البيانات الحاليين.
-Admin → Data collection and modification → Data streams → Mohamed Portfolio Web.
-اضغط القلم بجانب Stream details.
-Protocol: https
-Website URL: mohamed-abomosalam.github.io/mohamed-portfolio/
-Update stream.
-Measurement ID يبقى G-2TNQYQJ8V5؛ لا تحتاج إلى استبداله.
-اختبر الموقع من الموبايل ثم Reports → Realtime.
-
-5. ملف GitHub الشخصي
-Name: Mohamed Abo Mosalam Abdel-Mahdi
-Bio: Document Controller & EDMS Specialist | Building cloud automation and connected systems | Al Madinah, Saudi Arabia
-URL: https://mohamed-abomosalam.github.io/mohamed-portfolio/
-Location: Al Madinah, Saudi Arabia
-Social account: https://t.me/QQ_K0
-ارفع صورتك الشخصية ثم Update profile.
-حدّث رابط الموقع في حساباتك المهنية وأي رسائل أو ملفات تنشر فيها الرابط.
-
-6. التواصل والتصميم
-الواجهة تعرض أيقونة واسم القناة، دون كتابة أرقام واتساب أو معرف تليجرام.
-روابط التواصل تظل تحتوي على الأرقام والمعرف لتعمل؛ اختصار العرض لا يجعلها سرية.
-البريد ظاهر لتسهيل التواصل المهني، ورقما الاتصال الهاتفي محفوظان في الأزرار.
-اختيار الاحتياج يجهّز رسالة واتساب؛ لا يرسلها تلقائياً.
-البحث وتصنيف المشروعات والمشاركة وروابط الأعمال الأخرى موجودة في هذا الإصدار.
-الصوت غير مضاف.
-
-قياس الأحداث:
-contact_click: contact_channel و contact_topic و placement
+4. Analytics
+المعرف محفوظ: G-2TNQYQJ8V5. لا تُنشئ حساباً أو خاصية جديدة لمجرد تغيير التصميم.
+لو عنوان تدفق البيانات قديم: Admin → Data streams → اختر تدفق الموقع → تعديل تفاصيل التدفق.
+Protocol: https. Website URL: mohamed-abomosalam.github.io/mohamed-portfolio/
+فعّل Enhanced measurement، ومنه تنزيل الملفات إذا أردت تتبع تنزيل السيرة الذاتية.
+الأحداث:
+contact_click: contact_channel, contact_topic, placement
 project_filter: project_category
 project_share: project_slug
 service_select: service_focus
-تنزيل PDF يلتقطه Enhanced measurement عندما تكون File downloads مفعلة.
-لا ترسل كلمات بحث الزوار أو نصوص رسائلهم إلى أحداث مخصصة.
+workflow_select: workflow_type
+workflow_step: workflow_type, workflow_step
+portfolio_feedback: feedback_value, feedback_prompt, page_type, content_language
+لا تُرسل كلمات البحث أو مراجع النموذج أو نصوص رسائل واتساب في أحداث مخصصة.
+لا نرسل تنزيل PDF كحدث مخصص ثانٍ بجانب Enhanced measurement.
 
-
-7. تقييم التجربة — إعداد التقرير
-الرسالة تظهر بعد 25 ثانية من البقاء وتصفح أكثر من نصف الصفحة. يمكن إغلاقها أو فتحها من تذييل الموقع.
-حدث القياس: portfolio_feedback
-معلمة الاختيار: feedback_value
-القيم: satisfied / not_satisfied
-يُحفظ اختيار واحد في هذا المتصفح لمنع تكراره المعتاد. لا يعادل ذلك هوية شخص حقيقية؛ تغيير الجهاز أو مسح التخزين يسمح بتقييم آخر.
-لو كانت Analytics محجوبة لدى الزائر فلن تصل استجابته. رسالة الشكر لا تعني تأكيد استلامها على الخادم.
-لا توجد أرقام أو تقييمات عامة معروضة على الموقع. النتائج يراها مالك الحساب في Analytics فقط.
-
-لفصل راضٍ عن غير راضٍ:
+لفصل راضٍ عن غير راضٍ، إن لم تكن أنشأت التعريف سابقاً:
 Admin → Data display → Custom definitions → Custom dimensions → Create custom dimension.
 Dimension name: Feedback choice
 Scope: Event
 Event parameter: feedback_value
-Description: Visitor feedback on portfolio clarity
 Save.
-بعد إرسال البيانات وإنشاء التعريف قد تحتاج التقارير إلى 24–48 ساعة.
 Explore → Free form.
 Dimensions: Feedback choice و Event name.
 Metrics: Event count.
 Rows: Feedback choice.
 Values: Event count.
 Filter: Event name exactly matches portfolio_feedback.
-القيم satisfied تعني راضٍ، وnot_satisfied تعني غير راضٍ.
-Realtime يعرض الحدث قبل اكتمال تجهيز التقرير التفصيلي.
-لا تحوّل التقييمات إلى AggregateRating في البيانات المنظمة.
+satisfied = راضٍ. not_satisfied = غير راضٍ.
+قد تحتاج التقارير المفصلة إلى 24–48 ساعة بعد التعريف ووصول البيانات.
+نتائج التقييم مخصصة لك في Analytics. عرض مجموع عام على الموقع يحتاج تجميعاً حقيقياً وخدمة خلفية غير مضافة هنا.
 
-8. ترتيب الأعمال
-الرئيسية: ECC، Enterprise DCS، الأرشيف الهندسي، ومحرك الصوت العربي.
-الإضافية: إتقان وتبرع ونقوط داخل قسم قابل للفتح. البحث يشمل الأعمال الستة ويفتح القسم الإضافي عند الحاجة.
-روابط الدراسات الست محفوظة في اللغتين، وخريطة الموقع لا تزال تشمل 14 رابطاً.
-الصورة social-cover.png خاصة بمشاركة صفحات النبذة؛ هي تصميم تعريفي ولا تمثل شهادة أو تقييمًا.
+5. Google والبحث
+التصميم يستخدم روابط الإصدار السابق نفسها. لا تحتاج خاصية جديدة بسبب التصميم وحده.
+اختر الخاصية الجديدة التي أضفتها: https://mohamed-abomosalam.github.io/mohamed-portfolio/
+لا تعمل داخل خاصية salama-bot القديمة.
+خريطة الموقع: https://mohamed-abomosalam.github.io/mohamed-portfolio/sitemap.xml
+إذا كانت أُرسلت من قبل، يظل عنوانها صالحاً. يمكنك مراجعة حالتها بعد نشر التحديث.
+العربية: https://mohamed-abomosalam.github.io/mohamed-portfolio/ar/
+الإنجليزية: https://mohamed-abomosalam.github.io/mohamed-portfolio/en/
+افحص الرابطين ثم Test live URL، واطلب الفهرسة إن كانت الصفحة مؤهلة عند الحاجة.
+الصفحات تتضمن canonical وhreflang متبادلة وبيانات منظمة ProfilePage/Person وصفحات أعمال مستقلة.
+بيانات المشروع لا تحتوي AggregateRating أو تقييمات مختلقة.
+لا يوجد ضمان للتصدر أو موعد ثابت للظهور؛ تكرار طلب الفهرسة لا يسرّع العملية.
+لم نضف ملف robots.txt داخل مسار المشروع؛ قواعد الروبوتات تُقرأ من جذر المضيف.
+إذا طلب Google ملف تحقق جديداً، ارفعه باسمه ومحتواه الأصليين بجانب index.html.
 
-9. مراجعة Google بعد تغيير الاسم
-الصورة القديمة لـSearch Console تخص salama-bot ولا تثبت فهرسة عنوان mohamed-abomosalam الجديد.
-أضف الخاصية الجديدة بالرابط:
-https://mohamed-abomosalam.github.io/mohamed-portfolio/
-أثبت الملكية ثم أرسل sitemap.xml وافحص /ar/ و /en/ على العنوان الجديد.
-الزحف قد يستغرق أياماً إلى أسابيع؛ لا يوجد موعد مضمون للظهور ولا ترتيب مضمون.
+6. اختبارك بعد الرفع
+افتح الرابط على الكمبيوتر والهاتف، ويمكن تحديث الصفحة بقوة Ctrl+F5.
+جرّب العربية والإنجليزية ثم العودة إلى الرابط الأساسي؛ يتم حفظ اختيار اللغة في المتصفح.
+جرّب القائمة على الموبايل، وإغلاقها، والتنقل إلى الأعمال والتواصل.
+ابحث عن إتقان، وجرّب مرشّح الوثائق، ثم امسح البحث واختر جميع الأعمال.
+افتح دراسة مشروع، وكبّر لقطة الواجهة، ثم أغلق العرض.
+جرّب مسارات المختبر الثلاثة. تغيير الإصدار أو المرجع يعيد المسار.
+النموذج للتوضيح فقط، ولا يحفظ المراجع أو يدير بيانات مشروع حقيقي.
+افتح أزرار السعودية ومصر وتليجرام والبريد وتأكد من الوجهة.
+اختيار نوع الاحتياج يجهز رسالة قابلة للتعديل؛ لا يرسلها تلقائياً.
+جرّب التقييم مرة واحدة، ثم ابحث عن portfolio_feedback في Realtime.
+بيانات المستخدمين لا تعادل بالضرورة عدد أشخاص مستقلين؛ الجهاز والمتصفح والحظر تؤثر على القياس.
+
+7. المحتوى والسيرة الذاتية
+الأعمال الأساسية: ECC وEnterprise DCS والأرشيف الهندسي ومحرك الصوت العربي.
+الأعمال الإضافية: إتقان وتبرع ونقوط؛ تظهر عند فتح القسم أو عند وجود نتيجة بحث مطابقة.
+أرقام 40% و60% و1,000+ مأخوذة من بياناتك، وليست قياساً جديداً أجريناه.
+راجع ملف Mohamed_AboMosalam_CV.pdf قبل النشر: أبقينا الملف الذي قدمته، وقد تكون بيانات الوظيفة فيه أقدم من السجل الحالي للموقع.
+حدّث PDF بنفس الاسم إذا احتاج تصحيحاً، دون تغيير رابط التنزيل.
+أرقام واتساب ومعرف تليجرام غير مكتوبة بجوار الأزرار، لكنها موجودة في الروابط العامة لتعمل.
+الصوت غير مضاف إلى هذا الإصدار.
+
+8. الكود المصدر
+portfolio-atlas-source.zip اختياري للتحرير وإعادة البناء؛ لا ترفعه باعتباره الموقع الجاهز.
+يتضمن مولداً قياسياً في Python وملفات CSS وJavaScript والمحتوى والأصول والتراخيص.
+تعليماته داخل README_AR.txt. حزمة الموقع الجاهزة وحدها تكفي للنشر.
