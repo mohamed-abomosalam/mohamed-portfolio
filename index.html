@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>محمد أبو مسلم عبد المهدي — سجل النظم وإدارة الوثائق الهندسية</title>
-  <meta name="description" content="الملف التوثيقي المعماري لمحمد أبو مسلم عبد المهدي. متخصص في إدارة الوثائق الهندسية (Document Control) وهندسة حلول الأتمتة السحابية المتقدمة ونظم Google Apps Script.">
-  <meta name="keywords" content="محمد أبو مسلم, محمد ابو مسلم عبد المهدي, Document Control, Google Apps Script, أنساب للمقاولات العامة, ماس للهندسة والإنشاء, أتمتة الأنظمة">
+  <title id="pageTitleNode">محمد أبو مسلم عبد المهدي — الملف التوثيقي المعماري</title>
+  <meta name="description" id="pageMetaDescNode" content="الملف التوثيقي المعماري لمحمد أبو مسلم عبد المهدي. متخصص في إدارة الوثائق الهندسية (Document Control) وهندسة حلول الأتمتة السحابية ونظم Google Apps Script للمشاريع الكبرى.">
+  <meta name="keywords" content="محمد أبو مسلم, محمد ابو مسلم عبد المهدي, Document Control, Google Apps Script, أنساب للمقاولات العامة, ماس للهندسة والإنشاء, أتمتة الأنظمة, EDMS">
   <meta name="author" content="محمد أبو مسلم عبد المهدي">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://salama-bot.github.io/mohamed-portfolio/">
 
   <meta property="og:locale" content="ar_AR">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="محمد أبو مسلم عبد المهدي — Dossier System">
-  <meta property="og:description" content="إدارة الوثائق الهندسية، حوكمة الامتثال للمشاريع، وهندسة حلول الأتمتة السحابية.">
+  <meta property="og:title" id="ogTitleNode" content="محمد أبو مسلم عبد المهدي — Dossier System">
+  <meta property="og:description" id="ogDescNode" content="إدارة الوثائق الهندسية، حوكمة الامتثال للمشاريع، وهندسة حلول الأتمتة السحابية.">
   <meta property="og:url" content="https://salama-bot.github.io/mohamed-portfolio/">
   <meta property="og:site_name" content="Mohamed Abo Mosalam Dossier">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <script type="application/ld+json">
@@ -56,25 +56,25 @@
 
   <style>
     :root {
-      --bg: #0b0d10;
-      --bg-surface: #111419;
-      --bg-elevated: #161a22;
-      --bg-alt: #0e1116;
-      --rule-subtle: rgba(255, 255, 255, 0.07);
-      --rule-medium: rgba(255, 255, 255, 0.15);
-      --rule-strong: rgba(255, 255, 255, 0.28);
-      --text: #f0f2f5;
-      --text-muted: #848c96;
-      --text-dim: #4d5560;
-      --accent-emerald: #10b981;
-      --accent-emerald-dark: #059669;
-      --accent-emerald-subtle: rgba(16, 185, 129, 0.08);
+      --bg: #090b0e;
+      --bg-surface: #101318;
+      --bg-panel: #151921;
+      --bg-alt: #0c0f13;
+      --rule-subtle: rgba(255, 255, 255, 0.08);
+      --rule-medium: rgba(255, 255, 255, 0.16);
+      --rule-strong: rgba(255, 255, 255, 0.32);
+      --text: #f0f3f6;
+      --text-muted: #838c97;
+      --text-dim: #4c5460;
+      --accent: #10b981;
+      --accent-dark: #059669;
+      --accent-soft: rgba(16, 185, 129, 0.08);
 
-      --font-arabic: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-english: 'Plus Jakarta Sans', sans-serif;
+      --font-ar: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-en: 'Plus Jakarta Sans', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
 
-      --z-canvas: 0;
+      --z-bg: 0;
       --z-content: 10;
       --z-rail: 50;
       --z-header: 100;
@@ -99,15 +99,19 @@
     body {
       background-color: var(--bg);
       color: var(--text);
-      font-family: var(--font-arabic);
+      font-family: var(--font-ar);
       line-height: 1.65;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
+    html[dir="ltr"] body {
+      font-family: var(--font-en);
+    }
+
     ::selection {
-      background-color: var(--accent-emerald);
+      background-color: var(--accent);
       color: #000;
     }
 
@@ -118,10 +122,10 @@
       background: var(--bg);
     }
     ::-webkit-scrollbar-thumb {
-      background: #1f242d;
+      background: #1f2530;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: var(--accent-emerald);
+      background: var(--accent);
     }
 
     .dossier-wrap {
@@ -137,11 +141,11 @@
       letter-spacing: 0.02em;
     }
 
-    .en {
-      font-family: var(--font-english);
-      direction: ltr;
+    .isolate-ltr {
+      direction: ltr !important;
       unicode-bidi: isolate;
       text-align: left;
+      font-family: var(--font-en);
     }
 
     .dossier-rail {
@@ -154,6 +158,11 @@
       flex-direction: column;
       gap: 1.25rem;
       pointer-events: none;
+    }
+
+    html[dir="ltr"] .dossier-rail {
+      right: auto;
+      left: 1.5rem;
     }
 
     @media (min-width: 1280px) {
@@ -173,7 +182,7 @@
     }
 
     .rail-entry.active {
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .rail-line {
@@ -185,7 +194,7 @@
 
     .rail-entry.active .rail-line {
       width: 28px;
-      background: var(--accent-emerald);
+      background: var(--accent);
     }
 
     .dossier-header {
@@ -193,9 +202,9 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 68px;
+      height: 70px;
       z-index: var(--z-header);
-      background-color: rgba(11, 13, 16, 0.95);
+      background-color: rgba(9, 11, 14, 0.94);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--rule-subtle);
@@ -203,7 +212,7 @@
     }
 
     .dossier-header.scrolled {
-      height: 58px;
+      height: 60px;
       border-bottom-color: var(--rule-medium);
     }
 
@@ -227,7 +236,7 @@
       font-family: var(--font-mono);
       font-size: 0.75rem;
       font-weight: 700;
-      color: var(--accent-emerald);
+      color: var(--accent);
       border: 1px solid var(--rule-medium);
       padding: 0.25rem 0.5rem;
       background: var(--bg-surface);
@@ -244,7 +253,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2.5rem;
+      gap: 2.25rem;
     }
 
     .index-nav-link {
@@ -264,20 +273,45 @@
     }
 
     .index-nav-link span {
-      color: var(--accent-emerald);
+      color: var(--accent);
       font-size: 0.7rem;
     }
 
     .header-action-zone {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.85rem;
     }
 
-    .btn-header-link {
+    .lang-switcher-ui {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--rule-medium);
+      background: var(--bg-surface);
+      padding: 2px;
+    }
+
+    .lang-btn {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.25rem 0.65rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+    }
+
+    .btn-header-dial {
       font-family: var(--font-mono);
       font-size: 0.75rem;
-      padding: 0.45rem 1rem;
+      padding: 0.45rem 0.95rem;
       border: 1px solid var(--rule-medium);
       color: var(--text);
       text-decoration: none;
@@ -288,10 +322,10 @@
       transition: all 0.2s ease;
     }
 
-    .btn-header-link:hover {
-      border-color: var(--accent-emerald);
-      color: var(--accent-emerald);
-      background: var(--accent-emerald-subtle);
+    .btn-header-dial:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
     }
 
     .menu-toggle-btn {
@@ -307,13 +341,13 @@
     }
 
     .dossier-hero {
-      padding-top: 130px;
+      padding-top: 140px;
       padding-bottom: 90px;
       border-bottom: 1px solid var(--rule-subtle);
       position: relative;
     }
 
-    .hero-pre-coordinate {
+    .hero-coordinate-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -329,14 +363,14 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .active-status::before {
       content: '';
       width: 6px;
       height: 6px;
-      background: var(--accent-emerald);
+      background: var(--accent);
       display: inline-block;
       border-radius: 50%;
     }
@@ -357,7 +391,7 @@
       margin-top: 0.4rem;
     }
 
-    .hero-split-architectural {
+    .hero-split-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 3.5rem;
@@ -366,13 +400,13 @@
     }
 
     @media (min-width: 992px) {
-      .hero-split-architectural {
+      .hero-split-grid {
         grid-template-columns: 7fr 5fr;
         gap: 5rem;
       }
     }
 
-    .hero-statement-lead {
+    .hero-lead-text {
       font-size: 1.38rem;
       font-weight: 400;
       line-height: 1.65;
@@ -380,7 +414,7 @@
       margin-bottom: 2rem;
     }
 
-    .hero-statement-extended {
+    .hero-extended-text {
       font-size: 1.02rem;
       color: var(--text-muted);
       line-height: 1.8;
@@ -394,8 +428,8 @@
       gap: 1.25rem;
     }
 
-    .btn-dossier-primary {
-      background: var(--accent-emerald);
+    .btn-action-primary {
+      background: var(--accent);
       color: #000;
       font-weight: 700;
       font-size: 0.88rem;
@@ -407,12 +441,12 @@
       transition: background 0.2s ease, transform 0.2s ease;
     }
 
-    .btn-dossier-primary:hover {
+    .btn-action-primary:hover {
       background: #34d399;
       transform: translateY(-2px);
     }
 
-    .btn-dossier-secondary {
+    .btn-action-secondary {
       border: 1px solid var(--rule-medium);
       color: var(--text);
       font-size: 0.88rem;
@@ -425,9 +459,9 @@
       transition: all 0.2s ease;
     }
 
-    .btn-dossier-secondary:hover {
-      border-color: var(--accent-emerald);
-      color: var(--accent-emerald);
+    .btn-action-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     .hero-spec-sidebar {
@@ -445,6 +479,12 @@
         border-right: 1px solid var(--rule-subtle);
         padding-top: 0;
         padding-right: 3rem;
+      }
+      html[dir="ltr"] .hero-spec-sidebar {
+        border-right: none;
+        border-left: 1px solid var(--rule-subtle);
+        padding-right: 0;
+        padding-left: 3rem;
       }
     }
 
@@ -472,7 +512,7 @@
       font-family: var(--font-mono);
       font-size: 1.15rem;
       font-weight: 700;
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .dossier-section {
@@ -496,7 +536,7 @@
       font-family: var(--font-mono);
       font-size: 1.15rem;
       font-weight: 600;
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .spine-header-title {
@@ -529,8 +569,15 @@
       font-weight: 600;
       line-height: 1.5;
       color: var(--text);
-      border-right: 3px solid var(--accent-emerald);
+      border-right: 3px solid var(--accent);
       padding-right: 1.5rem;
+    }
+
+    html[dir="ltr"] .manifesto-lead-quote {
+      border-right: none;
+      border-left: 3px solid var(--accent);
+      padding-right: 0;
+      padding-left: 1.5rem;
     }
 
     .manifesto-body-prose {
@@ -584,7 +631,7 @@
       font-family: var(--font-mono);
       font-size: 1.5rem;
       font-weight: 700;
-      color: var(--accent-emerald);
+      color: var(--accent);
       display: block;
     }
 
@@ -636,7 +683,7 @@
 
     .case-problem-solution-box {
       background: var(--bg-surface);
-      border-right: 2px solid var(--accent-emerald);
+      border-right: 2px solid var(--accent);
       padding: 1.5rem;
       margin-top: 0.5rem;
       display: flex;
@@ -644,6 +691,11 @@
       gap: 0.75rem;
       font-size: 0.92rem;
       color: var(--text-muted);
+    }
+
+    html[dir="ltr"] .case-problem-solution-box {
+      border-right: none;
+      border-left: 2px solid var(--accent);
     }
 
     .case-problem-solution-box strong {
@@ -674,7 +726,7 @@
       gap: 0.5rem;
       font-family: var(--font-mono);
       font-size: 0.8rem;
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .footprint-metric-zone {
@@ -736,7 +788,7 @@
 
     .career-firm-name {
       font-size: 0.95rem;
-      color: var(--accent-emerald);
+      color: var(--accent);
       font-weight: 600;
       margin-top: 0.25rem;
     }
@@ -786,13 +838,13 @@
     }
 
     .capability-domain-column:hover {
-      border-top-color: var(--accent-emerald);
+      border-top-color: var(--accent);
     }
 
     .capability-code {
       font-family: var(--font-mono);
       font-size: 0.8rem;
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .capability-name {
@@ -827,7 +879,7 @@
 
     .capability-bullets li::before {
       content: '/';
-      color: var(--accent-emerald);
+      color: var(--accent);
       font-family: var(--font-mono);
       font-size: 0.75rem;
     }
@@ -872,12 +924,17 @@
       border-bottom: 1px solid var(--rule-subtle);
       text-decoration: none;
       color: inherit;
-      transition: padding-right 0.2s ease, border-bottom-color 0.2s ease;
+      transition: padding 0.2s ease, border-bottom-color 0.2s ease;
     }
 
     .channel-row-link:hover {
       padding-right: 0.75rem;
-      border-bottom-color: var(--accent-emerald);
+      border-bottom-color: var(--accent);
+    }
+
+    html[dir="ltr"] .channel-row-link:hover {
+      padding-right: 0;
+      padding-left: 0.75rem;
     }
 
     .channel-kicker {
@@ -900,7 +957,7 @@
 
     .channel-sub-context {
       font-size: 0.82rem;
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .contact-regulatory-panel {
@@ -947,7 +1004,7 @@
     }
 
     .regulatory-links-list a:hover {
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     .dossier-colophon-footer {
@@ -976,7 +1033,7 @@
     .mobile-drawer-stage {
       position: fixed;
       inset: 0;
-      background: rgba(11, 13, 16, 0.97);
+      background: rgba(9, 11, 14, 0.98);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       z-index: var(--z-drawer);
@@ -1021,7 +1078,7 @@
     .drawer-menu-item .num {
       font-family: var(--font-mono);
       font-size: 0.9rem;
-      color: var(--accent-emerald);
+      color: var(--accent);
     }
 
     @media (max-width: 991px) {
@@ -1041,7 +1098,7 @@
       .hero-monograph-title {
         font-size: 2.5rem;
       }
-      .btn-dossier-primary, .btn-dossier-secondary {
+      .btn-action-primary, .btn-action-secondary {
         width: 100%;
         justify-content: center;
       }
@@ -1071,25 +1128,31 @@
   <header class="dossier-header" id="dossierHeaderNode">
     <div class="dossier-wrap header-layout">
       
-      <a href="#" class="brand-system" aria-label="محمد أبو مسلم — الصفحة الرئيسية">
+      <a href="#" class="brand-system" aria-label="Home">
         <span class="brand-glyph">MA</span>
-        <span class="brand-label">محمد أبو مسلم عبد المهدي</span>
+        <span class="brand-label" id="brandLabelNode">محمد أبو مسلم عبد المهدي</span>
       </a>
 
-      <nav class="header-index-nav" aria-label="أقسام الملف التوثيقي">
-        <a href="#about" class="index-nav-link"><span>01</span> النبذة</a>
-        <a href="#projects" class="index-nav-link"><span>02</span> المشروعات</a>
-        <a href="#experience" class="index-nav-link"><span>03</span> الخبرات</a>
-        <a href="#capabilities" class="index-nav-link"><span>04</span> الكفاءات</a>
-        <a href="#contact" class="index-nav-link"><span>05</span> الاتصال</a>
+      <nav class="header-index-nav" aria-label="Dossier Index Navigation">
+        <a href="#about" class="index-nav-link"><span class="mono">01</span> <span class="nav-text" data-i18n="nav_about">النبذة</span></a>
+        <a href="#projects" class="index-nav-link"><span class="mono">02</span> <span class="nav-text" data-i18n="nav_projects">المشروعات</span></a>
+        <a href="#experience" class="index-nav-link"><span class="mono">03</span> <span class="nav-text" data-i18n="nav_experience">الخبرات</span></a>
+        <a href="#capabilities" class="index-nav-link"><span class="mono">04</span> <span class="nav-text" data-i18n="nav_capabilities">الكفاءات</span></a>
+        <a href="#contact" class="index-nav-link"><span class="mono">05</span> <span class="nav-text" data-i18n="nav_contact">الاتصال</span></a>
       </nav>
 
       <div class="header-action-zone">
-        <a href="https://wa.me/966570532375" target="_blank" rel="noopener" class="btn-header-link">
-          <i class="fa-brands fa-whatsapp" style="color: var(--accent-emerald);"></i>
+        <div class="lang-switcher-ui" role="group" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" id="langBtnAr" onclick="switchLanguage('ar')">عربي</button>
+          <button type="button" class="lang-btn" id="langBtnEn" onclick="switchLanguage('en')">EN</button>
+        </div>
+
+        <a href="https://wa.me/966570532375" target="_blank" rel="noopener" class="btn-header-dial isolate-ltr" aria-label="Direct WhatsApp Dial">
+          <i class="fa-brands fa-whatsapp" style="color: var(--accent);"></i>
           <span>+966 57 053 2375</span>
         </a>
-        <button class="menu-toggle-btn" id="drawerOpenTrigger" aria-label="فتح القائمة">
+
+        <button class="menu-toggle-btn" id="drawerOpenTrigger" aria-label="Open Navigation Drawer">
           <i class="fa-solid fa-bars-staggered"></i>
         </button>
       </div>
@@ -1099,17 +1162,17 @@
 
   <div class="mobile-drawer-stage" id="mobileDrawerStageNode">
     <div class="drawer-top-row">
-      <span class="mono" style="color: var(--accent-emerald); font-size: 0.85rem;">SYSTEM NAVIGATION</span>
-      <button class="menu-toggle-btn" id="drawerCloseTrigger" aria-label="إغلاق القائمة">
+      <span class="mono" style="color: var(--accent); font-size: 0.85rem;">SYSTEM NAVIGATION</span>
+      <button class="menu-toggle-btn" id="drawerCloseTrigger" aria-label="Close Navigation Drawer">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
     <div class="drawer-menu-links">
-      <a href="#about" class="drawer-menu-item drawer-action-link"><span class="num">01</span><span>النبذة المعمارية</span></a>
-      <a href="#projects" class="drawer-menu-item drawer-action-link"><span class="num">02</span><span>سجل المشروعات والنظم</span></a>
-      <a href="#experience" class="drawer-menu-item drawer-action-link"><span class="num">03</span><span>المسار المهني للشركات</span></a>
-      <a href="#capabilities" class="drawer-menu-item drawer-action-link"><span class="num">04</span><span>منظومة الكفاءات الفنية</span></a>
-      <a href="#contact" class="drawer-menu-item drawer-action-link"><span class="num">05</span><span>الاتصال والقنوات المفتوحة</span></a>
+      <a href="#about" class="drawer-menu-item drawer-action-link"><span class="num">01</span><span data-i18n="drawer_about">النبذة المعمارية</span></a>
+      <a href="#projects" class="drawer-menu-item drawer-action-link"><span class="num">02</span><span data-i18n="drawer_projects">سجل المشروعات والنظم</span></a>
+      <a href="#experience" class="drawer-menu-item drawer-action-link"><span class="num">03</span><span data-i18n="drawer_experience">المسار المهني للشركات</span></a>
+      <a href="#capabilities" class="drawer-menu-item drawer-action-link"><span class="num">04</span><span data-i18n="drawer_capabilities">منظومة الكفاءات الفنية</span></a>
+      <a href="#contact" class="drawer-menu-item drawer-action-link"><span class="num">05</span><span data-i18n="drawer_contact">الاتصال والقنوات المفتوحة</span></a>
     </div>
   </div>
 
@@ -1118,34 +1181,34 @@
     <section class="dossier-hero" id="hero">
       <div class="dossier-wrap">
         
-        <div class="hero-pre-coordinate">
-          <span class="active-status mono">جاهزية كاملة للمشاريع الاستراتيجية والتعاقدات</span>
-          <span class="mono en">LOC: AL MADINAH, KSA</span>
+        <div class="hero-coordinate-row">
+          <span class="active-status mono" data-i18n="hero_status">جاهزية كاملة للمشاريع الاستراتيجية والتعاقدات</span>
+          <span class="mono isolate-ltr">LOC: AL MADINAH, KSA</span>
           <span class="mono">DOSSIER // 2026</span>
         </div>
 
         <h1 class="hero-monograph-title">
-          محمد أبو مسلم
-          <span class="secondary-part">عبد المهدي</span>
+          <span id="heroNamePrimary">محمد أبو مسلم</span>
+          <span class="secondary-part" id="heroNameSecondary">عبد المهدي</span>
         </h1>
 
-        <div class="hero-split-architectural">
+        <div class="hero-split-grid">
           
           <div>
-            <p class="hero-statement-lead">
+            <p class="hero-lead-text" data-i18n="hero_lead">
               أخصائي إدارة وضبط الوثائق الهندسية (Document Controller)، ومطور حلول الأتمتة المخصصة ونظم Google Apps Script للمشاريع الكبرى والمنشآت الصناعية.
             </p>
-            <p class="hero-statement-extended">
+            <p class="hero-extended-text" data-i18n="hero_extended">
               أعمل في نقطة التقاء فريدة تجمع بين الدقة الرقابية الصارمة المطلوبة في إدارة وثائق المشاريع الهندسية (Document Control) والامتثال للمواصفات، وبين هندسة الحلول البرمجية وتطوير بيئات العمل السحابية. قمت بتحويل مسارات العمل الورقية والبيانات المعقدة في قطاعات المقاولات والصناعة إلى نظم مؤتمتة متكاملة، مستهدفاً خفض الأخطاء التشغيلية وتسريع زمن اتخاذ القرار الإداري والفني بدقة متناهية.
             </p>
             <div class="hero-cta-cluster">
               <a href="https://wa.me/966570532375?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%81%D8%B1%D8%B5%D8%A9%20%D8%B9%D9%85%D9%84%20/%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9." 
-                 target="_blank" rel="noopener" class="btn-dossier-primary">
+                 target="_blank" rel="noopener" class="btn-action-primary" id="heroDirectCtaNode">
                 <i class="fa-brands fa-whatsapp"></i>
-                <span>محادثة واتساب مباشرة (السعودية)</span>
+                <span data-i18n="hero_cta_dial">محادثة واتساب مباشرة (السعودية)</span>
               </a>
-              <a href="#projects" class="btn-dossier-secondary">
-                <span>استعراض المشروعات</span>
+              <a href="#projects" class="btn-action-secondary">
+                <span data-i18n="hero_cta_explore">استعراض المشروعات</span>
                 <i class="fa-solid fa-arrow-down-long" style="font-size: 0.8rem;"></i>
               </a>
             </div>
@@ -1154,28 +1217,28 @@
           <aside class="hero-spec-sidebar">
             
             <div class="spec-item">
-              <span class="spec-kicker">المقر المهني الحالي</span>
-              <span class="spec-content">المدينة المنورة، المملكة العربية السعودية</span>
+              <span class="spec-kicker" data-i18n="spec_kicker_loc">المقر المهني الحالي</span>
+              <span class="spec-content" data-i18n="spec_val_loc">المدينة المنورة، المملكة العربية السعودية</span>
             </div>
 
             <div class="spec-item">
-              <span class="spec-kicker">المحور المهني الأول</span>
-              <span class="spec-content">إدارة الوثائق الهندسية والمراسلات (EDMS)</span>
+              <span class="spec-kicker" data-i18n="spec_kicker_p1">المحور المهني الأول</span>
+              <span class="spec-content" data-i18n="spec_val_p1">إدارة الوثائق الهندسية والمراسلات (EDMS)</span>
             </div>
 
             <div class="spec-item">
-              <span class="spec-kicker">المحور المهني الثاني</span>
-              <span class="spec-content">هندسة الأتمتة وحلول Google Apps Script</span>
+              <span class="spec-kicker" data-i18n="spec_kicker_p2">المحور المهني الثاني</span>
+              <span class="spec-content" data-i18n="spec_val_p2">هندسة الأتمتة وحلول Google Apps Script</span>
             </div>
 
             <div class="spec-item">
-              <span class="spec-kicker">معدل تسريع استرجاع الوثائق</span>
-              <span class="spec-metric">رفع السرعة بنسبة 60%</span>
+              <span class="spec-kicker" data-i18n="spec_kicker_m1">معدل تسريع استرجاع الوثائق</span>
+              <span class="spec-metric" data-i18n="spec_val_m1">رفع السرعة بنسبة 60%</span>
             </div>
 
             <div class="spec-item">
-              <span class="spec-kicker">معدل تقليص الأخطاء اليدوية</span>
-              <span class="spec-metric">خفض الأخطاء بنسبة 40%</span>
+              <span class="spec-kicker" data-i18n="spec_kicker_m2">معدل تقليص الأخطاء اليدوية</span>
+              <span class="spec-metric" data-i18n="spec_val_m2">خفض الأخطاء بنسبة 40%</span>
             </div>
 
           </aside>
@@ -1191,24 +1254,24 @@
         <header class="section-spine-header">
           <span class="spine-code">01 //</span>
           <div>
-            <h2 class="spine-header-title">النبذة والتموضع المهني</h2>
-            <div class="spine-header-subtitle">حوكمة دورات المستندات ورقمنة بيئات العمل المعقدة</div>
+            <h2 class="spine-header-title" data-i18n="about_title">النبذة والتموضع المهني</h2>
+            <div class="spine-header-subtitle" data-i18n="about_subtitle">حوكمة دورات المستندات ورقمنة بيئات العمل المعقدة</div>
           </div>
         </header>
 
         <div class="manifesto-editorial-grid">
           
           <div>
-            <blockquote class="manifesto-lead-quote">
+            <blockquote class="manifesto-lead-quote" data-i18n="about_quote">
               "التحول الرقمي الرصين لا يعني مجرد استبدال الأوراق بنسخ ممسوحة، بل إعادة هندسة مسار المستند ليعمل ذاتياً بنظام تدقيق صارم يضمن عدم ضياع أي اعتماد."
             </blockquote>
           </div>
 
           <div class="manifesto-body-prose">
-            <p>
+            <p data-i18n="about_p1">
               أمتلك خبرة عملية متخصصة في إدارة منظومات الوثائق الهندسية للمشاريع الكبرى، بدءاً من حزم اعتمادات المواد (Material Submittals) ومخططات الورشة التنفيذية (Shop Drawings)، وصولاً إلى طلبات الفحص (IRs) وطلبات الاستفسار الفني (RFIs). أضمن من خلال السجلات الموثوقة (Master Logs) الالتزام التام بالمواصفات الفنية والمتطلبات الاستشارية وجداول التسليم.
             </p>
-            <p>
+            <p data-i18n="about_p2">
               وفي ذات الوقت، أسخر إمكاناتي البرمجية المتقدمة في لغات JavaScript وPython وأداة Google Apps Script لبناء أدوات سحابية متخصصة تربط جداول البيانات المعقدة بقواعد بيانات ديناميكية وتطبيقات ويب سريعة. تمكنت من خلال هذه النظم من رقمنة دورات التشغيل والتصنيع، وتحويل مئات العمليات الورقية اليومية إلى تدفقات إلكترونية فائقة الدقة.
             </p>
           </div>
@@ -1224,154 +1287,12 @@
         <header class="section-spine-header">
           <span class="spine-code">02 //</span>
           <div>
-            <h2 class="spine-header-title">معرض النظم والمشروعات</h2>
-            <div class="spine-header-subtitle">حلول برمجية وأنظمة حقيقية بُنيت للعمل تحت ظروف التشغيل الفعلية</div>
+            <h2 class="spine-header-title" data-i18n="projects_title">معرض النظم والمشروعات</h2>
+            <div class="spine-header-subtitle" data-i18n="projects_subtitle">حلول برمجية وأنظمة حقيقية بُنيت للعمل تحت ظروف التشغيل الفعلية</div>
           </div>
         </header>
 
-        <div class="case-sequence-stack">
-          
-          <article class="case-unit">
-            <div class="case-identity-rail">
-              <span class="case-index-indicator">CASE // 01</span>
-              <span class="case-category-tag">Enterprise Cloud Platform</span>
-              <ul class="case-meta-spec-list">
-                <li><span>الجهة / البيئة</span>الشركة المصرية لمستحضرات التجميل (ECC)[cite: 7]</li>
-                <li><span>النوع</span>نظام إدارة إنتاج سحابي متكامل[cite: 7]</li>
-                <li><span>الفترة</span>2025 - 2026[cite: 7]</li>
-              </ul>
-            </div>
-            <div class="case-narrative-zone">
-              <h3 class="case-title">منظومة إدارة الإنتاج والتحول السحابي (ECC Production System)[cite: 7]</h3>
-              <p class="case-summary">
-                هندسة وبناء نظام ويب كامل بالاعتماد على Google Apps Script وJavaScript، ينقل كافة مسارات العمل الورقية وسجلات التصنيع إلى بيئة سحابية تفاعلية[cite: 7].
-              </p>
-              <div class="case-problem-solution-box">
-                <p><strong>التحدي التشغيلي:</strong> الاعتماد على الدفاتر الورقية وجداول الإدخال اليدوية المشتتة، مما كان يسبب تأخيراً في تقارير خطوط الإنتاج وأخطاء في جرد الخامات وتتبع المستلزمات[cite: 7].</p>
-                <p><strong>الحل الهندسي:</strong> بناء تطبيق ويب تفاعلي يعتمد على Google Sheets كقاعدة بيانات علائقية مركزية، مع أتمتة أوامر الصرف، تنبيهات البريد الإلكتروني الفورية للإدارة، وتوليد التقارير الإحصائية التلقائية[cite: 7].</p>
-              </div>
-            </div>
-            <div class="case-system-footprint">
-              <div>
-                <span class="footprint-header">المعمارية البرمجية</span>
-                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
-                  <span>- Google Apps Script (Backend)[cite: 7]</span>
-                  <span>- JavaScript & HTML5 UI[cite: 7]</span>
-                  <span>- Google Workspace APIs[cite: 7]</span>
-                  <span>- Dynamic Sheets DB[cite: 7]</span>
-                </div>
-              </div>
-              <div class="footprint-metric-zone">
-                <strong>-40%</strong>
-                انخفاض مباشر في أخطاء الإدخال مع توفير جاهزية تشغيلية مستمرة بنسبة 100%[cite: 7].
-              </div>
-            </div>
-          </article>
-
-          <article class="case-unit">
-            <div class="case-identity-rail">
-              <span class="case-index-indicator">CASE // 02</span>
-              <span class="case-category-tag">Engineering Document Management</span>
-              <ul class="case-meta-spec-list">
-                <li><span>الجهة / المشروع</span>ماس للهندسة والإنشاء — منتجع سياحي بالساحل الشمالي[cite: 7]</li>
-                <li><span>النوع</span>نظام الأرشفة الرقمية والبحث الهندسي الموجه[cite: 7]</li>
-                <li><span>الفترة</span>2021 - 2023[cite: 7]</li>
-              </ul>
-            </div>
-            <div class="case-narrative-zone">
-              <h3 class="case-title">نظام الأرشفة الرقمية والبحث الهندسي الموجه (Digital Archive System)[cite: 7]</h3>
-              <p class="case-summary">
-                تصميم نظام تتبع وأرشفة متقدم لرقمنة وفهرسة آلاف المخططات الهندسية وحزم المراسلات التنفيذية لمشروع سياحي متكامل بمدينة سيدي عبد الرحمن[cite: 7].
-              </p>
-              <div class="case-problem-solution-box">
-                <p><strong>التحدي التشغيلي:</strong> بطء استرجاع النسخ المعتمدة من المخططات والعقود الورقية للمقاولين، وتعدد إصدارات المخططات التنفيذية مما هدد بحدوث أخطاء ميدانية[cite: 7].</p>
-                <p><strong>الحل الهندسي:</strong> إنشاء قاعدة بيانات أرشفة ذكية مبنية عبر تقنيات الإكسل المتقدمة وبرمجة الماكرو (VBA)، تتيح الاستعلام الفوري برقم المخطط أو الكود وتمنع تداول النسخ الملغاة[cite: 7].</p>
-              </div>
-            </div>
-            <div class="case-system-footprint">
-              <div>
-                <span class="footprint-header">المعمارية والأدوات</span>
-                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
-                  <span>- Advanced MS Excel & VBA[cite: 7]</span>
-                  <span>- Structured Master Logs[cite: 7]</span>
-                  <span>- Drawing Indexing System[cite: 7]</span>
-                  <span>- Submittal Workflows[cite: 7]</span>
-                </div>
-              </div>
-              <div class="footprint-metric-zone">
-                <strong>+60%</strong>
-                زيادة في سرعة استرجاع الوثائق مع رقمنة كاملة لأكثر من 1,000 عقد ومخطط هندسي[cite: 7].
-              </div>
-            </div>
-          </article>
-
-          <article class="case-unit">
-            <div class="case-identity-rail">
-              <span class="case-index-indicator">CASE // 03</span>
-              <span class="case-category-tag">Artificial Intelligence Platform</span>
-              <ul class="case-meta-spec-list">
-                <li><span>المشروع</span>منصة إتقان للذكاء الاصطناعي (Itqan AI)[cite: 7]</li>
-                <li><span>النوع</span>بوابة تفاعلية ذكية للتعلم ومعالجة النصوص[cite: 7]</li>
-                <li><span>التقنية</span>نماذج الذكاء الاصطناعي وواجهات الويب[cite: 7]</li>
-              </ul>
-            </div>
-            <div class="case-narrative-zone">
-              <h3 class="case-title">منصة إتقان الذكية (Itqan AI Platform)[cite: 7]</h3>
-              <p class="case-summary">
-                تطوير منصة ويب متطورة توظف تقنيات الذكاء الاصطناعي التوليدي لتقديم حلول تعلم ذكية، وتحليل واستخلاص البيانات من النصوص العربية بكفاءة عالية[cite: 7].
-              </p>
-              <div class="case-problem-solution-box">
-                <p><strong>الهدف:</strong> توفير بيئة تفاعلية للباحثين والطلاب تمكنهم من استرجاع المعلومات وتحليل الوثائق بطريقة مرنة وتفاعلية[cite: 7].</p>
-              </div>
-            </div>
-            <div class="case-system-footprint">
-              <div>
-                <span class="footprint-header">المعمارية البرمجية</span>
-                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
-                  <span>- AI Models Integration[cite: 7]</span>
-                  <span>- Prompt Engineering[cite: 7]</span>
-                  <span>- Modern Web UI Engine[cite: 7]</span>
-                </div>
-              </div>
-              <div class="footprint-metric-zone">
-                <strong>Intelligent Flow</strong>
-                معالجة وتصنيف فوري للنصوص عبر واجهة استخدام متجاوبة وسريعة الاستجابة[cite: 7].
-              </div>
-            </div>
-          </article>
-
-          <article class="case-unit">
-            <div class="case-identity-rail">
-              <span class="case-index-indicator">CASE // 04</span>
-              <span class="case-category-tag">Social & Operations Platforms</span>
-              <ul class="case-meta-spec-list">
-                <li><span>المشروعات</span>تبرع (Tabarra') & نقوط (Noqoot)[cite: 7]</li>
-                <li><span>النوع</span>تطبيقات ويب لقواعد البيانات الديناميكية والمطابقة[cite: 7]</li>
-                <li><span>المجال</span>منصات إنسانية وتنظيمية[cite: 7]</li>
-              </ul>
-            </div>
-            <div class="case-narrative-zone">
-              <h3 class="case-title">منظومتا (تبرع) الإنسانية و(نقوط) للمطابقة المالية[cite: 7]</h3>
-              <p class="case-summary">
-                ابتكار منصتين متكاملتين؛ الأولى لربط المتبرعين بالدم بالحالات الطبية الحرجة وفق التوزيع الجغرافي[cite: 7]، والثانية لتوثيق وتتبع المساهمات المالية في الفعاليات الاجتماعية رقمياً مستبدلة القيود الورقية[cite: 7].
-              </p>
-            </div>
-            <div class="case-system-footprint">
-              <div>
-                <span class="footprint-header">الركائز التقنية</span>
-                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
-                  <span>- Dynamic Database Matching[cite: 7]</span>
-                  <span>- Ledger Audit & Reconciliation[cite: 7]</span>
-                  <span>- Zero-Paper Tracking[cite: 7]</span>
-                </div>
-              </div>
-              <div class="footprint-metric-zone">
-                <strong>Real-Time Sync</strong>
-                مطابقة رقمية فورية وآمنة للبيانات تقلل الاعتماد على السجلات اليدوية[cite: 7].
-              </div>
-            </div>
-          </article>
-
+        <div class="case-sequence-stack" id="caseSequenceContainer">
         </div>
 
       </div>
@@ -1383,89 +1304,12 @@
         <header class="section-spine-header">
           <span class="spine-code">03 //</span>
           <div>
-            <h2 class="spine-header-title">سجل الخبرات والمسار المهني</h2>
-            <div class="spine-header-subtitle">محطات العمل في كبرى المؤسسات الهندسية والمقاولات والمنشآت الصناعية</div>
+            <h2 class="spine-header-title" data-i18n="exp_title">سجل الخبرات والمسار المهني</h2>
+            <div class="spine-header-subtitle" data-i18n="exp_subtitle">محطات العمل في كبرى المؤسسات الهندسية والمقاولات والمنشآت الصناعية</div>
           </div>
         </header>
 
-        <div class="career-monograph-list">
-          
-          <div class="career-monograph-entry">
-            <div class="career-timeframe">
-              <span class="en">2026 — PRESENT</span>
-              <span class="locality">المدينة المنورة، المملكة العربية السعودية</span>
-            </div>
-            <div>
-              <h3 class="career-primary-title">Document Controller & Technical Admin</h3>
-              <div class="career-firm-name">شركة أنساب للمقاولات العامة (Ansb General Contracting)</div>
-              <div class="career-focus-tags">
-                <span class="career-focus-tag">Downtown Medina Project</span>
-                <span class="career-focus-tag">Submittal Master Logs</span>
-                <span class="career-focus-tag">Consultant Correspondence</span>
-              </div>
-            </div>
-            <div class="career-duties-prose">
-              إدارة وضبط منظومة الوثائق والمراسلات الفنية لمشروع تطوير داون تاون المدينة برعاية شركة أنساب للمقاولات العامة. الإشراف الكامل على دورات تقديم العينات واعتمادات المواد وفحوصات الموقع وتنسيق الموافقات مع الاستشاري لضمان الامتثال التام.
-            </div>
-          </div>
-
-          <div class="career-monograph-entry">
-            <div class="career-timeframe">
-              <span class="en">02/2025 — 2026[cite: 7]</span>
-              <span class="locality">جمصة، مصر[cite: 7]</span>
-            </div>
-            <div>
-              <h3 class="career-primary-title">Google Apps Script Developer & Automation Specialist[cite: 7]</h3>
-              <div class="career-firm-name">الشركة المصرية لمستحضرات التجميل (ECC)[cite: 7]</div>
-              <div class="career-focus-tags">
-                <span class="career-focus-tag">Cloud Architecture[cite: 7]</span>
-                <span class="career-focus-tag">Web Applications[cite: 7]</span>
-                <span class="career-focus-tag">Workflow Optimization[cite: 7]</span>
-              </div>
-            </div>
-            <div class="career-duties-prose">
-              ابتكار وهندسة نظام إدارة الإنتاج الشامل، وتحويل العمليات الصناعية والمخزنية الورقية إلى منظومة سحابية متقدمة تعتمد على Google Sheets كقاعدة بيانات، مما خفض نسبة أخطاء الإدخال بمقدار 40%[cite: 7].
-            </div>
-          </div>
-
-          <div class="career-monograph-entry">
-            <div class="career-timeframe">
-              <span class="en">02/2021 — 01/2023[cite: 7]</span>
-              <span class="locality">الساحل الشمالي، مصر[cite: 7]</span>
-            </div>
-            <div>
-              <h3 class="career-primary-title">Document Controller[cite: 7]</h3>
-              <div class="career-firm-name">ماس للهندسة والإنشاء (Mass Engineering & Construction)[cite: 7]</div>
-              <div class="career-focus-tags">
-                <span class="career-focus-tag">Coastal Resort Project[cite: 7]</span>
-                <span class="career-focus-tag">RFIs & Drawings[cite: 7]</span>
-                <span class="career-focus-tag">Digital Archive System[cite: 7]</span>
-              </div>
-            </div>
-            <div class="career-duties-prose">
-              إدارة وتوثيق وأرشفة مستندات ومخططات المشروع لمنتجع سياحي بمدينة سيدي عبد الرحمن[cite: 7]. تطوير نظام أرشفة رقمي ذكي عبر إكسل المتطور أدى إلى رقمنة وتصنيف أكثر من 1,000 عقد ومخطط ورفع سرعة استرجاع الملفات بنسبة 60%[cite: 7].
-            </div>
-          </div>
-
-          <div class="career-monograph-entry">
-            <div class="career-timeframe">
-              <span class="en">01/2023 — 03/2024[cite: 7]</span>
-              <span class="locality">كفر الأطرش، مصر[cite: 7]</span>
-            </div>
-            <div>
-              <h3 class="career-primary-title">Showroom Operations & Systems Manager[cite: 7]</h3>
-              <div class="career-firm-name">معرض محسن شبكة للأجهزة المنزلية[cite: 7]</div>
-              <div class="career-focus-tags">
-                <span class="career-focus-tag">Inventory Control[cite: 7]</span>
-                <span class="career-focus-tag">Financial Analysis[cite: 7]</span>
-                <span class="career-focus-tag">Advanced Excel[cite: 7]</span>
-              </div>
-            </div>
-            <div class="career-duties-prose">
-              قيادة العمليات التشغيلية، ومراقبة المخزون، وتتبع المبيعات والتسويات المالية اليومية باستخدام نماذج تحليل البيانات المتقدمة في إكسل[cite: 7].
-            </div>
-          </div>
-
+        <div class="career-monograph-list" id="careerMonographContainer">
         </div>
 
       </div>
@@ -1477,55 +1321,12 @@
         <header class="section-spine-header">
           <span class="spine-code">04 //</span>
           <div>
-            <h2 class="spine-header-title">منظومة الكفاءات المعمارية</h2>
-            <div class="spine-header-subtitle">الأدوات التقنية والمنهجيات الهندسية المعتمدة في تنفيذ المشروعات</div>
+            <h2 class="spine-header-title" data-i18n="cap_title">منظومة الكفاءات المعمارية</h2>
+            <div class="spine-header-subtitle" data-i18n="cap_subtitle">الأدوات التقنية والمنهجيات الهندسية المعتمدة في تنفيذ المشروعات</div>
           </div>
         </header>
 
-        <div class="capabilities-architectural-grid">
-          
-          <div class="capability-domain-column">
-            <span class="capability-code">01 // DOMAIN</span>
-            <h3 class="capability-name">إدارة الوثائق الهندسية (EDMS)</h3>
-            <p class="capability-description">
-              حوكمة الدورة المستندية وضمان التدفق المنضبط للمراسلات بين الإدارة ومقاولي الباطن والاستشاريين وفق كودات وضوابط المشروع.
-            </p>
-            <ul class="capability-bullets">
-              <li>سجلات التقديمات الفنية (Submittal Logs)</li>
-              <li>طلبات الاستفسار الفني للموقع (RFIs)</li>
-              <li>طلبات الفحص والاستلام (IRs / MIRs)</li>
-              <li>فهرسة وأرشفة المخططات التنفيذية (As-Built)</li>
-            </ul>
-          </div>
-
-          <div class="capability-domain-column">
-            <span class="capability-code">02 // DOMAIN</span>
-            <h3 class="capability-name">الأتمتة وتطوير تطبيقات السحاب</h3>
-            <p class="capability-description">
-              بناء أدوات وتطبيقات برمجية تربط منظومة Google Workspace وتلغي العمليات الورقية اليدوية في تسجيل ومطابقة البيانات.
-            </p>
-            <ul class="capability-bullets">
-              <li>Google Apps Script (مستوى خبير ومتقدم)[cite: 7]</li>
-              <li>تطوير Web Apps تعتمد على جداول البيانات كقواعد بيانات</li>
-              <li>تكامل Webhooks وأتمتة روبوتات Telegram</li>
-              <li>التقارير اليومية المؤتمتة والتنبيهات المجدولة بالبريد[cite: 7]</li>
-            </ul>
-          </div>
-
-          <div class="capability-domain-column">
-            <span class="capability-code">03 // DOMAIN</span>
-            <h3 class="capability-name">هندسة البيانات والبرمجة النصية</h3>
-            <p class="capability-description">
-              تحليل وتدقيق السجلات الضخمة، واستخلاص النصوص من الملفات، وضبط البنية التحتية لتراخيص البرمجيات الهندسية.
-            </p>
-            <ul class="capability-bullets">
-              <li>إكسل المتقدم، Power Query، وبرمجة الماكرو VBA[cite: 7]</li>
-              <li>سكريبتات Python لاستخراج النصوص وفصل حزم الـ PDF</li>
-              <li>إدارة خوادم تراخيص الشبكات الهندسية (AutoCAD LMTOOLS)</li>
-              <li>ضبط أجهزة المسح الضوئي وأنظمة الأرشفة المركزية</li>
-            </ul>
-          </div>
-
+        <div class="capabilities-architectural-grid" id="capabilitiesContainer">
         </div>
 
       </div>
@@ -1537,10 +1338,10 @@
         <div class="contact-monograph-grid">
           
           <div>
-            <h2 class="contact-primary-headline">
+            <h2 class="contact-primary-headline" data-i18n="contact_headline">
               جاهز للبدء في حوكمة وثائق مشاريعكم وأتمتة منظومتكم
             </h2>
-            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; font-weight: 300;">
+            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; font-weight: 300;" data-i18n="contact_sublead">
               متاح لمناقشة فرص التعاقد لإدارة منظومات الوثائق الهندسية للمشاريع الكبرى في المملكة العربية السعودية، أو لتصميم وتطوير نظم أتمتة مخصصة لمؤسستكم.
             </p>
 
@@ -1549,30 +1350,30 @@
               <a href="https://wa.me/966570532375?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%81%D8%B1%D8%B5%D8%A9%20%D8%B9%D9%85%D9%84%20/%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9." 
                  target="_blank" rel="noopener" class="channel-row-link">
                 <span class="channel-kicker">
-                  <i class="fa-brands fa-whatsapp" style="color: var(--accent-emerald);"></i>
-                  <span>واتساب مباشر — المملكة العربية السعودية (المقر الحالي)</span>
+                  <i class="fa-brands fa-whatsapp" style="color: var(--accent);"></i>
+                  <span data-i18n="contact_ch1_label">واتساب مباشر — المملكة العربية السعودية (المقر الحالي)</span>
                 </span>
-                <span class="channel-value-display en">+966 57 053 2375</span>
-                <span class="channel-sub-context">محادثة فورية مباشرة</span>
+                <span class="channel-value-display isolate-ltr">+966 57 053 2375</span>
+                <span class="channel-sub-context" data-i18n="contact_ch1_hint">محادثة فورية مباشرة</span>
               </a>
 
-              <a href="https://wa.me/201063864546?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20/%20%D8%A3%D8%AA%D9%85%D8%AA%D8%A9." 
+              <a href="https://wa.me/201063864546?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%81%D8%B1%D8%B5%D8%A9%20%D8%B9%D9%85%D9%84%20/%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9." 
                  target="_blank" rel="noopener" class="channel-row-link">
                 <span class="channel-kicker">
-                  <i class="fa-brands fa-whatsapp" style="color: var(--accent-emerald);"></i>
-                  <span>واتساب وهاتف مباشر — جمهورية مصر العربية</span>
+                  <i class="fa-brands fa-whatsapp" style="color: var(--accent);"></i>
+                  <span data-i18n="contact_ch2_label">واتساب وهاتف مباشر — جمهورية مصر العربية</span>
                 </span>
-                <span class="channel-value-display en">+20 106 386 4546</span>
-                <span class="channel-sub-context">اتصال ومراسلة مباشرة</span>
+                <span class="channel-value-display isolate-ltr">+20 106 386 4546</span>
+                <span class="channel-sub-context" data-i18n="contact_ch2_hint">اتصال ومراسلة مباشرة</span>
               </a>
 
               <a href="mailto:mohamedabomosalam96@gmail.com" class="channel-row-link">
                 <span class="channel-kicker">
-                  <i class="fa-regular fa-envelope" style="color: var(--accent-emerald);"></i>
-                  <span>البريد الإلكتروني المهني</span>
+                  <i class="fa-regular fa-envelope" style="color: var(--accent);"></i>
+                  <span data-i18n="contact_ch3_label">البريد الإلكتروني المهني</span>
                 </span>
-                <span class="channel-value-display en" style="font-size: 1.05rem;">mohamedabomosalam96@gmail.com</span>
-                <span class="channel-sub-context">استقبال المستندات الرسمية ومراسلات العمل</span>
+                <span class="channel-value-display isolate-ltr" style="font-size: 1.05rem;">mohamedabomosalam96@gmail.com</span>
+                <span class="channel-sub-context" data-i18n="contact_ch3_hint">استقبال المستندات الرسمية ومراسلات العمل</span>
               </a>
 
             </div>
@@ -1580,14 +1381,14 @@
 
           <aside class="contact-regulatory-panel">
             <div>
-              <span class="regulatory-panel-title">ملاحظة تنظيمية للجهات المهنية</span>
-              <p class="regulatory-panel-body" style="margin-top: 1rem;">
+              <span class="regulatory-panel-title" data-i18n="panel_note_title">ملاحظة تنظيمية للجهات المهنية</span>
+              <p class="regulatory-panel-body" style="margin-top: 1rem;" data-i18n="panel_note_body">
                 يتم الرد على المراسلات والاستفسارات المتعلقة بالمشاريع الهندسية وطلبات النظم المؤتمتة بصورة فورية ومباشرة عبر قنوات الواتساب الموضحة.
               </p>
             </div>
             <div class="regulatory-links-list">
-              <span class="regulatory-panel-title">القنوات الرقمية الإضافية</span>
-              <a href="https://github.com/salama-bot" target="_blank" rel="noopener" class="en">
+              <span class="regulatory-panel-title" data-i18n="panel_repo_title">القنوات الرقمية الإضافية</span>
+              <a href="https://github.com/salama-bot" target="_blank" rel="noopener" class="isolate-ltr">
                 <i class="fa-brands fa-github"></i>
                 <span>github.com/salama-bot</span>
               </a>
@@ -1604,12 +1405,12 @@
   <footer class="dossier-colophon-footer">
     <div class="dossier-wrap colophon-flex">
       <div>
-        <span>محمد أبو مسلم عبد المهدي</span>
+        <span id="footerAuthorNode">محمد أبو مسلم عبد المهدي</span>
         <span style="margin: 0 0.5rem; color: var(--rule-subtle);">|</span>
-        <span class="en">DOCUMENT CONTROLLER & AUTOMATION SYSTEMS ARCHITECT</span>
+        <span class="isolate-ltr">DOCUMENT CONTROLLER & AUTOMATION SYSTEMS ARCHITECT</span>
       </div>
       <div>
-        <span>المملكة العربية السعودية — المدينة المنورة</span>
+        <span data-i18n="footer_locality">المملكة العربية السعودية — المدينة المنورة</span>
         <span style="margin: 0 0.5rem; color: var(--rule-subtle);">/</span>
         <span id="colophonYearDisplayNode"></span>
       </div>
@@ -1617,44 +1418,595 @@
   </footer>
 
   <script>
+    var globalCurrentLanguage = 'ar';
+
+    var rawProjectCatalog = [
+      {
+        id: 'CASE // 01',
+        category_ar: 'منظومة سحابية متكاملة للمصانع',
+        category_en: 'Enterprise Cloud Platform',
+        entity_ar: 'الشركة المصرية لمستحضرات التجميل (ECC)',
+        entity_en: 'Egyptian Cosmetics Company (ECC)',
+        type_ar: 'نظام إدارة إنتاج سحابي متكامل',
+        type_en: 'Cloud Production Management System',
+        period: '2025 - 2026',
+        title_ar: 'منظومة إدارة الإنتاج والتحول السحابي (ECC Production System)',
+        title_en: 'ECC Production Management & Cloud Migration Suite',
+        lead_ar: 'هندسة وبناء نظام ويب كامل بالاعتماد على Google Apps Script وJavaScript، ينقل كافة مسارات العمل الورقية وسجلات التصنيع إلى بيئة سحابية تفاعلية.',
+        lead_en: 'Engineered an end-to-end cloud production suite utilizing Google Apps Script and JavaScript, migrating all paper manufacturing workflows into a dynamic cloud environment.',
+        challenge_ar: 'الاعتماد على الدفاتر الورقية وجداول الإدخال اليدوية المشتتة، مما كان يسبب تأخيراً في تقارير خطوط الإنتاج وأخطاء في جرد الخامات وتتبع المستلزمات.',
+        challenge_en: 'Paper registers and disconnected manual entries delayed production updates and introduced discrepancies across raw material inventories.',
+        solution_ar: 'بناء تطبيق ويب تفاعلي يعتمد على Google Sheets كقاعدة بيانات علائقية مركزية، مع أتمتة أوامر الصرف، تنبيهات البريد الإلكتروني الفورية للإدارة، وتوليد التقارير الإحصائية التلقائية.',
+        solution_en: 'Engineered a Web Application using Google Sheets as a dynamic relational database, automating material requisition, instant executive email alerts, and scheduled metrics.',
+        stack: ['Google Apps Script (Backend)', 'JavaScript & HTML5 UI', 'Google Workspace APIs', 'Dynamic Sheets DB'],
+        impact_metric: '-40%',
+        impact_desc_ar: 'انخفاض مباشر في أخطاء الإدخال مع توفير جاهزية تشغيلية مستمرة بنسبة 100%.',
+        impact_desc_en: 'Direct reduction in data entry errors with guaranteed 100% operational uptime.'
+      },
+      {
+        id: 'CASE // 02',
+        category_ar: 'إدارة الوثائق الهندسية وحوكمة المشاريع',
+        category_en: 'Engineering Document Management',
+        entity_ar: 'ماس للهندسة والإنشاء — منتجع سياحي بالساحل الشمالي',
+        entity_en: 'Mass Engineering & Construction — North Coast Resort',
+        type_ar: 'نظام الأرشفة الرقمية والبحث الهندسي الموجه',
+        type_en: 'Targeted Digital Engineering Archive',
+        period: '2021 - 2023',
+        title_ar: 'نظام الأرشفة الرقمية والبحث الهندسي الموجه (Digital Archive System)',
+        title_en: 'Automated Engineering Archive & Retrieval Engine',
+        lead_ar: 'تصميم نظام تتبع وأرشفة متقدم لرقمنة وفهرسة آلاف المخططات الهندسية وحزم المراسلات التنفيذية لمشروع سياحي متكامل بمدينة سيدي عبد الرحمن.',
+        lead_en: 'Architected an automated archiving and indexing system to catalog thousands of blueprints, contracts, and submittal workflows for a Sidi Abdel Rahman coastal resort.',
+        challenge_ar: 'بطء استرجاع النسخ المعتمدة من المخططات والعقود للمقاولين، وتعدد إصدارات المخططات التنفيذية مما هدد بحدوث أخطاء ميدانية.',
+        challenge_en: 'Severe retrieval latency for approved blueprints and subcontractor contracts, risking on-site execution with outdated revision drawings.',
+        solution_ar: 'إنشاء قاعدة بيانات أرشفة ذكية مبنية عبر تقنيات الإكسل المتقدمة وبرمجة الماكرو (VBA)، تتيح الاستعلام الفوري برقم المخطط أو الكود وتمنع تداول النسخ الملغاة.',
+        solution_en: 'Structured an automated Excel and VBA registry enabling instantaneous code retrieval and strictly preventing superseded drawing circulation.',
+        stack: ['Advanced MS Excel & VBA', 'Structured Master Logs', 'Drawing Indexing System', 'Submittal Workflows'],
+        impact_metric: '+60%',
+        impact_desc_ar: 'زيادة في سرعة استرجاع الوثائق مع رقمنة كاملة لأكثر من 1,000 عقد ومخطط هندسي.',
+        impact_desc_en: 'Increase in retrieval velocity with full digitization of 1,000+ contracts and shop drawings.'
+      },
+      {
+        id: 'CASE // 03',
+        category_ar: 'منظومات الذكاء الاصطناعي ومعالجة المحتوى',
+        category_en: 'Artificial Intelligence Platform',
+        entity_ar: 'منصة إتقان للذكاء الاصطناعي (Itqan AI)',
+        entity_en: 'Itqan AI Platform',
+        type_ar: 'بوابة تفاعلية ذكية للتعلم ومعالجة النصوص',
+        type_en: 'Smart Interactive Learning & Analysis Portal',
+        period: '2024',
+        title_ar: 'منصة إتقان الذكية (Itqan AI Platform)',
+        title_en: 'Itqan AI Educational & Processing Ecosystem',
+        lead_ar: 'تطوير منصة ويب متطورة توظف تقنيات الذكاء الاصطناعي التوليدي لتقديم حلول تعلم ذكية، وتحليل واستخلاص البيانات من النصوص العربية بكفاءة عالية.',
+        lead_en: 'Developed an interactive web platform utilizing AI language models to deliver intelligent automated text analysis and interactive learning assistance.',
+        challenge_ar: 'الحاجة إلى بيئة تعليمية ذكية قادرة على معالجة واستخلاص المعرفة الفورية للباحثين والطلاب بدقة وسلاسة.',
+        challenge_en: 'The need for an accessible interface capable of processing research queries and synthesizing textual knowledge without latency.',
+        solution_ar: 'دمج واجهات البرمجة لنماذج الذكاء الاصطناعي مع واجهة مستخدم سريعة الاستجابة لتقديم استعلامات ذكية وحلول مخصصة.',
+        solution_en: 'Integrated advanced LLM API endpoints into a streamlined web frontend delivering instantaneous query analysis.',
+        stack: ['AI Models Integration', 'Prompt Engineering', 'Modern Web UI Engine', 'Dynamic Text Pipeline'],
+        impact_metric: 'Real-Time',
+        impact_desc_ar: 'معالجة وتصنيف فوري للنصوص عبر واجهة استخدام متجاوبة وسريعة الاستجابة.',
+        impact_desc_en: 'Instant automated text processing through a fluid, responsive client interface.'
+      },
+      {
+        id: 'CASE // 04',
+        category_ar: 'المنصات الإنسانية والأنظمة التشغيلية',
+        category_en: 'Social & Operations Platforms',
+        entity_ar: 'منصتا تبرع (Tabarra) ونقوط (Noqoot)',
+        entity_en: 'Tabarra & Noqoot Platforms',
+        type_ar: 'تطبيقات ويب لقواعد البيانات الديناميكية والمطابقة',
+        type_en: 'Dynamic Database Web Applications',
+        period: '2024',
+        title_ar: 'منظومتا تبرع الإنسانية ونقوط للمطابقة المالية',
+        title_en: 'Tabarra Donor Matching & Noqoot Registry Platforms',
+        lead_ar: 'ابتكار منصتين متكاملتين؛ الأولى لربط المتبرعين بالدم بالحالات الطبية الحرجة وفق التوزيع الجغرافي، والثانية لتوثيق وتتبع المساهمات المالية في الفعاليات الاجتماعية رقمياً مستبدلة القيود الورقية.',
+        lead_en: 'Designed two digital platforms: Tabarra for geo-matched blood donor urgent connections, and Noqoot for precise zero-paper social contribution ledgers.',
+        challenge_ar: 'فقدان التنسيق السريع في حالات الطوارئ الطبية، وتراكم السجلات الورقية المعرضة للفقد في المناسبات الاجتماعية والفعاليات.',
+        challenge_en: 'Urgent communication bottlenecks during critical medical blood requests, and messy paper bookkeeping during major community events.',
+        solution_ar: 'برمجة قواعد بيانات سحابية للمطابقة الفورية للمتبرعين، وتطبيق نظام محاسبي مبسط للتسجيل الفوري والمطابقة المالية الآمنة.',
+        solution_en: 'Engineered instantaneous matching database logic for donors, combined with an automated, auditable contribution ledger.',
+        stack: ['Dynamic Database Matching', 'Ledger Audit Logic', 'Zero-Paper Tracking', 'Rapid Query Engine'],
+        impact_metric: 'Zero-Paper',
+        impact_desc_ar: 'مطابقة رقمية فورية وآمنة للبيانات تقلل الاعتماد على السجلات اليدوية بنسبة 100%.',
+        impact_desc_en: 'Instantaneous data matching replacing manual paper logs by 100%.'
+      }
+    ];
+
+    var rawExperienceCatalog = [
+      {
+        period_ar: '2026 — الحالي',
+        period_en: '2026 — PRESENT',
+        locality_ar: 'المدينة المنورة، المملكة العربية السعودية',
+        locality_en: 'Madinah, Kingdom of Saudi Arabia',
+        role_ar: 'أخصائي ضبط الوثائق والمراسلات الهندسية (Document Controller)',
+        role_en: 'Document Controller & Technical Admin',
+        company_ar: 'شركة أنساب للمقاولات العامة (Ansb General Contracting)',
+        company_en: 'Ansb General Contracting Co.',
+        tags: ['Downtown Medina Project', 'Submittal Master Logs', 'Consultant Correspondence', 'IR Workflows'],
+        duties_ar: 'إدارة وضبط منظومة الوثائق والمراسلات الفنية لمشروع تطوير داون تاون المدينة برعاية شركة أنساب للمقاولات العامة. الإشراف الكامل على دورات تقديم العينات واعتمادات المواد وفحوصات الموقع وتنسيق الموافقات مع الاستشاري لضمان الامتثال التام.',
+        duties_en: 'Governing the technical documentation and correspondence workflows for Downtown Medina development project. Direct oversight of material submittals, inspection requests (IRs), shop drawing registers, and consultant approvals ensuring zero compliance gaps.'
+      },
+      {
+        period_ar: '02/2025 — 2026',
+        period_en: '02/2025 — 2026',
+        locality_ar: 'جمصة، جمهورية مصر العربية',
+        locality_en: 'Gamasa, Egypt',
+        role_ar: 'مطور حلول الأتمتة ونظم Google Apps Script',
+        role_en: 'Google Apps Script Developer & Automation Specialist',
+        company_ar: 'الشركة المصرية لمستحضرات التجميل (ECC)',
+        company_en: 'Egyptian Cosmetics Company (ECC)',
+        tags: ['Cloud Architecture', 'Web Applications', 'Workflow Optimization', 'Sheets Database'],
+        duties_ar: 'ابتكار وهندسة نظام إدارة الإنتاج الشامل، وتحويل العمليات الصناعية والمخزنية الورقية إلى منظومة سحابية متقدمة تعتمد على Google Sheets كقاعدة بيانات، مما خفض نسبة أخطاء الإدخال بمقدار 40%.',
+        duties_en: 'Engineered an enterprise Production Management System migrating all manufacturing registers into a cloud suite driven by Google Sheets relational architecture, reducing human data entry errors by 40% and optimizing factory-wide reporting.'
+      },
+      {
+        period_ar: '02/2021 — 01/2023',
+        period_en: '02/2021 — 01/2023',
+        locality_ar: 'الساحل الشمالي، جمهورية مصر العربية',
+        locality_en: 'North Coast, Egypt',
+        role_ar: 'مسؤول وثائق ومخططات هندسية (Document Controller)',
+        role_en: 'Document Controller',
+        company_ar: 'ماس للهندسة والإنشاء (Mass Engineering & Construction)',
+        company_en: 'Mass Engineering & Construction',
+        tags: ['Coastal Resort Project', 'RFIs & Drawings', 'Digital Archive System', 'Subcontractor Tracking'],
+        duties_ar: 'إدارة وتوثيق وأرشفة مستندات ومخططات المشروع لمنتجع سياحي بمدينة سيدي عبد الرحمن. تطوير نظام أرشفة رقمي ذكي عبر إكسل المتطور أدى إلى رقمنة وتصنيف أكثر من 1,000 عقد ومخطط ورفع سرعة استرجاع الملفات بنسبة 60%.',
+        duties_en: 'Administered the engineering repository and blueprint cycles for a coastal resort in Sidi Abdel Rahman. Designed a proprietary Excel/VBA archiving index digitizing 1,000+ contracts and blueprints, accelerating retrieval speeds by 60%.'
+      },
+      {
+        period_ar: '01/2023 — 03/2024',
+        period_en: '01/2023 — 03/2024',
+        locality_ar: 'كفر الأطرش، جمهورية مصر العربية',
+        locality_en: 'Kafr El-Atrash, Egypt',
+        role_ar: 'مدير العمليات والأنظمة الإدارية',
+        role_en: 'Showroom Operations & Systems Manager',
+        company_ar: 'معرض محسن شبكة للأجهزة المنزلية',
+        company_en: 'Mohsen Shabaka Appliances Showroom',
+        tags: ['Inventory Control', 'Financial Analysis', 'Advanced Excel', 'Auditing'],
+        duties_ar: 'قيادة العمليات التشغيلية، ومراقبة المخزون، وتتبع المبيعات والتسويات المالية اليومية باستخدام نماذج تحليل البيانات المتقدمة في إكسل.',
+        duties_en: 'Directed daily showroom inventory, financial reconciliation, and sales data pipelines utilizing advanced analytical Excel models and inventory tracking.'
+      }
+    ];
+
+    var rawCapabilitiesCatalog = [
+      {
+        code: '01 // DOMAIN',
+        title_ar: 'إدارة الوثائق الهندسية (EDMS)',
+        title_en: 'Engineering Document Control (EDMS)',
+        desc_ar: 'حوكمة الدورة المستندية وضمان التدفق المنضبط للمراسلات بين الإدارة ومقاولي الباطن والاستشاريين وفق كودات وضوابط المشروع.',
+        desc_en: 'Rigorous engineering document governance ensuring uninterrupted revision flow between management, consultants, and subcontractors.',
+        bullets_ar: [
+          'سجلات التقديمات الفنية (Submittal Logs)',
+          'طلبات الاستفسار الفني للموقع (RFIs)',
+          'طلبات الفحص والاستلام (IRs / MIRs)',
+          'فهرسة وأرشفة المخططات التنفيذية (As-Built)'
+        ],
+        bullets_en: [
+          'Material & Shop Drawing Submittal Master Logs',
+          'Site Requests for Information (RFIs)',
+          'Inspection Requests (IRs / MIRs)',
+          'As-Built Blueprint Archival & Revision Control'
+        ]
+      },
+      {
+        code: '02 // DOMAIN',
+        title_ar: 'الأتمتة وتطوير تطبيقات السحاب',
+        title_en: 'Cloud Automation & Systems Architecture',
+        desc_ar: 'بناء أدوات وتطبيقات برمجية تربط منظومة Google Workspace وتلغي العمليات الورقية اليدوية في تسجيل ومطابقة البيانات.',
+        desc_en: 'Custom full-stack web applications and automation pipelines leveraging Google Workspace ecosystems to eradicate paper reliance.',
+        bullets_ar: [
+          'Google Apps Script (مستوى خبير ومتقدم)',
+          'تطوير Web Apps تعتمد على جداول البيانات كقواعد بيانات',
+          'تكامل Webhooks وأتمتة روبوتات Telegram',
+          'التقارير اليومية المؤتمتة والتنبيهات المجدولة بالبريد'
+        ],
+        bullets_en: [
+          'Google Apps Script (Expert Server Architecture)',
+          'Web Apps using Google Sheets Relational Databases',
+          'Webhook Integration & Automated Telegram Bots',
+          'Scheduled Automated Reporting & Email Dispatch'
+        ]
+      },
+      {
+        code: '03 // DOMAIN',
+        title_ar: 'هندسة البيانات والبرمجة النصية',
+        title_en: 'Data Engineering & Technical Scripting',
+        desc_ar: 'تحليل وتدقيق السجلات الضخمة، واستخلاص النصوص من الملفات، وضبط البنية التحتية لتراخيص البرمجيات الهندسية.',
+        desc_en: 'Data transformation, programmatic OCR batch processing, and network licensing server infrastructure for CAD systems.',
+        bullets_ar: [
+          'إكسل المتقدم، Power Query، وبرمجة الماكرو VBA',
+          'سكريبتات Python لاستخراج النصوص وفصل حزم المستندات',
+          'إدارة خوادم تراخيص الشبكات الهندسية (AutoCAD LMTOOLS)',
+          'ضبط أجهزة المسح الضوئي وأنظمة الأرشفة المركزية'
+        ],
+        bullets_en: [
+          'Advanced Excel, Power Query & VBA Macro Automation',
+          'Python Scripting for Text Extraction & Document Splitting',
+          'Engineering Network License Server Administration (LMTOOLS)',
+          'Enterprise Scanner Configuration & Central Repository Control'
+        ]
+      }
+    ];
+
+    var dictionaryI18n = {
+      ar: {
+        page_title: 'محمد أبو مسلم عبد المهدي — الملف التوثيقي المعماري',
+        page_desc: 'الملف التوثيقي المعماري لمحمد أبو مسلم عبد المهدي. متخصص في إدارة الوثائق الهندسية (Document Control) وهندسة حلول الأتمتة السحابية ونظم Google Apps Script للمشاريع الكبرى.',
+        brand_name: 'محمد أبو مسلم عبد المهدي',
+        nav_about: 'النبذة',
+        nav_projects: 'المشروعات',
+        nav_experience: 'الخبرات',
+        nav_capabilities: 'الكفاءات',
+        nav_contact: 'الاتصال',
+        drawer_about: 'النبذة المعمارية',
+        drawer_projects: 'سجل المشروعات والنظم',
+        drawer_experience: 'المسار المهني للشركات',
+        drawer_capabilities: 'منظومة الكفاءات الفنية',
+        drawer_contact: 'الاتصال والقنوات المفتوحة',
+        hero_status: 'جاهزية كاملة للمشاريع الاستراتيجية والتعاقدات',
+        hero_name_p1: 'محمد أبو مسلم',
+        hero_name_p2: 'عبد المهدي',
+        hero_lead: 'أخصائي إدارة وضبط الوثائق الهندسية (Document Controller)، ومطور حلول الأتمتة المخصصة ونظم Google Apps Script للمشاريع الكبرى والمنشآت الصناعية.',
+        hero_extended: 'أعمل في نقطة التقاء فريدة تجمع بين الدقة الرقابية الصارمة المطلوبة في إدارة وثائق المشاريع الهندسية (Document Control) والامتثال للمواصفات، وبين هندسة الحلول البرمجية وتطوير بيئات العمل السحابية. قمت بتحويل مسارات العمل الورقية والبيانات المعقدة في قطاعات المقاولات والصناعة إلى نظم مؤتمتة متكاملة، مستهدفاً خفض الأخطاء التشغيلية وتسريع زمن اتخاذ القرار الإداري والفني بدقة متناهية.',
+        hero_cta_dial: 'محادثة واتساب مباشرة (السعودية)',
+        hero_cta_explore: 'استعراض المشروعات',
+        spec_kicker_loc: 'المقر المهني الحالي',
+        spec_val_loc: 'المدينة المنورة، المملكة العربية السعودية',
+        spec_kicker_p1: 'المحور المهني الأول',
+        spec_val_p1: 'إدارة الوثائق الهندسية والمراسلات (EDMS)',
+        spec_kicker_p2: 'المحور المهني الثاني',
+        spec_val_p2: 'هندسة الأتمتة وحلول Google Apps Script',
+        spec_kicker_m1: 'معدل تسريع استرجاع الوثائق',
+        spec_val_m1: 'رفع السرعة بنسبة 60%',
+        spec_kicker_m2: 'معدل تقليص الأخطاء اليدوية',
+        spec_val_m2: 'خفض الأخطاء بنسبة 40%',
+        about_title: 'النبذة والتموضع المهني',
+        about_subtitle: 'حوكمة دورات المستندات ورقمنة بيئات العمل المعقدة',
+        about_quote: '«التحول الرقمي الرصين لا يعني مجرد استبدال الأوراق بنسخ ممسوحة، بل إعادة هندسة مسار المستند ليعمل ذاتياً بنظام تدقيق صارم يضمن عدم ضياع أي اعتماد.»',
+        about_p1: 'أمتلك خبرة عملية متخصصة في إدارة منظومات الوثائق الهندسية للمشاريع الكبرى، بدءاً من حزم اعتمادات المواد (Material Submittals) ومخططات الورشة التنفيذية (Shop Drawings)، وصولاً إلى طلبات الفحص (IRs) وطلبات الاستفسار الفني (RFIs). أضمن من خلال السجلات الموثوقة (Master Logs) الالتزام التام بالمواصفات الفنية والمتطلبات الاستشارية وجداول التسليم.',
+        about_p2: 'وفي ذات الوقت، أسخر إمكاناتي البرمجية المتقدمة في لغات JavaScript وPython وأداة Google Apps Script لبناء أدوات سحابية متخصصة تربط جداول البيانات المعقدة بقواعد بيانات ديناميكية وتطبيقات ويب سريعة. تمكنت من خلال هذه النظم من رقمنة دورات التشغيل والتصنيع، وتحويل مئات العمليات الورقية اليومية إلى تدفقات إلكترونية فائقة الدقة.',
+        projects_title: 'معرض النظم والمشروعات',
+        projects_subtitle: 'حلول برمجية وأنظمة حقيقية بُنيت للعمل تحت ظروف التشغيل الفعلية',
+        exp_title: 'سجل الخبرات والمسار المهني',
+        exp_subtitle: 'محطات العمل في كبرى المؤسسات الهندسية والمقاولات والمنشآت الصناعية',
+        cap_title: 'منظومة الكفاءات المعمارية',
+        cap_subtitle: 'الأدوات التقنية والمنهجيات الهندسية المعتمدة في تنفيذ المشروعات',
+        contact_headline: 'جاهز للبدء في حوكمة وثائق مشاريعكم وأتمتة منظومتكم',
+        contact_sublead: 'متاح لمناقشة فرص التعاقد لإدارة منظومات الوثائق الهندسية للمشاريع الكبرى في المملكة العربية السعودية، أو لتصميم وتطوير نظم أتمتة مخصصة لمؤسستكم.',
+        contact_ch1_label: 'واتساب مباشر — المملكة العربية السعودية (المقر الحالي)',
+        contact_ch1_hint: 'محادثة فورية مباشرة',
+        contact_ch2_label: 'واتساب وهاتف مباشر — جمهورية مصر العربية',
+        contact_ch2_hint: 'اتصال ومراسلة مباشرة',
+        contact_ch3_label: 'البريد الإلكتروني المهني',
+        contact_ch3_hint: 'استقبال المستندات الرسمية ومراسلات العمل',
+        panel_note_title: 'ملاحظة تنظيمية للجهات المهنية',
+        panel_note_body: 'يتم الرد على المراسلات والاستفسارات المتعلقة بالمشاريع الهندسية وطلبات النظم المؤتمتة بصورة فورية ومباشرة عبر قنوات الواتساب الموضحة.',
+        panel_repo_title: 'القنوات الرقمية الإضافية',
+        footer_locality: 'المملكة العربية السعودية — المدينة المنورة'
+      },
+      en: {
+        page_title: 'Mohamed Abo Mosalam Abdel-Mahdi — Architectural Systems Dossier',
+        page_desc: 'Executive Systems Dossier of Mohamed Abo Mosalam Abdel-Mahdi. Specializing in Engineering Document Control (EDMS) and enterprise Google Apps Script process automation.',
+        brand_name: 'Mohamed Abo Mosalam Abdel-Mahdi',
+        nav_about: 'Profile',
+        nav_projects: 'Projects',
+        nav_experience: 'Trajectory',
+        nav_capabilities: 'Capabilities',
+        nav_contact: 'Contact',
+        drawer_about: 'Architectural Profile',
+        drawer_projects: 'System Case Studies',
+        drawer_experience: 'Career Trajectory',
+        drawer_capabilities: 'Technical Domains',
+        drawer_contact: 'Open Channels',
+        hero_status: 'Available for Strategic Contracting & Major Projects',
+        hero_name_p1: 'Mohamed Abo Mosalam',
+        hero_name_p2: 'Abdel-Mahdi',
+        hero_lead: 'Document Controller & Automation Solutions Architect specializing in major contracting projects and enterprise industrial cloud workflows.',
+        hero_extended: 'Operating at the intersection of rigorous engineering compliance and software-driven process automation. Experienced in managing complex construction document lifecycles (EDMS, submittals, RFIs) while developing scalable Google Apps Script web platforms that convert manual data entries into reliable automated environments with zero compliance gaps.',
+        hero_cta_dial: 'Direct WhatsApp (Saudi Arabia)',
+        hero_cta_explore: 'Examine Case Studies',
+        spec_kicker_loc: 'Current Location',
+        spec_val_loc: 'Madinah, Kingdom of Saudi Arabia',
+        spec_kicker_p1: 'Primary Core Discipline',
+        spec_val_p1: 'Engineering Document Control (EDMS)',
+        spec_kicker_p2: 'Secondary Systems Discipline',
+        spec_val_p2: 'Google Apps Script & Process Automation',
+        spec_kicker_m1: 'Retrieval Velocity Delta',
+        spec_val_m1: '+60% Faster Document Access',
+        spec_kicker_m2: 'Manual Error Mitigation',
+        spec_val_m2: '-40% Data Entry Inaccuracies',
+        about_title: 'Professional Positioning',
+        about_subtitle: 'Document Governance and Complex Workflow Digitization',
+        about_quote: '"True digitalization is never about replacing paper with static scans; it is the complete re-engineering of the document lifecycle into an automated, auditable, and mistake-proof pipeline."',
+        about_p1: 'Backed by extensive field and administrative experience in construction and manufacturing sectors, I oversee complete engineering documentation lifecycles—from material submittals and shop drawings to inspection requests (IRs) and RFIs. Through auditable Master Logs, I ensure strict compliance with project specifications, consultant approvals, and delivery timelines.',
+        about_p2: 'Concurrently, I deploy full-stack scripting capabilities in JavaScript, Python, and Google Apps Script to build internal web platforms backed by Google Sheets as dynamic databases. These solutions replace hundreds of manual bookkeeping hours with resilient, cloud-connected data systems.',
+        projects_title: 'System Case Studies',
+        projects_subtitle: 'Field-tested software architectures deployed under actual operational loads',
+        exp_title: 'Career Trajectory',
+        exp_subtitle: 'Documented milestones across contracting, construction, and manufacturing enterprises',
+        cap_title: 'Technical Capabilities',
+        cap_subtitle: 'Engineering methodologies and programming toolchains applied across projects',
+        contact_headline: 'Prepared to Govern Project Documents and Automate Operations',
+        contact_sublead: 'Available for immediate consultation on engineering documentation management for projects in Saudi Arabia, or custom enterprise process automation suites.',
+        contact_ch1_label: 'Direct WhatsApp — Saudi Arabia (Current Base)',
+        contact_ch1_hint: 'Immediate Direct Chat',
+        contact_ch2_label: 'Direct Phone & WhatsApp — Egypt',
+        contact_ch2_hint: 'Direct Phone & Messaging',
+        contact_ch3_label: 'Professional Email Channel',
+        contact_ch3_hint: 'Formal Letters & Documentation Dispatch',
+        panel_note_title: 'Executive Notice',
+        panel_note_body: 'All inquiries regarding engineering projects and automated system architecture are answered directly via the verified WhatsApp channels.',
+        panel_repo_title: 'Digital Repositories',
+        footer_locality: 'Kingdom of Saudi Arabia — Madinah'
+      }
+    };
+
     function sanitizeDisplayText(rawText) {
       if (!rawText) return '';
       return String(rawText)
-        .replace(/\/gi, '')
-        .replace(/\]+\]/gi, '')
-        .replace(/\bPDF\b/g, 'مستندات')
+        .replace(/\[\s*cite:\s*[^\]]+\]/gi, '')
+        .replace(/\[\s*cite\s*\]/gi, '')
+        .replace(/\[PDF\]/gi, '')
+        .replace(/\bPDF\b/g, 'Documents')
+        .replace(/\s{2,}/g, ' ')
         .trim();
     }
 
-    function executeDOMSanitization() {
-      var walker = document.createTreeWalker(
-        document.body,
-        NodeFilter.SHOW_TEXT,
-        null,
-        false
-      );
-      var node;
-      while (node = walker.nextNode()) {
-        if (node.nodeValue && (/\/i.test(node.nodeValue))) {
-          node.nodeValue = sanitizeDisplayText(node.nodeValue);
+    function sanitizeProjectItem(item) {
+      return {
+        id: sanitizeDisplayText(item.id),
+        category_ar: sanitizeDisplayText(item.category_ar),
+        category_en: sanitizeDisplayText(item.category_en),
+        entity_ar: sanitizeDisplayText(item.entity_ar),
+        entity_en: sanitizeDisplayText(item.entity_en),
+        type_ar: sanitizeDisplayText(item.type_ar),
+        type_en: sanitizeDisplayText(item.type_en),
+        period: sanitizeDisplayText(item.period),
+        title_ar: sanitizeDisplayText(item.title_ar),
+        title_en: sanitizeDisplayText(item.title_en),
+        lead_ar: sanitizeDisplayText(item.lead_ar),
+        lead_en: sanitizeDisplayText(item.lead_en),
+        challenge_ar: sanitizeDisplayText(item.challenge_ar),
+        challenge_en: sanitizeDisplayText(item.challenge_en),
+        solution_ar: sanitizeDisplayText(item.solution_ar),
+        solution_en: sanitizeDisplayText(item.solution_en),
+        stack: item.stack.map(function(s) { return sanitizeDisplayText(s); }),
+        impact_metric: sanitizeDisplayText(item.impact_metric),
+        impact_desc_ar: sanitizeDisplayText(item.impact_desc_ar),
+        impact_desc_en: sanitizeDisplayText(item.impact_desc_en)
+      };
+    }
+
+    function sanitizeExperienceItem(item) {
+      return {
+        period_ar: sanitizeDisplayText(item.period_ar),
+        period_en: sanitizeDisplayText(item.period_en),
+        locality_ar: sanitizeDisplayText(item.locality_ar),
+        locality_en: sanitizeDisplayText(item.locality_en),
+        role_ar: sanitizeDisplayText(item.role_ar),
+        role_en: sanitizeDisplayText(item.role_en),
+        company_ar: sanitizeDisplayText(item.company_ar),
+        company_en: sanitizeDisplayText(item.company_en),
+        tags: item.tags.map(function(t) { return sanitizeDisplayText(t); }),
+        duties_ar: sanitizeDisplayText(item.duties_ar),
+        duties_en: sanitizeDisplayText(item.duties_en)
+      };
+    }
+
+    function sanitizeCapabilityItem(item) {
+      return {
+        code: sanitizeDisplayText(item.code),
+        title_ar: sanitizeDisplayText(item.title_ar),
+        title_en: sanitizeDisplayText(item.title_en),
+        desc_ar: sanitizeDisplayText(item.desc_ar),
+        desc_en: sanitizeDisplayText(item.desc_en),
+        bullets_ar: item.bullets_ar.map(function(b) { return sanitizeDisplayText(b); }),
+        bullets_en: item.bullets_en.map(function(b) { return sanitizeDisplayText(b); })
+      };
+    }
+
+    function saveLanguagePreference(lang) {
+      try {
+        localStorage.setItem('dossier_lang_pref', lang);
+      } catch (err) {}
+    }
+
+    function loadLanguagePreference() {
+      try {
+        var stored = localStorage.getItem('dossier_lang_pref');
+        if (stored === 'ar' || stored === 'en') {
+          return stored;
+        }
+      } catch (err) {}
+      return 'ar';
+    }
+
+    function applyLanguageDirection(lang) {
+      var htmlNode = document.documentElement;
+      if (lang === 'en') {
+        htmlNode.setAttribute('lang', 'en');
+        htmlNode.setAttribute('dir', 'ltr');
+      } else {
+        htmlNode.setAttribute('lang', 'ar');
+        htmlNode.setAttribute('dir', 'rtl');
+      }
+    }
+
+    function renderStaticLocalizedStrings(lang) {
+      var dict = dictionaryI18n[lang] || dictionaryI18n.ar;
+
+      document.title = dict.page_title;
+      var metaDesc = document.getElementById('pageMetaDescNode');
+      if (metaDesc) metaDesc.setAttribute('content', dict.page_desc);
+
+      var brandLabel = document.getElementById('brandLabelNode');
+      if (brandLabel) brandLabel.textContent = dict.brand_name;
+
+      var footerAuthor = document.getElementById('footerAuthorNode');
+      if (footerAuthor) footerAuthor.textContent = dict.brand_name;
+
+      var heroP1 = document.getElementById('heroNamePrimary');
+      var heroP2 = document.getElementById('heroNameSecondary');
+      if (heroP1 && heroP2) {
+        heroP1.textContent = dict.hero_name_p1;
+        heroP2.textContent = dict.hero_name_p2;
+      }
+
+      var i18nElements = document.querySelectorAll('[data-i18n]');
+      i18nElements.forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+
+      var btnAr = document.getElementById('langBtnAr');
+      var btnEn = document.getElementById('langBtnEn');
+      if (btnAr && btnEn) {
+        if (lang === 'en') {
+          btnEn.classList.add('active');
+          btnAr.classList.remove('active');
+        } else {
+          btnAr.classList.add('active');
+          btnEn.classList.remove('active');
         }
       }
     }
 
-    function initializeSite() {
-      executeDOMSanitization();
-      setupColophonYear();
-      initializeScrollObserver();
-      initializeSectionNavigation();
-      initializeDossierRail();
-      initializeMobileDrawer();
+    function renderProjects(lang) {
+      var container = document.getElementById('caseSequenceContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      rawProjectCatalog.forEach(function(rawItem) {
+        var item = sanitizeProjectItem(rawItem);
+        var isEn = (lang === 'en');
+
+        var article = document.createElement('article');
+        article.className = 'case-unit';
+
+        var identityRail = document.createElement('div');
+        identityRail.className = 'case-identity-rail';
+        identityRail.innerHTML =
+          '<span class="case-index-indicator">' + item.id + '</span>' +
+          '<span class="case-category-tag">' + (isEn ? item.category_en : item.category_ar) + '</span>' +
+          '<ul class="case-meta-spec-list">' +
+            '<li><span>' + (isEn ? 'Entity / Scope' : 'الجهة / البيئة') + '</span>' + (isEn ? item.entity_en : item.entity_ar) + '</li>' +
+            '<li><span>' + (isEn ? 'System Archetype' : 'النوع المعماري') + '</span>' + (isEn ? item.type_en : item.type_ar) + '</li>' +
+            '<li><span>' + (isEn ? 'Timeframe' : 'الفترة') + '</span>' + item.period + '</li>' +
+          '</ul>';
+
+        var narrativeZone = document.createElement('div');
+        narrativeZone.className = 'case-narrative-zone';
+        narrativeZone.innerHTML =
+          '<h3 class="case-title">' + (isEn ? item.title_en : item.title_ar) + '</h3>' +
+          '<p class="case-summary">' + (isEn ? item.lead_en : item.lead_ar) + '</p>' +
+          '<div class="case-problem-solution-box">' +
+            '<p><strong>' + (isEn ? 'Operational Challenge: ' : 'التحدي التشغيلي: ') + '</strong>' + (isEn ? item.challenge_en : item.challenge_ar) + '</p>' +
+            '<p><strong>' + (isEn ? 'Engineered Resolution: ' : 'الحل الهندسي: ') + '</strong>' + (isEn ? item.solution_en : item.solution_ar) + '</p>' +
+          '</div>';
+
+        var stackListHtml = item.stack.map(function(s) {
+          return '<span>- ' + s + '</span>';
+        }).join('');
+
+        var systemFootprint = document.createElement('div');
+        systemFootprint.className = 'case-system-footprint';
+        systemFootprint.innerHTML =
+          '<div>' +
+            '<span class="footprint-header">' + (isEn ? 'Toolchain Stack' : 'المعمارية البرمجية') + '</span>' +
+            '<div class="footprint-tags-list" style="margin-top: 0.75rem;">' + stackListHtml + '</div>' +
+          '</div>' +
+          '<div class="footprint-metric-zone">' +
+            '<strong>' + item.impact_metric + '</strong>' +
+            (isEn ? item.impact_desc_en : item.impact_desc_ar) +
+          '</div>';
+
+        article.appendChild(identityRail);
+        article.appendChild(narrativeZone);
+        article.appendChild(systemFootprint);
+        container.appendChild(article);
+      });
     }
 
-    function setupColophonYear() {
-      var yearNode = document.getElementById('colophonYearDisplayNode');
-      if (yearNode) {
-        yearNode.textContent = new Date().getFullYear();
-      }
+    function renderExperience(lang) {
+      var container = document.getElementById('careerMonographContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      rawExperienceCatalog.forEach(function(rawItem) {
+        var item = sanitizeExperienceItem(rawItem);
+        var isEn = (lang === 'en');
+
+        var entry = document.createElement('div');
+        entry.className = 'career-monograph-entry';
+
+        var timeframe = document.createElement('div');
+        timeframe.className = 'career-timeframe';
+        timeframe.innerHTML =
+          '<span class="isolate-ltr">' + (isEn ? item.period_en : item.period_ar) + '</span>' +
+          '<span class="locality">' + (isEn ? item.locality_en : item.locality_ar) + '</span>';
+
+        var tagsHtml = item.tags.map(function(t) {
+          return '<span class="career-focus-tag">' + t + '</span>';
+        }).join('');
+
+        var roleBlock = document.createElement('div');
+        roleBlock.innerHTML =
+          '<h3 class="career-primary-title">' + (isEn ? item.role_en : item.role_ar) + '</h3>' +
+          '<div class="career-firm-name">' + (isEn ? item.company_en : item.company_ar) + '</div>' +
+          '<div class="career-focus-tags">' + tagsHtml + '</div>';
+
+        var duties = document.createElement('div');
+        duties.className = 'career-duties-prose';
+        duties.textContent = isEn ? item.duties_en : item.duties_ar;
+
+        entry.appendChild(timeframe);
+        entry.appendChild(roleBlock);
+        entry.appendChild(duties);
+        container.appendChild(entry);
+      });
+    }
+
+    function renderCapabilities(lang) {
+      var container = document.getElementById('capabilitiesContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      rawCapabilitiesCatalog.forEach(function(rawItem) {
+        var item = sanitizeCapabilityItem(rawItem);
+        var isEn = (lang === 'en');
+
+        var col = document.createElement('div');
+        col.className = 'capability-domain-column';
+
+        var bullets = isEn ? item.bullets_en : item.bullets_ar;
+        var bulletsHtml = bullets.map(function(b) {
+          return '<li>' + b + '</li>';
+        }).join('');
+
+        col.innerHTML =
+          '<span class="capability-code">' + item.code + '</span>' +
+          '<h3 class="capability-name">' + (isEn ? item.title_en : item.title_ar) + '</h3>' +
+          '<p class="capability-description">' + (isEn ? item.desc_en : item.desc_ar) + '</p>' +
+          '<ul class="capability-bullets">' + bulletsHtml + '</ul>';
+
+        container.appendChild(col);
+      });
+    }
+
+    function switchLanguage(targetLang) {
+      if (targetLang !== 'ar' && targetLang !== 'en') return;
+      globalCurrentLanguage = targetLang;
+      saveLanguagePreference(targetLang);
+      applyLanguageDirection(targetLang);
+      renderStaticLocalizedStrings(targetLang);
+      renderProjects(targetLang);
+      renderExperience(targetLang);
+      renderCapabilities(targetLang);
+    }
+
+    function initializeLanguageSystem() {
+      var preferred = loadLanguagePreference();
+      switchLanguage(preferred);
     }
 
     function initializeScrollObserver() {
@@ -1752,6 +2104,38 @@
           closeDrawer();
         }
       });
+    }
+
+    function setupColophonYear() {
+      var yearNode = document.getElementById('colophonYearDisplayNode');
+      if (yearNode) {
+        yearNode.textContent = new Date().getFullYear();
+      }
+    }
+
+    function executeDOMSanitizationScan() {
+      var walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+      var node;
+      while (node = walker.nextNode()) {
+        if (node.nodeValue && (/\[\s*cite:\s*[^\]]+\]/i.test(node.nodeValue))) {
+          node.nodeValue = sanitizeDisplayText(node.nodeValue);
+        }
+      }
+    }
+
+    function initializeSite() {
+      initializeLanguageSystem();
+      setupColophonYear();
+      initializeScrollObserver();
+      initializeSectionNavigation();
+      initializeDossierRail();
+      initializeMobileDrawer();
+      executeDOMSanitizationScan();
     }
 
     window.addEventListener('DOMContentLoaded', initializeSite);
