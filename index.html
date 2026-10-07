@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>محمد أبو مسلم عبد المهدي — سجل الكفاءات وإدارة الوثائق الهندسية والنظم</title>
-  <meta name="description" content="الملف التنفيذي المهني لمحمد أبو مسلم عبد المهدي. إدارة الوثائق الهندسية الكبرى وحوكمة دورات الاعتماد، مع تطوير منظومات الأتمتة المخصصة ونظم Google Apps Script.">
-  <meta name="keywords" content="محمد أبو مسلم, محمد ابو مسلم عبد المهدي, Document Controller, Google Apps Script, أنساب للمقاولات العامة, ماس للهندسة والإنشاء, أتمتة العمليات, إدارة الوثائق">
+  <title>محمد أبو مسلم عبد المهدي — سجل النظم وإدارة الوثائق الهندسية</title>
+  <meta name="description" content="الملف التوثيقي المعماري لمحمد أبو مسلم عبد المهدي. متخصص في إدارة الوثائق الهندسية (Document Control) وهندسة حلول الأتمتة السحابية المتقدمة ونظم Google Apps Script.">
+  <meta name="keywords" content="محمد أبو مسلم, محمد ابو مسلم عبد المهدي, Document Control, Google Apps Script, أنساب للمقاولات العامة, ماس للهندسة والإنشاء, أتمتة الأنظمة">
   <meta name="author" content="محمد أبو مسلم عبد المهدي">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://salama-bot.github.io/mohamed-portfolio/">
 
   <meta property="og:locale" content="ar_AR">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="محمد أبو مسلم عبد المهدي — الملف التنفيذي">
+  <meta property="og:title" content="محمد أبو مسلم عبد المهدي — Dossier System">
   <meta property="og:description" content="إدارة الوثائق الهندسية، حوكمة الامتثال للمشاريع، وهندسة حلول الأتمتة السحابية.">
   <meta property="og:url" content="https://salama-bot.github.io/mohamed-portfolio/">
-  <meta property="og:site_name" content="Mohamed Abo Mosalam — Executive Dossier">
+  <meta property="og:site_name" content="Mohamed Abo Mosalam Dossier">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
     "@id": "https://salama-bot.github.io/mohamed-portfolio/#person",
     "name": "محمد أبو مسلم عبد المهدي",
     "alternateName": ["Mohamed Abo Mosalam Abdel-Mahdi", "Mohamed Abu Muslim", "محمد ابو مسلم"],
-    "jobTitle": "Document Controller & Solutions Automation Specialist",
+    "jobTitle": "Document Controller & Automation Systems Architect",
     "telephone": ["+966570532375", "+201063864546"],
     "email": "mohamedabomosalam96@gmail.com",
     "url": "https://salama-bot.github.io/mohamed-portfolio/",
@@ -56,22 +56,32 @@
 
   <style>
     :root {
-      --bg: #090a0d;
-      --bg-surface: #101217;
-      --bg-panel: #151821;
-      --border: rgba(255, 255, 255, 0.08);
-      --border-focus: rgba(255, 255, 255, 0.22);
-      --border-accent: #10b981;
-      --text: #f3f5f8;
-      --text-muted: #8b949e;
-      --text-dim: #545d68;
-      --accent: #10b981;
-      --accent-soft: rgba(16, 185, 129, 0.1);
-      --font-display: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-body: 'IBM Plex Sans Arabic', sans-serif;
+      --bg: #0b0d10;
+      --bg-surface: #111419;
+      --bg-elevated: #161a22;
+      --bg-alt: #0e1116;
+      --rule-subtle: rgba(255, 255, 255, 0.07);
+      --rule-medium: rgba(255, 255, 255, 0.15);
+      --rule-strong: rgba(255, 255, 255, 0.28);
+      --text: #f0f2f5;
+      --text-muted: #848c96;
+      --text-dim: #4d5560;
+      --accent-emerald: #10b981;
+      --accent-emerald-dark: #059669;
+      --accent-emerald-subtle: rgba(16, 185, 129, 0.08);
+
+      --font-arabic: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-english: 'Plus Jakarta Sans', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
-      --font-en: 'Plus Jakarta Sans', sans-serif;
-      --max-w: 1360px;
+
+      --z-canvas: 0;
+      --z-content: 10;
+      --z-rail: 50;
+      --z-header: 100;
+      --z-drawer: 200;
+      --z-toast: 300;
+
+      --max-w: 1440px;
     }
 
     *, *::before, *::after {
@@ -89,7 +99,7 @@
     body {
       background-color: var(--bg);
       color: var(--text);
-      font-family: var(--font-body);
+      font-family: var(--font-arabic);
       line-height: 1.65;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
@@ -97,24 +107,24 @@
     }
 
     ::selection {
-      background-color: var(--accent);
+      background-color: var(--accent-emerald);
       color: #000;
     }
 
     ::-webkit-scrollbar {
-      width: 5px;
+      width: 4px;
     }
     ::-webkit-scrollbar-track {
       background: var(--bg);
     }
     ::-webkit-scrollbar-thumb {
-      background: #21262d;
+      background: #1f242d;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: var(--accent);
+      background: var(--accent-emerald);
     }
 
-    .wrap {
+    .dossier-wrap {
       width: 100%;
       max-width: var(--max-w);
       margin: 0 auto;
@@ -128,221 +138,268 @@
     }
 
     .en {
-      font-family: var(--font-en);
+      font-family: var(--font-english);
       direction: ltr;
       unicode-bidi: isolate;
       text-align: left;
     }
 
-    .editorial-header {
+    .dossier-rail {
+      position: fixed;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: var(--z-rail);
+      display: none;
+      flex-direction: column;
+      gap: 1.25rem;
+      pointer-events: none;
+    }
+
+    @media (min-width: 1280px) {
+      .dossier-rail {
+        display: flex;
+      }
+    }
+
+    .rail-entry {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      transition: color 0.2s ease;
+    }
+
+    .rail-entry.active {
+      color: var(--accent-emerald);
+    }
+
+    .rail-line {
+      width: 14px;
+      height: 1px;
+      background: var(--rule-medium);
+      transition: width 0.2s ease, background 0.2s ease;
+    }
+
+    .rail-entry.active .rail-line {
+      width: 28px;
+      background: var(--accent-emerald);
+    }
+
+    .dossier-header {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      height: 72px;
-      z-index: 100;
-      background-color: rgba(9, 10, 13, 0.94);
+      height: 68px;
+      z-index: var(--z-header);
+      background-color: rgba(11, 13, 16, 0.95);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-      transition: height 0.25s ease, background-color 0.25s ease;
+      border-bottom: 1px solid var(--rule-subtle);
+      transition: height 0.2s ease, border-color 0.2s ease;
     }
 
-    .editorial-header.scrolled {
-      height: 60px;
-      background-color: rgba(9, 10, 13, 0.98);
-      border-bottom-color: var(--border-focus);
+    .dossier-header.scrolled {
+      height: 58px;
+      border-bottom-color: var(--rule-medium);
     }
 
-    .header-grid {
+    .header-layout {
       height: 100%;
       display: grid;
       grid-template-columns: auto 1fr auto;
       align-items: center;
-      gap: 2.5rem;
+      gap: 2rem;
     }
 
-    .brand-mark {
+    .brand-system {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.85rem;
       text-decoration: none;
       color: inherit;
     }
 
-    .brand-index {
+    .brand-glyph {
       font-family: var(--font-mono);
       font-size: 0.75rem;
-      color: var(--accent);
-      border: 1px solid var(--border);
-      padding: 0.25rem 0.6rem;
+      font-weight: 700;
+      color: var(--accent-emerald);
+      border: 1px solid var(--rule-medium);
+      padding: 0.25rem 0.5rem;
       background: var(--bg-surface);
     }
 
-    .brand-title {
+    .brand-label {
       font-size: 0.95rem;
       font-weight: 700;
       letter-spacing: -0.01em;
+      color: var(--text);
     }
 
-    .header-nav {
+    .header-index-nav {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2.25rem;
+      gap: 2.5rem;
     }
 
-    .header-nav a {
+    .index-nav-link {
       font-family: var(--font-mono);
       font-size: 0.78rem;
       color: var(--text-muted);
       text-decoration: none;
-      transition: color 0.2s ease;
       display: flex;
       align-items: center;
       gap: 0.4rem;
+      transition: color 0.2s ease;
     }
 
-    .header-nav a:hover,
-    .header-nav a.active {
+    .index-nav-link:hover,
+    .index-nav-link.active {
       color: var(--text);
     }
 
-    .header-nav a span {
-      color: var(--accent);
+    .index-nav-link span {
+      color: var(--accent-emerald);
       font-size: 0.7rem;
     }
 
-    .header-cta-group {
+    .header-action-zone {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
 
-    .btn-header {
+    .btn-header-link {
       font-family: var(--font-mono);
       font-size: 0.75rem;
-      padding: 0.5rem 1.1rem;
-      border: 1px solid var(--border-focus);
-      background: transparent;
+      padding: 0.45rem 1rem;
+      border: 1px solid var(--rule-medium);
       color: var(--text);
       text-decoration: none;
-      transition: all 0.2s ease;
+      background: transparent;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      transition: all 0.2s ease;
     }
 
-    .btn-header:hover {
-      background: var(--text);
-      color: var(--bg);
-      border-color: var(--text);
+    .btn-header-link:hover {
+      border-color: var(--accent-emerald);
+      color: var(--accent-emerald);
+      background: var(--accent-emerald-subtle);
     }
 
-    .mobile-btn {
+    .menu-toggle-btn {
       display: none;
       background: transparent;
-      border: 1px solid var(--border);
+      border: 1px solid var(--rule-medium);
       color: var(--text);
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       align-items: center;
       justify-content: center;
       cursor: pointer;
     }
 
-    .editorial-hero {
-      padding-top: 140px;
+    .dossier-hero {
+      padding-top: 130px;
       padding-bottom: 90px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--rule-subtle);
+      position: relative;
     }
 
-    .hero-meta-row {
+    .hero-pre-coordinate {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--rule-subtle);
+      padding-bottom: 1rem;
       margin-bottom: 3.5rem;
       font-family: var(--font-mono);
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       color: var(--text-muted);
     }
 
-    .hero-meta-row .live-tag {
-      color: var(--accent);
+    .active-status {
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      color: var(--accent-emerald);
     }
 
-    .hero-meta-row .live-tag::before {
+    .active-status::before {
       content: '';
       width: 6px;
       height: 6px;
-      background: var(--accent);
+      background: var(--accent-emerald);
       display: inline-block;
       border-radius: 50%;
     }
 
-    .hero-editorial-title {
-      font-size: clamp(2.8rem, 6.5vw, 6.2rem);
+    .hero-monograph-title {
+      font-size: clamp(3rem, 7.5vw, 6.8rem);
       font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -0.03em;
-      margin-bottom: 2.5rem;
-      max-width: 1200px;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+      margin-bottom: 3rem;
     }
 
-    .hero-editorial-title .sub-name {
+    .hero-monograph-title .secondary-part {
       display: block;
-      color: var(--text-muted);
-      font-weight: 500;
-      font-size: 0.72em;
-      margin-top: 0.35rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      font-size: 0.78em;
+      margin-top: 0.4rem;
     }
 
-    .hero-editorial-grid {
+    .hero-split-architectural {
       display: grid;
       grid-template-columns: 1fr;
       gap: 3.5rem;
-      padding-top: 2rem;
+      border-top: 1px solid var(--rule-subtle);
+      padding-top: 3rem;
     }
 
     @media (min-width: 992px) {
-      .hero-editorial-grid {
+      .hero-split-architectural {
         grid-template-columns: 7fr 5fr;
         gap: 5rem;
       }
     }
 
     .hero-statement-lead {
-      font-size: 1.35rem;
+      font-size: 1.38rem;
       font-weight: 400;
-      line-height: 1.7;
+      line-height: 1.65;
       color: var(--text);
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
 
-    .hero-statement-body {
-      font-size: 1rem;
+    .hero-statement-extended {
+      font-size: 1.02rem;
       color: var(--text-muted);
       line-height: 1.8;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.75rem;
+      font-weight: 300;
     }
 
-    .hero-actions {
+    .hero-cta-cluster {
       display: flex;
       flex-wrap: wrap;
       gap: 1.25rem;
     }
 
-    .btn-solid {
-      background: var(--accent);
+    .btn-dossier-primary {
+      background: var(--accent-emerald);
       color: #000;
       font-weight: 700;
       font-size: 0.88rem;
-      padding: 0.95rem 1.8rem;
+      padding: 0.95rem 1.85rem;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
@@ -350,16 +407,16 @@
       transition: background 0.2s ease, transform 0.2s ease;
     }
 
-    .btn-solid:hover {
+    .btn-dossier-primary:hover {
       background: #34d399;
       transform: translateY(-2px);
     }
 
-    .btn-outline {
-      border: 1px solid var(--border-focus);
+    .btn-dossier-secondary {
+      border: 1px solid var(--rule-medium);
       color: var(--text);
       font-size: 0.88rem;
-      padding: 0.95rem 1.8rem;
+      padding: 0.95rem 1.85rem;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
@@ -368,35 +425,36 @@
       transition: all 0.2s ease;
     }
 
-    .btn-outline:hover {
-      border-color: var(--accent);
-      color: var(--accent);
+    .btn-dossier-secondary:hover {
+      border-color: var(--accent-emerald);
+      color: var(--accent-emerald);
     }
 
-    .hero-sidebar-dossier {
-      border-top: 1px solid var(--border);
-      padding-top: 1.5rem;
+    .hero-spec-sidebar {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.75rem;
+      border-right: none;
+      border-top: 1px solid var(--rule-subtle);
+      padding-top: 2rem;
     }
 
     @media (min-width: 992px) {
-      .hero-sidebar-dossier {
+      .hero-spec-sidebar {
         border-top: none;
-        border-right: 1px solid var(--border);
+        border-right: 1px solid var(--rule-subtle);
         padding-top: 0;
         padding-right: 3rem;
       }
     }
 
-    .dossier-entry {
+    .spec-item {
       display: flex;
       flex-direction: column;
       gap: 0.35rem;
     }
 
-    .dossier-entry .label {
+    .spec-kicker {
       font-family: var(--font-mono);
       font-size: 0.72rem;
       color: var(--text-dim);
@@ -404,22 +462,24 @@
       letter-spacing: 0.05em;
     }
 
-    .dossier-entry .value {
+    .spec-content {
       font-size: 0.98rem;
       font-weight: 600;
       color: var(--text);
     }
 
-    .dossier-entry .value-mono {
+    .spec-metric {
       font-family: var(--font-mono);
-      font-size: 0.92rem;
-      color: var(--accent);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent-emerald);
     }
 
-    .editorial-section {
+    .dossier-section {
       padding-top: 110px;
       padding-bottom: 110px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--rule-subtle);
+      position: relative;
     }
 
     .section-spine-header {
@@ -428,57 +488,52 @@
       align-items: baseline;
       gap: 2rem;
       margin-bottom: 4rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--rule-subtle);
       padding-bottom: 1.5rem;
     }
 
-    .spine-index {
+    .spine-code {
       font-family: var(--font-mono);
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 600;
-      color: var(--accent);
+      color: var(--accent-emerald);
     }
 
-    .spine-title-wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    .spine-title {
-      font-size: 2.2rem;
+    .spine-header-title {
+      font-size: 2.25rem;
       font-weight: 700;
       letter-spacing: -0.02em;
     }
 
-    .spine-lead {
+    .spine-header-subtitle {
       font-size: 0.95rem;
       color: var(--text-muted);
+      margin-top: 0.25rem;
     }
 
-    .about-editorial-layout {
+    .manifesto-editorial-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 3.5rem;
     }
 
     @media (min-width: 992px) {
-      .about-editorial-layout {
+      .manifesto-editorial-grid {
         grid-template-columns: 5fr 7fr;
         gap: 5rem;
       }
     }
 
-    .manifesto-callout {
-      font-size: 1.7rem;
+    .manifesto-lead-quote {
+      font-size: 1.65rem;
       font-weight: 600;
-      line-height: 1.45;
+      line-height: 1.5;
       color: var(--text);
-      border-right: 3px solid var(--accent);
+      border-right: 3px solid var(--accent-emerald);
       padding-right: 1.5rem;
     }
 
-    .about-narrative-columns {
+    .manifesto-body-prose {
       display: flex;
       flex-direction: column;
       gap: 1.75rem;
@@ -488,52 +543,52 @@
       font-weight: 300;
     }
 
-    .about-narrative-columns p strong {
+    .manifesto-body-prose strong {
       color: var(--text);
       font-weight: 600;
     }
 
-    .case-exhibition {
+    .case-sequence-stack {
       display: flex;
       flex-direction: column;
       gap: 6rem;
     }
 
-    .case-study {
+    .case-unit {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2.5rem;
       padding-bottom: 5rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--rule-subtle);
     }
 
     @media (min-width: 992px) {
-      .case-study {
+      .case-unit {
         grid-template-columns: 3fr 6fr 3fr;
         gap: 3.5rem;
       }
     }
 
-    .case-study:last-child {
+    .case-unit:last-child {
       border-bottom: none;
       padding-bottom: 0;
     }
 
-    .case-meta-spine {
+    .case-identity-rail {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
     }
 
-    .case-num {
+    .case-index-indicator {
       font-family: var(--font-mono);
       font-size: 1.5rem;
       font-weight: 700;
-      color: var(--accent);
+      color: var(--accent-emerald);
       display: block;
     }
 
-    .case-category {
+    .case-category-tag {
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-dim);
@@ -541,47 +596,47 @@
       letter-spacing: 0.05em;
     }
 
-    .case-details-list {
+    .case-meta-spec-list {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
       padding-top: 1rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--rule-subtle);
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-muted);
     }
 
-    .case-details-list li span {
+    .case-meta-spec-list li span {
       color: var(--text-dim);
       display: block;
       margin-bottom: 0.15rem;
     }
 
-    .case-content-core {
+    .case-narrative-zone {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
     }
 
-    .case-heading {
-      font-size: 1.95rem;
+    .case-title {
+      font-size: 2rem;
       font-weight: 700;
       letter-spacing: -0.015em;
-      line-height: 1.3;
+      line-height: 1.25;
     }
 
-    .case-lead {
+    .case-summary {
       font-size: 1.05rem;
       color: var(--text-muted);
       line-height: 1.8;
       font-weight: 300;
     }
 
-    .case-problem-solution {
+    .case-problem-solution-box {
       background: var(--bg-surface);
-      border-right: 2px solid var(--accent);
+      border-right: 2px solid var(--accent-emerald);
       padding: 1.5rem;
       margin-top: 0.5rem;
       display: flex;
@@ -591,12 +646,12 @@
       color: var(--text-muted);
     }
 
-    .case-problem-solution strong {
+    .case-problem-solution-box strong {
       color: var(--text);
     }
 
-    .case-technical-footprint {
-      border: 1px solid var(--border);
+    .case-system-footprint {
+      border: 1px solid var(--rule-subtle);
       background: var(--bg-surface);
       padding: 1.75rem;
       display: flex;
@@ -605,7 +660,7 @@
       gap: 1.5rem;
     }
 
-    .footprint-title {
+    .footprint-header {
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-dim);
@@ -613,54 +668,53 @@
       letter-spacing: 0.05em;
     }
 
-    .footprint-stack {
+    .footprint-tags-list {
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
+      gap: 0.5rem;
       font-family: var(--font-mono);
       font-size: 0.8rem;
-      color: var(--accent);
+      color: var(--accent-emerald);
     }
 
-    .footprint-impact {
-      border-top: 1px solid var(--border);
+    .footprint-metric-zone {
+      border-top: 1px solid var(--rule-subtle);
       padding-top: 1.25rem;
       font-size: 0.88rem;
       color: var(--text-muted);
       line-height: 1.6;
     }
 
-    .footprint-impact strong {
+    .footprint-metric-zone strong {
       color: var(--text);
       display: block;
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       font-family: var(--font-mono);
       margin-bottom: 0.25rem;
     }
 
-    .career-editorial-feed {
+    .career-monograph-list {
       display: flex;
       flex-direction: column;
-      divide-y: 1px solid var(--border);
     }
 
-    .career-row {
+    .career-monograph-entry {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
       padding: 3rem 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--rule-subtle);
     }
 
     @media (min-width: 992px) {
-      .career-row {
+      .career-monograph-entry {
         grid-template-columns: 3fr 5fr 4fr;
         gap: 3rem;
         align-items: baseline;
       }
     }
 
-    .career-period {
+    .career-timeframe {
       font-family: var(--font-mono);
       font-size: 0.8rem;
       color: var(--text-muted);
@@ -669,169 +723,164 @@
       gap: 0.4rem;
     }
 
-    .career-period .location {
+    .career-timeframe .locality {
       color: var(--text-dim);
       font-size: 0.75rem;
     }
 
-    .career-role-block {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .career-role-title {
-      font-size: 1.3rem;
+    .career-primary-title {
+      font-size: 1.35rem;
       font-weight: 700;
       color: var(--text);
     }
 
-    .career-company-name {
+    .career-firm-name {
       font-size: 0.95rem;
-      color: var(--accent);
+      color: var(--accent-emerald);
       font-weight: 600;
+      margin-top: 0.25rem;
     }
 
-    .career-narrative-summary {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.75;
-      font-weight: 300;
-    }
-
-    .career-tags {
+    .career-focus-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
       margin-top: 0.75rem;
     }
 
-    .career-tag-item {
+    .career-focus-tag {
       font-family: var(--font-mono);
       font-size: 0.7rem;
       color: var(--text-dim);
-      border: 1px solid var(--border);
+      border: 1px solid var(--rule-subtle);
       padding: 0.2rem 0.5rem;
     }
 
-    .capabilities-triad {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
-    }
-
-    @media (min-width: 992px) {
-      .capabilities-triad {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-      }
-    }
-
-    .capability-column {
-      border-top: 2px solid var(--border);
-      padding-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      transition: border-color 0.25s ease;
-    }
-
-    .capability-column:hover {
-      border-top-color: var(--accent);
-    }
-
-    .cap-num {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--accent);
-    }
-
-    .cap-heading {
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-    }
-
-    .cap-body {
+    .career-duties-prose {
       font-size: 0.95rem;
       color: var(--text-muted);
       line-height: 1.75;
       font-weight: 300;
     }
 
-    .cap-points {
+    .capabilities-architectural-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 992px) {
+      .capabilities-architectural-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+      }
+    }
+
+    .capability-domain-column {
+      border-top: 2px solid var(--rule-subtle);
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transition: border-top-color 0.2s ease;
+    }
+
+    .capability-domain-column:hover {
+      border-top-color: var(--accent-emerald);
+    }
+
+    .capability-code {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent-emerald);
+    }
+
+    .capability-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .capability-description {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      font-weight: 300;
+    }
+
+    .capability-bullets {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 0.65rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--rule-subtle);
       padding-top: 1.25rem;
       font-size: 0.88rem;
       color: var(--text-muted);
     }
 
-    .cap-points li {
+    .capability-bullets li {
       display: flex;
       align-items: baseline;
       gap: 0.5rem;
     }
 
-    .cap-points li::before {
+    .capability-bullets li::before {
       content: '/';
-      color: var(--accent);
+      color: var(--accent-emerald);
       font-family: var(--font-mono);
       font-size: 0.75rem;
     }
 
-    .editorial-contact-stage {
+    .dossier-contact-stage {
       padding-top: 120px;
       padding-bottom: 120px;
     }
 
-    .contact-editorial-grid {
+    .contact-monograph-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 4rem;
     }
 
     @media (min-width: 992px) {
-      .contact-editorial-grid {
+      .contact-monograph-grid {
         grid-template-columns: 7fr 5fr;
         gap: 6rem;
       }
     }
 
-    .contact-headline {
-      font-size: clamp(2.2rem, 4.5vw, 4rem);
+    .contact-primary-headline {
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
       font-weight: 800;
       letter-spacing: -0.025em;
       line-height: 1.15;
       margin-bottom: 2rem;
     }
 
-    .contact-direct-channels {
+    .contact-open-channels {
       display: flex;
       flex-direction: column;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--rule-subtle);
     }
 
-    .contact-row-link {
+    .channel-row-link {
       display: flex;
       flex-direction: column;
       gap: 0.35rem;
       padding: 1.75rem 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--rule-subtle);
       text-decoration: none;
       color: inherit;
-      transition: padding-right 0.2s ease, border-color 0.2s ease;
+      transition: padding-right 0.2s ease, border-bottom-color 0.2s ease;
     }
 
-    .contact-row-link:hover {
+    .channel-row-link:hover {
       padding-right: 0.75rem;
-      border-bottom-color: var(--accent);
+      border-bottom-color: var(--accent-emerald);
     }
 
-    .contact-row-link .meta {
+    .channel-kicker {
       font-family: var(--font-mono);
       font-size: 0.72rem;
       color: var(--text-dim);
@@ -842,20 +891,20 @@
       gap: 0.5rem;
     }
 
-    .contact-row-link .dial {
+    .channel-value-display {
       font-family: var(--font-mono);
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: var(--text);
     }
 
-    .contact-row-link .hint {
+    .channel-sub-context {
       font-size: 0.82rem;
-      color: var(--accent);
+      color: var(--accent-emerald);
     }
 
-    .contact-auxiliary-block {
-      border: 1px solid var(--border);
+    .contact-regulatory-panel {
+      border: 1px solid var(--rule-subtle);
       background: var(--bg-surface);
       padding: 2.5rem;
       display: flex;
@@ -864,7 +913,7 @@
       gap: 2.5rem;
     }
 
-    .aux-title {
+    .regulatory-panel-title {
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-dim);
@@ -872,21 +921,21 @@
       letter-spacing: 0.05em;
     }
 
-    .aux-body {
+    .regulatory-panel-body {
       font-size: 0.95rem;
       color: var(--text-muted);
       line-height: 1.75;
     }
 
-    .aux-links-cluster {
+    .regulatory-links-list {
       display: flex;
       flex-direction: column;
       gap: 0.85rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--rule-subtle);
       padding-top: 1.5rem;
     }
 
-    .aux-links-cluster a {
+    .regulatory-links-list a {
       font-family: var(--font-mono);
       font-size: 0.82rem;
       color: var(--text);
@@ -897,19 +946,19 @@
       transition: color 0.2s ease;
     }
 
-    .aux-links-cluster a:hover {
-      color: var(--accent);
+    .regulatory-links-list a:hover {
+      color: var(--accent-emerald);
     }
 
-    .editorial-colophon {
-      border-top: 1px solid var(--border);
+    .dossier-colophon-footer {
+      border-top: 1px solid var(--rule-subtle);
       padding: 2.5rem 0;
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-dim);
     }
 
-    .colophon-grid {
+    .colophon-flex {
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -918,49 +967,49 @@
     }
 
     @media (min-width: 768px) {
-      .colophon-grid {
+      .colophon-flex {
         flex-direction: row;
         align-items: center;
       }
     }
 
-    .mobile-drawer-layer {
+    .mobile-drawer-stage {
       position: fixed;
       inset: 0;
-      background: rgba(9, 10, 13, 0.96);
+      background: rgba(11, 13, 16, 0.97);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      z-index: 200;
+      z-index: var(--z-drawer);
       display: flex;
       flex-direction: column;
       padding: 2rem;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.25s ease, visibility 0.25s ease;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
     }
 
-    .mobile-drawer-layer.open {
+    .mobile-drawer-stage.open {
       opacity: 1;
       visibility: visible;
     }
 
-    .drawer-top-bar {
+    .drawer-top-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--rule-subtle);
       padding-bottom: 1.5rem;
       margin-bottom: 3rem;
     }
 
-    .drawer-nav-list {
+    .drawer-menu-links {
       display: flex;
       flex-direction: column;
       gap: 2rem;
     }
 
-    .drawer-nav-item {
-      font-size: 1.5rem;
+    .drawer-menu-item {
+      font-size: 1.55rem;
       font-weight: 700;
       color: var(--text);
       text-decoration: none;
@@ -969,41 +1018,41 @@
       gap: 1rem;
     }
 
-    .drawer-nav-item .idx {
+    .drawer-menu-item .num {
       font-family: var(--font-mono);
       font-size: 0.9rem;
-      color: var(--accent);
+      color: var(--accent-emerald);
     }
 
     @media (max-width: 991px) {
-      .header-nav {
+      .header-index-nav {
         display: none;
       }
-      .mobile-btn {
+      .menu-toggle-btn {
         display: flex;
       }
     }
 
     @media (max-width: 576px) {
-      .wrap {
+      .dossier-wrap {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
       }
-      .hero-editorial-title {
-        font-size: 2.35rem;
+      .hero-monograph-title {
+        font-size: 2.5rem;
       }
-      .btn-solid, .btn-outline {
+      .btn-dossier-primary, .btn-dossier-secondary {
         width: 100%;
         justify-content: center;
       }
-      .spine-title {
-        font-size: 1.75rem;
+      .spine-header-title {
+        font-size: 1.8rem;
       }
-      .case-heading {
-        font-size: 1.5rem;
+      .case-title {
+        font-size: 1.6rem;
       }
-      .manifesto-callout {
-        font-size: 1.3rem;
+      .manifesto-lead-quote {
+        font-size: 1.35rem;
       }
     }
   </style>
@@ -1011,28 +1060,36 @@
 
 <body>
 
-  <header class="editorial-header" id="mainHeaderNode">
-    <div class="wrap header-grid">
+  <aside class="dossier-rail" id="dossierRailNode" aria-hidden="true">
+    <div class="rail-entry" data-rail-target="about"><span class="rail-line"></span><span>01 // BIO</span></div>
+    <div class="rail-entry" data-rail-target="projects"><span class="rail-line"></span><span>02 // CASE</span></div>
+    <div class="rail-entry" data-rail-target="experience"><span class="rail-line"></span><span>03 // HIST</span></div>
+    <div class="rail-entry" data-rail-target="capabilities"><span class="rail-line"></span><span>04 // SPEC</span></div>
+    <div class="rail-entry" data-rail-target="contact"><span class="rail-line"></span><span>05 // DIAL</span></div>
+  </aside>
+
+  <header class="dossier-header" id="dossierHeaderNode">
+    <div class="dossier-wrap header-layout">
       
-      <a href="#" class="brand-mark" aria-label="محمد أبو مسلم — العودة للأعلى">
-        <span class="brand-index mono">REF // MA</span>
-        <span class="brand-title">محمد أبو مسلم عبد المهدي</span>
+      <a href="#" class="brand-system" aria-label="محمد أبو مسلم — الصفحة الرئيسية">
+        <span class="brand-glyph">MA</span>
+        <span class="brand-label">محمد أبو مسلم عبد المهدي</span>
       </a>
 
-      <nav class="header-nav" aria-label="أقسام الملف المهني">
-        <a href="#about" class="nav-target"><span>01</span> النبذة</a>
-        <a href="#projects" class="nav-target"><span>02</span> المشروعات</a>
-        <a href="#experience" class="nav-target"><span>03</span> الخبرات</a>
-        <a href="#capabilities" class="nav-target"><span>04</span> الكفاءات</a>
-        <a href="#contact" class="nav-target"><span>05</span> الاتصال</a>
+      <nav class="header-index-nav" aria-label="أقسام الملف التوثيقي">
+        <a href="#about" class="index-nav-link"><span>01</span> النبذة</a>
+        <a href="#projects" class="index-nav-link"><span>02</span> المشروعات</a>
+        <a href="#experience" class="index-nav-link"><span>03</span> الخبرات</a>
+        <a href="#capabilities" class="index-nav-link"><span>04</span> الكفاءات</a>
+        <a href="#contact" class="index-nav-link"><span>05</span> الاتصال</a>
       </nav>
 
-      <div class="header-cta-group">
-        <a href="https://wa.me/966570532375" target="_blank" rel="noopener" class="btn-header">
-          <i class="fa-brands fa-whatsapp" style="color: var(--accent);"></i>
+      <div class="header-action-zone">
+        <a href="https://wa.me/966570532375" target="_blank" rel="noopener" class="btn-header-link">
+          <i class="fa-brands fa-whatsapp" style="color: var(--accent-emerald);"></i>
           <span>+966 57 053 2375</span>
         </a>
-        <button class="mobile-btn" id="drawerOpenBtn" aria-label="فتح القائمة">
+        <button class="menu-toggle-btn" id="drawerOpenTrigger" aria-label="فتح القائمة">
           <i class="fa-solid fa-bars-staggered"></i>
         </button>
       </div>
@@ -1040,85 +1097,85 @@
     </div>
   </header>
 
-  <div class="mobile-drawer-layer" id="mobileDrawerLayerNode">
-    <div class="drawer-top-bar">
-      <span class="mono" style="color: var(--accent); font-size: 0.85rem;">INDEX NAVIGATION</span>
-      <button class="mobile-btn" id="drawerCloseBtn" aria-label="إغلاق القائمة">
+  <div class="mobile-drawer-stage" id="mobileDrawerStageNode">
+    <div class="drawer-top-row">
+      <span class="mono" style="color: var(--accent-emerald); font-size: 0.85rem;">SYSTEM NAVIGATION</span>
+      <button class="menu-toggle-btn" id="drawerCloseTrigger" aria-label="إغلاق القائمة">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-    <div class="drawer-nav-list">
-      <a href="#about" class="drawer-nav-item drawer-link"><span class="idx">01</span><span>النبذة والتموضع</span></a>
-      <a href="#projects" class="drawer-nav-item drawer-link"><span class="idx">02</span><span>المشروعات والنظم المطورة</span></a>
-      <a href="#experience" class="drawer-nav-item drawer-link"><span class="idx">03</span><span>المسار المهني والشركات</span></a>
-      <a href="#capabilities" class="drawer-nav-item drawer-link"><span class="idx">04</span><span>منظومة الكفاءات التقنية</span></a>
-      <a href="#contact" class="drawer-nav-item drawer-link"><span class="idx">05</span><span>قنوات الاتصال المباشر</span></a>
+    <div class="drawer-menu-links">
+      <a href="#about" class="drawer-menu-item drawer-action-link"><span class="num">01</span><span>النبذة المعمارية</span></a>
+      <a href="#projects" class="drawer-menu-item drawer-action-link"><span class="num">02</span><span>سجل المشروعات والنظم</span></a>
+      <a href="#experience" class="drawer-menu-item drawer-action-link"><span class="num">03</span><span>المسار المهني للشركات</span></a>
+      <a href="#capabilities" class="drawer-menu-item drawer-action-link"><span class="num">04</span><span>منظومة الكفاءات الفنية</span></a>
+      <a href="#contact" class="drawer-menu-item drawer-action-link"><span class="num">05</span><span>الاتصال والقنوات المفتوحة</span></a>
     </div>
   </div>
 
   <main>
 
-    <section class="editorial-hero" id="hero">
-      <div class="wrap">
+    <section class="dossier-hero" id="hero">
+      <div class="dossier-wrap">
         
-        <div class="hero-meta-row">
-          <span class="live-tag mono">جاهزية للتعاقد والمشاريع الاستراتيجية</span>
+        <div class="hero-pre-coordinate">
+          <span class="active-status mono">جاهزية كاملة للمشاريع الاستراتيجية والتعاقدات</span>
           <span class="mono en">LOC: AL MADINAH, KSA</span>
           <span class="mono">DOSSIER // 2026</span>
         </div>
 
-        <h1 class="hero-editorial-title">
+        <h1 class="hero-monograph-title">
           محمد أبو مسلم
-          <span class="sub-name">عبد المهدي</span>
+          <span class="secondary-part">عبد المهدي</span>
         </h1>
 
-        <div class="hero-editorial-grid">
+        <div class="hero-split-architectural">
           
           <div>
             <p class="hero-statement-lead">
               أخصائي إدارة وضبط الوثائق الهندسية (Document Controller)، ومطور حلول الأتمتة المخصصة ونظم Google Apps Script للمشاريع الكبرى والمنشآت الصناعية.
             </p>
-            <p class="hero-statement-body">
+            <p class="hero-statement-extended">
               أعمل في نقطة التقاء فريدة تجمع بين الدقة الرقابية الصارمة المطلوبة في إدارة وثائق المشاريع الهندسية (Document Control) والامتثال للمواصفات، وبين هندسة الحلول البرمجية وتطوير بيئات العمل السحابية. قمت بتحويل مسارات العمل الورقية والبيانات المعقدة في قطاعات المقاولات والصناعة إلى نظم مؤتمتة متكاملة، مستهدفاً خفض الأخطاء التشغيلية وتسريع زمن اتخاذ القرار الإداري والفني بدقة متناهية.
             </p>
-            <div class="hero-actions">
+            <div class="hero-cta-cluster">
               <a href="https://wa.me/966570532375?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%81%D8%B1%D8%B5%D8%A9%20%D8%B9%D9%85%D9%84%20/%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9." 
-                 target="_blank" rel="noopener" class="btn-solid">
+                 target="_blank" rel="noopener" class="btn-dossier-primary">
                 <i class="fa-brands fa-whatsapp"></i>
-                <span>محادثة واتساب (المملكة العربية السعودية)</span>
+                <span>محادثة واتساب مباشرة (السعودية)</span>
               </a>
-              <a href="#projects" class="btn-outline">
+              <a href="#projects" class="btn-dossier-secondary">
                 <span>استعراض المشروعات</span>
                 <i class="fa-solid fa-arrow-down-long" style="font-size: 0.8rem;"></i>
               </a>
             </div>
           </div>
 
-          <aside class="hero-sidebar-dossier">
+          <aside class="hero-spec-sidebar">
             
-            <div class="dossier-entry">
-              <span class="label">المقر المهني الحالي</span>
-              <span class="value">المدينة المنورة، المملكة العربية السعودية</span>
+            <div class="spec-item">
+              <span class="spec-kicker">المقر المهني الحالي</span>
+              <span class="spec-content">المدينة المنورة، المملكة العربية السعودية</span>
             </div>
 
-            <div class="dossier-entry">
-              <span class="label">التخصص المحوري الأول</span>
-              <span class="value">إدارة الوثائق الهندسية والمراسلات (EDMS)</span>
+            <div class="spec-item">
+              <span class="spec-kicker">المحور المهني الأول</span>
+              <span class="spec-content">إدارة الوثائق الهندسية والمراسلات (EDMS)</span>
             </div>
 
-            <div class="dossier-entry">
-              <span class="label">التخصص المحوري الثاني</span>
-              <span class="value">تطوير تطبيقات Google Apps Script والأتمتة</span>
+            <div class="spec-item">
+              <span class="spec-kicker">المحور المهني الثاني</span>
+              <span class="spec-content">هندسة الأتمتة وحلول Google Apps Script</span>
             </div>
 
-            <div class="dossier-entry">
-              <span class="label">الأثر التشغيلي المسجل</span>
-              <span class="value-mono">خفض زمن استرجاع الوثائق بنسبة 60%</span>
+            <div class="spec-item">
+              <span class="spec-kicker">معدل تسريع استرجاع الوثائق</span>
+              <span class="spec-metric">رفع السرعة بنسبة 60%</span>
             </div>
 
-            <div class="dossier-entry">
-              <span class="label">معدل خفض الخطأ اليدوي</span>
-              <span class="value-mono">تقليص أخطاء إدخال البيانات بنسبة 40%</span>
+            <div class="spec-item">
+              <span class="spec-kicker">معدل تقليص الأخطاء اليدوية</span>
+              <span class="spec-metric">خفض الأخطاء بنسبة 40%</span>
             </div>
 
           </aside>
@@ -1128,26 +1185,26 @@
       </div>
     </section>
 
-    <section class="editorial-section" id="about">
-      <div class="wrap">
+    <section class="dossier-section" id="about">
+      <div class="dossier-wrap">
         
         <header class="section-spine-header">
-          <span class="spine-index">01 //</span>
-          <div class="spine-title-wrap">
-            <h2 class="spine-title">النبذة والتموضع المهني</h2>
-            <span class="spine-lead">حوكمة دورات المستندات ورقمنة بيئات العمل المعقدة</span>
+          <span class="spine-code">01 //</span>
+          <div>
+            <h2 class="spine-header-title">النبذة والتموضع المهني</h2>
+            <div class="spine-header-subtitle">حوكمة دورات المستندات ورقمنة بيئات العمل المعقدة</div>
           </div>
         </header>
 
-        <div class="about-editorial-layout">
+        <div class="manifesto-editorial-grid">
           
           <div>
-            <blockquote class="manifesto-callout">
+            <blockquote class="manifesto-lead-quote">
               "التحول الرقمي الرصين لا يعني مجرد استبدال الأوراق بنسخ ممسوحة، بل إعادة هندسة مسار المستند ليعمل ذاتياً بنظام تدقيق صارم يضمن عدم ضياع أي اعتماد."
             </blockquote>
           </div>
 
-          <div class="about-narrative-columns">
+          <div class="manifesto-body-prose">
             <p>
               أمتلك خبرة عملية متخصصة في إدارة منظومات الوثائق الهندسية للمشاريع الكبرى، بدءاً من حزم اعتمادات المواد (Material Submittals) ومخططات الورشة التنفيذية (Shop Drawings)، وصولاً إلى طلبات الفحص (IRs) وطلبات الاستفسار الفني (RFIs). أضمن من خلال السجلات الموثوقة (Master Logs) الالتزام التام بالمواصفات الفنية والمتطلبات الاستشارية وجداول التسليم.
             </p>
@@ -1161,154 +1218,154 @@
       </div>
     </section>
 
-    <section class="editorial-section" id="projects">
-      <div class="wrap">
+    <section class="dossier-section" id="projects">
+      <div class="dossier-wrap">
         
         <header class="section-spine-header">
-          <span class="spine-index">02 //</span>
-          <div class="spine-title-wrap">
-            <h2 class="spine-title">معرض النظم والمشروعات</h2>
-            <span class="spine-lead">حلول برمجية وأنظمة حقيقية بُنيت للعمل تحت ظروف التشغيل الفعلية</span>
+          <span class="spine-code">02 //</span>
+          <div>
+            <h2 class="spine-header-title">معرض النظم والمشروعات</h2>
+            <div class="spine-header-subtitle">حلول برمجية وأنظمة حقيقية بُنيت للعمل تحت ظروف التشغيل الفعلية</div>
           </div>
         </header>
 
-        <div class="case-exhibition">
+        <div class="case-sequence-stack">
           
-          <article class="case-study">
-            <div class="case-meta-spine">
-              <span class="case-num">CASE // 01</span>
-              <span class="case-category">Enterprise Cloud Platform</span>
-              <ul class="case-details-list">
+          <article class="case-unit">
+            <div class="case-identity-rail">
+              <span class="case-index-indicator">CASE // 01</span>
+              <span class="case-category-tag">Enterprise Cloud Platform</span>
+              <ul class="case-meta-spec-list">
                 <li><span>الجهة / البيئة</span>الشركة المصرية لمستحضرات التجميل (ECC)[cite: 7]</li>
                 <li><span>النوع</span>نظام إدارة إنتاج سحابي متكامل[cite: 7]</li>
                 <li><span>الفترة</span>2025 - 2026[cite: 7]</li>
               </ul>
             </div>
-            <div class="case-content-core">
-              <h3 class="case-heading">منظومة إدارة الإنتاج والتحول السحابي (ECC Production System)[cite: 7]</h3>
-              <p class="case-lead">
+            <div class="case-narrative-zone">
+              <h3 class="case-title">منظومة إدارة الإنتاج والتحول السحابي (ECC Production System)[cite: 7]</h3>
+              <p class="case-summary">
                 هندسة وبناء نظام ويب كامل بالاعتماد على Google Apps Script وJavaScript، ينقل كافة مسارات العمل الورقية وسجلات التصنيع إلى بيئة سحابية تفاعلية[cite: 7].
               </p>
-              <div class="case-problem-solution">
+              <div class="case-problem-solution-box">
                 <p><strong>التحدي التشغيلي:</strong> الاعتماد على الدفاتر الورقية وجداول الإدخال اليدوية المشتتة، مما كان يسبب تأخيراً في تقارير خطوط الإنتاج وأخطاء في جرد الخامات وتتبع المستلزمات[cite: 7].</p>
                 <p><strong>الحل الهندسي:</strong> بناء تطبيق ويب تفاعلي يعتمد على Google Sheets كقاعدة بيانات علائقية مركزية، مع أتمتة أوامر الصرف، تنبيهات البريد الإلكتروني الفورية للإدارة، وتوليد التقارير الإحصائية التلقائية[cite: 7].</p>
               </div>
             </div>
-            <div class="case-technical-footprint">
+            <div class="case-system-footprint">
               <div>
-                <span class="footprint-title">المعمارية البرمجية</span>
-                <div class="footprint-stack" style="margin-top: 0.75rem;">
+                <span class="footprint-header">المعمارية البرمجية</span>
+                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
                   <span>- Google Apps Script (Backend)[cite: 7]</span>
                   <span>- JavaScript & HTML5 UI[cite: 7]</span>
                   <span>- Google Workspace APIs[cite: 7]</span>
                   <span>- Dynamic Sheets DB[cite: 7]</span>
                 </div>
               </div>
-              <div class="footprint-impact">
+              <div class="footprint-metric-zone">
                 <strong>-40%</strong>
                 انخفاض مباشر في أخطاء الإدخال مع توفير جاهزية تشغيلية مستمرة بنسبة 100%[cite: 7].
               </div>
             </div>
           </article>
 
-          <article class="case-study">
-            <div class="case-meta-spine">
-              <span class="case-num">CASE // 02</span>
-              <span class="case-category">Engineering Document Management</span>
-              <ul class="case-details-list">
+          <article class="case-unit">
+            <div class="case-identity-rail">
+              <span class="case-index-indicator">CASE // 02</span>
+              <span class="case-category-tag">Engineering Document Management</span>
+              <ul class="case-meta-spec-list">
                 <li><span>الجهة / المشروع</span>ماس للهندسة والإنشاء — منتجع سياحي بالساحل الشمالي[cite: 7]</li>
                 <li><span>النوع</span>نظام الأرشفة الرقمية والبحث الهندسي الموجه[cite: 7]</li>
                 <li><span>الفترة</span>2021 - 2023[cite: 7]</li>
               </ul>
             </div>
-            <div class="case-content-core">
-              <h3 class="case-heading">نظام الأرشفة الرقمية والبحث الهندسي الموجه (Digital Archive System)[cite: 7]</h3>
-              <p class="case-lead">
+            <div class="case-narrative-zone">
+              <h3 class="case-title">نظام الأرشفة الرقمية والبحث الهندسي الموجه (Digital Archive System)[cite: 7]</h3>
+              <p class="case-summary">
                 تصميم نظام تتبع وأرشفة متقدم لرقمنة وفهرسة آلاف المخططات الهندسية وحزم المراسلات التنفيذية لمشروع سياحي متكامل بمدينة سيدي عبد الرحمن[cite: 7].
               </p>
-              <div class="case-problem-solution">
+              <div class="case-problem-solution-box">
                 <p><strong>التحدي التشغيلي:</strong> بطء استرجاع النسخ المعتمدة من المخططات والعقود الورقية للمقاولين، وتعدد إصدارات المخططات التنفيذية مما هدد بحدوث أخطاء ميدانية[cite: 7].</p>
                 <p><strong>الحل الهندسي:</strong> إنشاء قاعدة بيانات أرشفة ذكية مبنية عبر تقنيات الإكسل المتقدمة وبرمجة الماكرو (VBA)، تتيح الاستعلام الفوري برقم المخطط أو الكود وتمنع تداول النسخ الملغاة[cite: 7].</p>
               </div>
             </div>
-            <div class="case-technical-footprint">
+            <div class="case-system-footprint">
               <div>
-                <span class="footprint-title">المعمارية والأدوات</span>
-                <div class="footprint-stack" style="margin-top: 0.75rem;">
+                <span class="footprint-header">المعمارية والأدوات</span>
+                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
                   <span>- Advanced MS Excel & VBA[cite: 7]</span>
                   <span>- Structured Master Logs[cite: 7]</span>
                   <span>- Drawing Indexing System[cite: 7]</span>
                   <span>- Submittal Workflows[cite: 7]</span>
                 </div>
               </div>
-              <div class="footprint-impact">
+              <div class="footprint-metric-zone">
                 <strong>+60%</strong>
                 زيادة في سرعة استرجاع الوثائق مع رقمنة كاملة لأكثر من 1,000 عقد ومخطط هندسي[cite: 7].
               </div>
             </div>
           </article>
 
-          <article class="case-study">
-            <div class="case-meta-spine">
-              <span class="case-num">CASE // 03</span>
-              <span class="case-category">Artificial Intelligence Platform</span>
-              <ul class="case-details-list">
+          <article class="case-unit">
+            <div class="case-identity-rail">
+              <span class="case-index-indicator">CASE // 03</span>
+              <span class="case-category-tag">Artificial Intelligence Platform</span>
+              <ul class="case-meta-spec-list">
                 <li><span>المشروع</span>منصة إتقان للذكاء الاصطناعي (Itqan AI)[cite: 7]</li>
                 <li><span>النوع</span>بوابة تفاعلية ذكية للتعلم ومعالجة النصوص[cite: 7]</li>
                 <li><span>التقنية</span>نماذج الذكاء الاصطناعي وواجهات الويب[cite: 7]</li>
               </ul>
             </div>
-            <div class="case-content-core">
-              <h3 class="case-heading">منصة إتقان الذكية (Itqan AI Platform)[cite: 7]</h3>
-              <p class="case-lead">
+            <div class="case-narrative-zone">
+              <h3 class="case-title">منصة إتقان الذكية (Itqan AI Platform)[cite: 7]</h3>
+              <p class="case-summary">
                 تطوير منصة ويب متطورة توظف تقنيات الذكاء الاصطناعي التوليدي لتقديم حلول تعلم ذكية، وتحليل واستخلاص البيانات من النصوص العربية بكفاءة عالية[cite: 7].
               </p>
-              <div class="case-problem-solution">
+              <div class="case-problem-solution-box">
                 <p><strong>الهدف:</strong> توفير بيئة تفاعلية للباحثين والطلاب تمكنهم من استرجاع المعلومات وتحليل الوثائق بطريقة مرنة وتفاعلية[cite: 7].</p>
               </div>
             </div>
-            <div class="case-technical-footprint">
+            <div class="case-system-footprint">
               <div>
-                <span class="footprint-title">المعمارية البرمجية</span>
-                <div class="footprint-stack" style="margin-top: 0.75rem;">
+                <span class="footprint-header">المعمارية البرمجية</span>
+                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
                   <span>- AI Models Integration[cite: 7]</span>
                   <span>- Prompt Engineering[cite: 7]</span>
                   <span>- Modern Web UI Engine[cite: 7]</span>
                 </div>
               </div>
-              <div class="footprint-impact">
+              <div class="footprint-metric-zone">
                 <strong>Intelligent Flow</strong>
                 معالجة وتصنيف فوري للنصوص عبر واجهة استخدام متجاوبة وسريعة الاستجابة[cite: 7].
               </div>
             </div>
           </article>
 
-          <article class="case-study">
-            <div class="case-meta-spine">
-              <span class="case-num">CASE // 04</span>
-              <span class="case-category">Social & Operations Platforms</span>
-              <ul class="case-details-list">
+          <article class="case-unit">
+            <div class="case-identity-rail">
+              <span class="case-index-indicator">CASE // 04</span>
+              <span class="case-category-tag">Social & Operations Platforms</span>
+              <ul class="case-meta-spec-list">
                 <li><span>المشروعات</span>تبرع (Tabarra') & نقوط (Noqoot)[cite: 7]</li>
                 <li><span>النوع</span>تطبيقات ويب لقواعد البيانات الديناميكية والمطابقة[cite: 7]</li>
                 <li><span>المجال</span>منصات إنسانية وتنظيمية[cite: 7]</li>
               </ul>
             </div>
-            <div class="case-content-core">
-              <h3 class="case-heading">منظومتا (تبرع) الإنسانية و(نقوط) للمطابقة المالية[cite: 7]</h3>
-              <p class="case-lead">
+            <div class="case-narrative-zone">
+              <h3 class="case-title">منظومتا (تبرع) الإنسانية و(نقوط) للمطابقة المالية[cite: 7]</h3>
+              <p class="case-summary">
                 ابتكار منصتين متكاملتين؛ الأولى لربط المتبرعين بالدم بالحالات الطبية الحرجة وفق التوزيع الجغرافي[cite: 7]، والثانية لتوثيق وتتبع المساهمات المالية في الفعاليات الاجتماعية رقمياً مستبدلة القيود الورقية[cite: 7].
               </p>
             </div>
-            <div class="case-technical-footprint">
+            <div class="case-system-footprint">
               <div>
-                <span class="footprint-title">الركائز التقنية</span>
-                <div class="footprint-stack" style="margin-top: 0.75rem;">
+                <span class="footprint-header">الركائز التقنية</span>
+                <div class="footprint-tags-list" style="margin-top: 0.75rem;">
                   <span>- Dynamic Database Matching[cite: 7]</span>
                   <span>- Ledger Audit & Reconciliation[cite: 7]</span>
                   <span>- Zero-Paper Tracking[cite: 7]</span>
                 </div>
               </div>
-              <div class="footprint-impact">
+              <div class="footprint-metric-zone">
                 <strong>Real-Time Sync</strong>
                 مطابقة رقمية فورية وآمنة للبيانات تقلل الاعتماد على السجلات اليدوية[cite: 7].
               </div>
@@ -1320,91 +1377,91 @@
       </div>
     </section>
 
-    <section class="editorial-section" id="experience">
-      <div class="wrap">
+    <section class="dossier-section" id="experience">
+      <div class="dossier-wrap">
         
         <header class="section-spine-header">
-          <span class="spine-index">03 //</span>
-          <div class="spine-title-wrap">
-            <h2 class="spine-title">سجل الخبرات والمسار المهني</h2>
-            <span class="spine-lead">محطات العمل في كبرى المؤسسات الهندسية والمقاولات والمنشآت الصناعية</span>
+          <span class="spine-code">03 //</span>
+          <div>
+            <h2 class="spine-header-title">سجل الخبرات والمسار المهني</h2>
+            <div class="spine-header-subtitle">محطات العمل في كبرى المؤسسات الهندسية والمقاولات والمنشآت الصناعية</div>
           </div>
         </header>
 
-        <div class="career-editorial-feed">
+        <div class="career-monograph-list">
           
-          <div class="career-row">
-            <div class="career-period">
+          <div class="career-monograph-entry">
+            <div class="career-timeframe">
               <span class="en">2026 — PRESENT</span>
-              <span class="location">المدينة المنورة، المملكة العربية السعودية</span>
+              <span class="locality">المدينة المنورة، المملكة العربية السعودية</span>
             </div>
-            <div class="career-role-block">
-              <h3 class="career-role-title">Document Controller & Technical Admin</h3>
-              <span class="career-company-name">شركة أنساب للمقاولات العامة (Ansb General Contracting)</span>
-              <div class="career-tags">
-                <span class="career-tag-item">Downtown Medina Project</span>
-                <span class="career-tag-item">Submittal Master Logs</span>
-                <span class="career-tag-item">Consultant Correspondence</span>
+            <div>
+              <h3 class="career-primary-title">Document Controller & Technical Admin</h3>
+              <div class="career-firm-name">شركة أنساب للمقاولات العامة (Ansb General Contracting)</div>
+              <div class="career-focus-tags">
+                <span class="career-focus-tag">Downtown Medina Project</span>
+                <span class="career-focus-tag">Submittal Master Logs</span>
+                <span class="career-focus-tag">Consultant Correspondence</span>
               </div>
             </div>
-            <div class="career-narrative-summary">
+            <div class="career-duties-prose">
               إدارة وضبط منظومة الوثائق والمراسلات الفنية لمشروع تطوير داون تاون المدينة برعاية شركة أنساب للمقاولات العامة. الإشراف الكامل على دورات تقديم العينات واعتمادات المواد وفحوصات الموقع وتنسيق الموافقات مع الاستشاري لضمان الامتثال التام.
             </div>
           </div>
 
-          <div class="career-row">
-            <div class="career-period">
+          <div class="career-monograph-entry">
+            <div class="career-timeframe">
               <span class="en">02/2025 — 2026[cite: 7]</span>
-              <span class="location">جمصة، مصر[cite: 7]</span>
+              <span class="locality">جمصة، مصر[cite: 7]</span>
             </div>
-            <div class="career-role-block">
-              <h3 class="career-role-title">Google Apps Script Developer & Automation Specialist[cite: 7]</h3>
-              <span class="career-company-name">الشركة المصرية لمستحضرات التجميل (ECC)[cite: 7]</span>
-              <div class="career-tags">
-                <span class="career-tag-item">Cloud Architecture[cite: 7]</span>
-                <span class="career-tag-item">Web Applications[cite: 7]</span>
-                <span class="career-tag-item">Workflow Optimization[cite: 7]</span>
+            <div>
+              <h3 class="career-primary-title">Google Apps Script Developer & Automation Specialist[cite: 7]</h3>
+              <div class="career-firm-name">الشركة المصرية لمستحضرات التجميل (ECC)[cite: 7]</div>
+              <div class="career-focus-tags">
+                <span class="career-focus-tag">Cloud Architecture[cite: 7]</span>
+                <span class="career-focus-tag">Web Applications[cite: 7]</span>
+                <span class="career-focus-tag">Workflow Optimization[cite: 7]</span>
               </div>
             </div>
-            <div class="career-narrative-summary">
+            <div class="career-duties-prose">
               ابتكار وهندسة نظام إدارة الإنتاج الشامل، وتحويل العمليات الصناعية والمخزنية الورقية إلى منظومة سحابية متقدمة تعتمد على Google Sheets كقاعدة بيانات، مما خفض نسبة أخطاء الإدخال بمقدار 40%[cite: 7].
             </div>
           </div>
 
-          <div class="career-row">
-            <div class="career-period">
+          <div class="career-monograph-entry">
+            <div class="career-timeframe">
               <span class="en">02/2021 — 01/2023[cite: 7]</span>
-              <span class="location">الساحل الشمالي، مصر[cite: 7]</span>
+              <span class="locality">الساحل الشمالي، مصر[cite: 7]</span>
             </div>
-            <div class="career-role-block">
-              <h3 class="career-role-title">Document Controller[cite: 7]</h3>
-              <span class="career-company-name">ماس للهندسة والإنشاء (Mass Engineering & Construction)[cite: 7]</span>
-              <div class="career-tags">
-                <span class="career-tag-item">Coastal Resort Project[cite: 7]</span>
-                <span class="career-tag-item">RFIs & Drawings[cite: 7]</span>
-                <span class="career-tag-item">Digital Archive System[cite: 7]</span>
+            <div>
+              <h3 class="career-primary-title">Document Controller[cite: 7]</h3>
+              <div class="career-firm-name">ماس للهندسة والإنشاء (Mass Engineering & Construction)[cite: 7]</div>
+              <div class="career-focus-tags">
+                <span class="career-focus-tag">Coastal Resort Project[cite: 7]</span>
+                <span class="career-focus-tag">RFIs & Drawings[cite: 7]</span>
+                <span class="career-focus-tag">Digital Archive System[cite: 7]</span>
               </div>
             </div>
-            <div class="career-narrative-summary">
+            <div class="career-duties-prose">
               إدارة وتوثيق وأرشفة مستندات ومخططات المشروع لمنتجع سياحي بمدينة سيدي عبد الرحمن[cite: 7]. تطوير نظام أرشفة رقمي ذكي عبر إكسل المتطور أدى إلى رقمنة وتصنيف أكثر من 1,000 عقد ومخطط ورفع سرعة استرجاع الملفات بنسبة 60%[cite: 7].
             </div>
           </div>
 
-          <div class="career-row">
-            <div class="career-period">
+          <div class="career-monograph-entry">
+            <div class="career-timeframe">
               <span class="en">01/2023 — 03/2024[cite: 7]</span>
-              <span class="location">كفر الأطرش، مصر[cite: 7]</span>
+              <span class="locality">كفر الأطرش، مصر[cite: 7]</span>
             </div>
-            <div class="career-role-block">
-              <h3 class="career-role-title">Showroom Operations & Systems Manager[cite: 7]</h3>
-              <span class="career-company-name">معرض محسن شبكة للأجهزة المنزلية[cite: 7]</span>
-              <div class="career-tags">
-                <span class="career-tag-item">Inventory Control[cite: 7]</span>
-                <span class="career-tag-item">Financial Analysis[cite: 7]</span>
-                <span class="career-tag-item">Advanced Excel[cite: 7]</span>
+            <div>
+              <h3 class="career-primary-title">Showroom Operations & Systems Manager[cite: 7]</h3>
+              <div class="career-firm-name">معرض محسن شبكة للأجهزة المنزلية[cite: 7]</div>
+              <div class="career-focus-tags">
+                <span class="career-focus-tag">Inventory Control[cite: 7]</span>
+                <span class="career-focus-tag">Financial Analysis[cite: 7]</span>
+                <span class="career-focus-tag">Advanced Excel[cite: 7]</span>
               </div>
             </div>
-            <div class="career-narrative-summary">
+            <div class="career-duties-prose">
               قيادة العمليات التشغيلية، ومراقبة المخزون، وتتبع المبيعات والتسويات المالية اليومية باستخدام نماذج تحليل البيانات المتقدمة في إكسل[cite: 7].
             </div>
           </div>
@@ -1414,26 +1471,26 @@
       </div>
     </section>
 
-    <section class="editorial-section" id="capabilities">
-      <div class="wrap">
+    <section class="dossier-section" id="capabilities">
+      <div class="dossier-wrap">
         
         <header class="section-spine-header">
-          <span class="spine-index">04 //</span>
-          <div class="spine-title-wrap">
-            <h2 class="spine-title">منظومة الكفاءات المعمارية</h2>
-            <span class="spine-lead">الأدوات التقنية والمنهجيات الهندسية المعتمدة في تنفيذ المشروعات</span>
+          <span class="spine-code">04 //</span>
+          <div>
+            <h2 class="spine-header-title">منظومة الكفاءات المعمارية</h2>
+            <div class="spine-header-subtitle">الأدوات التقنية والمنهجيات الهندسية المعتمدة في تنفيذ المشروعات</div>
           </div>
         </header>
 
-        <div class="capabilities-triad">
+        <div class="capabilities-architectural-grid">
           
-          <div class="capability-column">
-            <span class="cap-num">01 // DOMAIN</span>
-            <h3 class="cap-heading">إدارة الوثائق الهندسية (EDMS)</h3>
-            <p class="cap-body">
+          <div class="capability-domain-column">
+            <span class="capability-code">01 // DOMAIN</span>
+            <h3 class="capability-name">إدارة الوثائق الهندسية (EDMS)</h3>
+            <p class="capability-description">
               حوكمة الدورة المستندية وضمان التدفق المنضبط للمراسلات بين الإدارة ومقاولي الباطن والاستشاريين وفق كودات وضوابط المشروع.
             </p>
-            <ul class="cap-points">
+            <ul class="capability-bullets">
               <li>سجلات التقديمات الفنية (Submittal Logs)</li>
               <li>طلبات الاستفسار الفني للموقع (RFIs)</li>
               <li>طلبات الفحص والاستلام (IRs / MIRs)</li>
@@ -1441,13 +1498,13 @@
             </ul>
           </div>
 
-          <div class="capability-column">
-            <span class="cap-num">02 // DOMAIN</span>
-            <h3 class="cap-heading">الأتمتة وتطوير تطبيقات السحاب</h3>
-            <p class="cap-body">
+          <div class="capability-domain-column">
+            <span class="capability-code">02 // DOMAIN</span>
+            <h3 class="capability-name">الأتمتة وتطوير تطبيقات السحاب</h3>
+            <p class="capability-description">
               بناء أدوات وتطبيقات برمجية تربط منظومة Google Workspace وتلغي العمليات الورقية اليدوية في تسجيل ومطابقة البيانات.
             </p>
-            <ul class="cap-points">
+            <ul class="capability-bullets">
               <li>Google Apps Script (مستوى خبير ومتقدم)[cite: 7]</li>
               <li>تطوير Web Apps تعتمد على جداول البيانات كقواعد بيانات</li>
               <li>تكامل Webhooks وأتمتة روبوتات Telegram</li>
@@ -1455,13 +1512,13 @@
             </ul>
           </div>
 
-          <div class="capability-column">
-            <span class="cap-num">03 // DOMAIN</span>
-            <h3 class="cap-heading">هندسة البيانات والبرمجة النصية</h3>
-            <p class="cap-body">
+          <div class="capability-domain-column">
+            <span class="capability-code">03 // DOMAIN</span>
+            <h3 class="capability-name">هندسة البيانات والبرمجة النصية</h3>
+            <p class="capability-description">
               تحليل وتدقيق السجلات الضخمة، واستخلاص النصوص من الملفات، وضبط البنية التحتية لتراخيص البرمجيات الهندسية.
             </p>
-            <ul class="cap-points">
+            <ul class="capability-bullets">
               <li>إكسل المتقدم، Power Query، وبرمجة الماكرو VBA[cite: 7]</li>
               <li>سكريبتات Python لاستخراج النصوص وفصل حزم الـ PDF</li>
               <li>إدارة خوادم تراخيص الشبكات الهندسية (AutoCAD LMTOOLS)</li>
@@ -1474,62 +1531,62 @@
       </div>
     </section>
 
-    <section class="editorial-contact-stage" id="contact">
-      <div class="wrap">
+    <section class="dossier-contact-stage" id="contact">
+      <div class="dossier-wrap">
         
-        <div class="contact-editorial-grid">
+        <div class="contact-monograph-grid">
           
           <div>
-            <h2 class="contact-headline">
+            <h2 class="contact-primary-headline">
               جاهز للبدء في حوكمة وثائق مشاريعكم وأتمتة منظومتكم
             </h2>
             <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; font-weight: 300;">
               متاح لمناقشة فرص التعاقد لإدارة منظومات الوثائق الهندسية للمشاريع الكبرى في المملكة العربية السعودية، أو لتصميم وتطوير نظم أتمتة مخصصة لمؤسستكم.
             </p>
 
-            <div class="contact-direct-channels">
+            <div class="contact-open-channels">
               
               <a href="https://wa.me/966570532375?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%81%D8%B1%D8%B5%D8%A9%20%D8%B9%D9%85%D9%84%20/%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9." 
-                 target="_blank" rel="noopener" class="contact-row-link">
-                <span class="meta">
-                  <i class="fa-brands fa-whatsapp" style="color: var(--accent);"></i>
+                 target="_blank" rel="noopener" class="channel-row-link">
+                <span class="channel-kicker">
+                  <i class="fa-brands fa-whatsapp" style="color: var(--accent-emerald);"></i>
                   <span>واتساب مباشر — المملكة العربية السعودية (المقر الحالي)</span>
                 </span>
-                <span class="dial en">+966 57 053 2375</span>
-                <span class="hint">محادثة فورية مع محمد أبو مسلم</span>
+                <span class="channel-value-display en">+966 57 053 2375</span>
+                <span class="channel-sub-context">محادثة فورية مباشرة</span>
               </a>
 
               <a href="https://wa.me/201063864546?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20/%20%D8%A3%D8%AA%D9%85%D8%AA%D8%A9." 
-                 target="_blank" rel="noopener" class="contact-row-link">
-                <span class="meta">
-                  <i class="fa-brands fa-whatsapp" style="color: var(--accent);"></i>
+                 target="_blank" rel="noopener" class="channel-row-link">
+                <span class="channel-kicker">
+                  <i class="fa-brands fa-whatsapp" style="color: var(--accent-emerald);"></i>
                   <span>واتساب وهاتف مباشر — جمهورية مصر العربية</span>
                 </span>
-                <span class="dial en">+20 106 386 4546</span>
-                <span class="hint">اتصال ومراسلة مباشرة</span>
+                <span class="channel-value-display en">+20 106 386 4546</span>
+                <span class="channel-sub-context">اتصال ومراسلة مباشرة</span>
               </a>
 
-              <a href="mailto:mohamedabomosalam96@gmail.com" class="contact-row-link">
-                <span class="meta">
-                  <i class="fa-regular fa-envelope" style="color: var(--accent);"></i>
+              <a href="mailto:mohamedabomosalam96@gmail.com" class="channel-row-link">
+                <span class="channel-kicker">
+                  <i class="fa-regular fa-envelope" style="color: var(--accent-emerald);"></i>
                   <span>البريد الإلكتروني المهني</span>
                 </span>
-                <span class="dial en" style="font-size: 1rem;">mohamedabomosalam96@gmail.com</span>
-                <span class="hint">استقبال المستندات الرسمية ومراسلات العمل</span>
+                <span class="channel-value-display en" style="font-size: 1.05rem;">mohamedabomosalam96@gmail.com</span>
+                <span class="channel-sub-context">استقبال المستندات الرسمية ومراسلات العمل</span>
               </a>
 
             </div>
           </div>
 
-          <aside class="contact-auxiliary-block">
+          <aside class="contact-regulatory-panel">
             <div>
-              <span class="aux-title">ملاحظة تنظيمية للجهات المهنية</span>
-              <p class="aux-body" style="margin-top: 1rem;">
+              <span class="regulatory-panel-title">ملاحظة تنظيمية للجهات المهنية</span>
+              <p class="regulatory-panel-body" style="margin-top: 1rem;">
                 يتم الرد على المراسلات والاستفسارات المتعلقة بالمشاريع الهندسية وطلبات النظم المؤتمتة بصورة فورية ومباشرة عبر قنوات الواتساب الموضحة.
               </p>
             </div>
-            <div class="aux-links-cluster">
-              <span class="aux-title">القنوات الرقمية الإضافية</span>
+            <div class="regulatory-links-list">
+              <span class="regulatory-panel-title">القنوات الرقمية الإضافية</span>
               <a href="https://github.com/salama-bot" target="_blank" rel="noopener" class="en">
                 <i class="fa-brands fa-github"></i>
                 <span>github.com/salama-bot</span>
@@ -1544,38 +1601,64 @@
 
   </main>
 
-  <footer class="editorial-colophon">
-    <div class="wrap colophon-grid">
+  <footer class="dossier-colophon-footer">
+    <div class="dossier-wrap colophon-flex">
       <div>
         <span>محمد أبو مسلم عبد المهدي</span>
-        <span style="margin: 0 0.5rem; color: var(--border);">|</span>
-        <span class="en">DOCUMENT CONTROLLER & AUTOMATION SPECIALIST</span>
+        <span style="margin: 0 0.5rem; color: var(--rule-subtle);">|</span>
+        <span class="en">DOCUMENT CONTROLLER & AUTOMATION SYSTEMS ARCHITECT</span>
       </div>
       <div>
         <span>المملكة العربية السعودية — المدينة المنورة</span>
-        <span style="margin: 0 0.5rem; color: var(--border);">/</span>
-        <span id="colophonYearNode"></span>
+        <span style="margin: 0 0.5rem; color: var(--rule-subtle);">/</span>
+        <span id="colophonYearDisplayNode"></span>
       </div>
     </div>
   </footer>
 
   <script>
+    function sanitizeDisplayText(rawText) {
+      if (!rawText) return '';
+      return String(rawText)
+        .replace(/\/gi, '')
+        .replace(/\]+\]/gi, '')
+        .replace(/\bPDF\b/g, 'مستندات')
+        .trim();
+    }
+
+    function executeDOMSanitization() {
+      var walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+      var node;
+      while (node = walker.nextNode()) {
+        if (node.nodeValue && (/\/i.test(node.nodeValue))) {
+          node.nodeValue = sanitizeDisplayText(node.nodeValue);
+        }
+      }
+    }
+
     function initializeSite() {
+      executeDOMSanitization();
       setupColophonYear();
       initializeScrollObserver();
       initializeSectionNavigation();
+      initializeDossierRail();
       initializeMobileDrawer();
     }
 
     function setupColophonYear() {
-      var yearNode = document.getElementById('colophonYearNode');
+      var yearNode = document.getElementById('colophonYearDisplayNode');
       if (yearNode) {
         yearNode.textContent = new Date().getFullYear();
       }
     }
 
     function initializeScrollObserver() {
-      var header = document.getElementById('mainHeaderNode');
+      var header = document.getElementById('dossierHeaderNode');
       if (!header) return;
 
       window.addEventListener('scroll', function() {
@@ -1588,7 +1671,7 @@
     }
 
     function initializeSectionNavigation() {
-      var navLinks = document.querySelectorAll('.header-nav .nav-target');
+      var navLinks = document.querySelectorAll('.header-index-nav .index-nav-link');
       var sections = document.querySelectorAll('section[id]');
 
       if (!('IntersectionObserver' in window)) return;
@@ -1613,11 +1696,37 @@
       });
     }
 
+    function initializeDossierRail() {
+      var railEntries = document.querySelectorAll('.dossier-rail .rail-entry');
+      var sections = document.querySelectorAll('section[id]');
+
+      if (!('IntersectionObserver' in window)) return;
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var targetId = entry.target.getAttribute('id');
+            railEntries.forEach(function(r) {
+              if (r.getAttribute('data-rail-target') === targetId) {
+                r.classList.add('active');
+              } else {
+                r.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, { threshold: 0.25 });
+
+      sections.forEach(function(sec) {
+        observer.observe(sec);
+      });
+    }
+
     function initializeMobileDrawer() {
-      var openBtn = document.getElementById('drawerOpenBtn');
-      var closeBtn = document.getElementById('drawerCloseBtn');
-      var drawer = document.getElementById('mobileDrawerLayerNode');
-      var links = document.querySelectorAll('.drawer-link');
+      var openBtn = document.getElementById('drawerOpenTrigger');
+      var closeBtn = document.getElementById('drawerCloseTrigger');
+      var drawer = document.getElementById('mobileDrawerStageNode');
+      var links = document.querySelectorAll('.drawer-action-link');
 
       if (!openBtn || !drawer) return;
 
