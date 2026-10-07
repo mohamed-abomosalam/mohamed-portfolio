@@ -1,0 +1,21 @@
+تحديث الملف التنفيذي — الإصدار 05
+
+التثبيت دفعة واحدة:
+1. فك ضغط الحزمة.
+2. افتح الصفحة الرئيسية لمستودع mohamed-portfolio.
+3. Add file → Upload files.
+4. اسحب محتويات المجلد المفكوك (ar و en و assets و index.html و sitemap.xml و .nojekyll) إلى صفحة الرفع. لا ترفع ZIP أو المجلد الخارجي نفسه.
+5. Commit changes ثم انتظر نجاح Actions.
+6. لا تحذف ملف Google للتحقق من الملكية الموجود عندك.
+7. افتح Analytics واضغط Test installation. اختبر الموقع من الموبايل ثم Reports → Realtime؛ قد يحتاج بدء جمع البيانات حتى 30 دقيقة.
+
+القياس: G-2TNQYQJ8V5
+contact_click: contact_channel = whatsapp / phone / email / telegram
+لمتابعة القنوات تفصيلياً يمكن إضافة تعريف مخصص ببُعد Event للمعلمة contact_channel داخل Analytics. ينطبق ذلك على البيانات الجديدة وقد يحتاج تجهيز التقرير وقتاً.
+تنزيل PDF: تلتقطه ميزة Enhanced measurement عند تفعيل File downloads.
+
+ملف ar-index-executive.txt هو الكود الكامل لصفحة ar/index.html.
+ملف en-index-executive.txt هو الكود الكامل لصفحة en/index.html.
+لا ترفع ملفات TXT مكان HTML؛ استخدم محتواها للنسخ واللصق فقط، أو استخدم الحزمة كاملة.
+
+التصميم لا يضمن ترتيباً محدداً في البحث. الحزمة تحافظ على صفحات اللغات والمشروعات والبيانات المنظمة وخريطة الموقع.
