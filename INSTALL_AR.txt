@@ -1,4 +1,4 @@
-الإصدار 07 — محمد أبو مسلم عبد المهدي
+الإصدار 08 — محمد أبو مسلم عبد المهدي
 
 الرابط الجديد:
 https://mohamed-abomosalam.github.io/mohamed-portfolio/
@@ -58,3 +58,44 @@ project_share: project_slug
 service_select: service_focus
 تنزيل PDF يلتقطه Enhanced measurement عندما تكون File downloads مفعلة.
 لا ترسل كلمات بحث الزوار أو نصوص رسائلهم إلى أحداث مخصصة.
+
+
+7. تقييم التجربة — إعداد التقرير
+الرسالة تظهر بعد 25 ثانية من البقاء وتصفح أكثر من نصف الصفحة. يمكن إغلاقها أو فتحها من تذييل الموقع.
+حدث القياس: portfolio_feedback
+معلمة الاختيار: feedback_value
+القيم: satisfied / not_satisfied
+يُحفظ اختيار واحد في هذا المتصفح لمنع تكراره المعتاد. لا يعادل ذلك هوية شخص حقيقية؛ تغيير الجهاز أو مسح التخزين يسمح بتقييم آخر.
+لو كانت Analytics محجوبة لدى الزائر فلن تصل استجابته. رسالة الشكر لا تعني تأكيد استلامها على الخادم.
+لا توجد أرقام أو تقييمات عامة معروضة على الموقع. النتائج يراها مالك الحساب في Analytics فقط.
+
+لفصل راضٍ عن غير راضٍ:
+Admin → Data display → Custom definitions → Custom dimensions → Create custom dimension.
+Dimension name: Feedback choice
+Scope: Event
+Event parameter: feedback_value
+Description: Visitor feedback on portfolio clarity
+Save.
+بعد إرسال البيانات وإنشاء التعريف قد تحتاج التقارير إلى 24–48 ساعة.
+Explore → Free form.
+Dimensions: Feedback choice و Event name.
+Metrics: Event count.
+Rows: Feedback choice.
+Values: Event count.
+Filter: Event name exactly matches portfolio_feedback.
+القيم satisfied تعني راضٍ، وnot_satisfied تعني غير راضٍ.
+Realtime يعرض الحدث قبل اكتمال تجهيز التقرير التفصيلي.
+لا تحوّل التقييمات إلى AggregateRating في البيانات المنظمة.
+
+8. ترتيب الأعمال
+الرئيسية: ECC، Enterprise DCS، الأرشيف الهندسي، ومحرك الصوت العربي.
+الإضافية: إتقان وتبرع ونقوط داخل قسم قابل للفتح. البحث يشمل الأعمال الستة ويفتح القسم الإضافي عند الحاجة.
+روابط الدراسات الست محفوظة في اللغتين، وخريطة الموقع لا تزال تشمل 14 رابطاً.
+الصورة social-cover.png خاصة بمشاركة صفحات النبذة؛ هي تصميم تعريفي ولا تمثل شهادة أو تقييمًا.
+
+9. مراجعة Google بعد تغيير الاسم
+الصورة القديمة لـSearch Console تخص salama-bot ولا تثبت فهرسة عنوان mohamed-abomosalam الجديد.
+أضف الخاصية الجديدة بالرابط:
+https://mohamed-abomosalam.github.io/mohamed-portfolio/
+أثبت الملكية ثم أرسل sitemap.xml وافحص /ar/ و /en/ على العنوان الجديد.
+الزحف قد يستغرق أياماً إلى أسابيع؛ لا يوجد موعد مضمون للظهور ولا ترتيب مضمون.
