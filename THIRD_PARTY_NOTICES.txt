@@ -1,4 +1,4 @@
-THIRD-PARTY NOTICES — PROFESSIONAL PORTFOLIO, REVISION 13
+THIRD-PARTY NOTICES — PROFESSIONAL PORTFOLIO, REVISION 15
 
 Lucide — selected SVG icon paths, inlined in HTML.
 ISC License
@@ -55,5 +55,5 @@ Manrope variable: Manrope Project Authors.
 Google Fonts distribution, Latin and Latin-extended WOFF2 subsets.
 Complete license: assets/MANROPE_OFL.txt
 
-Project-authored inline social glyphs: Facebook and Instagram.
+Project-authored inline social glyphs: Facebook, Instagram and LinkedIn.
 Project-authored geometric monogram: MA / Documents to Systems.
